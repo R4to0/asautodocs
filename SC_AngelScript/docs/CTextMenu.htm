@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>CTextMenu</title>
+</head>
+<body>
+<h1>CTextMenu</h1>
+<p>Text menu.</p>
+<p>Type: Reference type</p>
+<div><h2>Methods</h2>
+<table><tr><th>Declaration</th>
+<th>Description</th>
+</tr>
+<tr><td>CTextMenu@ CTextMenu(TextMenuPlayerSlotCallback@ inputCB)</td>
+<td>Constructor. You must pass a player slot callback and handle the input yourself.</td>
+</tr>
+<tr><td>TextMenuId_t get_Id() const</td>
+<td>Gets this text menu's id. If CTextMenus::INVALID_TEXT_MENU_ID, this is an unregistered menu.</td>
+</tr>
+<tr><td>bool IsRegistered() const</td>
+<td>Returns whether this menu is registered or not.</td>
+</tr>
+<tr><td>bool Register()</td>
+<td>Registers this text menu.</td>
+</tr>
+<tr><td>void Unregister()</td>
+<td>Unregisters this text menu.</td>
+</tr>
+<tr><td>void Open(const int iDisplayTime, const uint page, array<edict_t@>@ pPlayers = null)</td>
+<td>Opens the menu and keeps it open for the given amount of time.<br/>Time must be a positive value. Maximum 255 seconds. Pass 0 for infinite.<br/>You can optionally pass a list of players that receive this menu.</td>
+</tr>
+<tr><td>void Open(const int iDisplayTime, const uint page, CBasePlayer@ pPlayer)</td>
+<td>Opens the menu and keeps it open for the given amount of time.<br/>Time must be a positive value. Maximum 255 seconds. Pass 0 for infinite.<br/>You must pass the player that receives this menu.</td>
+</tr>
+<tr><td>size_t GetItemCount() const</td>
+<td>Gets the number of items in this menu.</td>
+</tr>
+<tr><td>uint GetPageCount() const</td>
+<td>Gets the number of pages in this menu.</td>
+</tr>
+<tr><td>const CTextMenuItem@ GetItem(const size_t uiIndex) const</td>
+<td>Gets the item at the given index.</td>
+</tr>
+<tr><td>const string& GetTitle() const</td>
+<td>Gets the title.</td>
+</tr>
+<tr><td>void SetTitle(const string& in szTitle)</td>
+<td>Sets the title.</td>
+</tr>
+<tr><td>void AddItem( const string& in szName, any@ pUserData = null)</td>
+<td>Adds an item to the menu.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

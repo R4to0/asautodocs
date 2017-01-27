@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>EHandle</title>
+</head>
+<body>
+<h1>EHandle</h1>
+<p>Safe way to point to CBaseEntities who may die between frames.</p>
+<p>Type: Value type</p>
+<div><h2>Methods</h2>
+<table><tr><th>Declaration</th>
+<th>Description</th>
+</tr>
+<tr><td>void EHandle()</td>
+<td>Default constructs this handle.</td>
+</tr>
+<tr><td>void EHandle(const EHandle& in other)</td>
+<td>Copy constructs this handle.</td>
+</tr>
+<tr><td>void EHandle(CBaseEntity@ pEntity)</td>
+<td>Constructs this handle with a reference to the given entity.</td>
+</tr>
+<tr><td>void DestructEHandle()</td>
+<td>Destructor.</td>
+</tr>
+<tr><td>bool IsValid() const</td>
+<td>Returns whether this handle is valid.</td>
+</tr>
+<tr><td>bool opImplConv() const</td>
+<td>Returns whether this handle is valid.</td>
+</tr>
+<tr><td>CBaseEntity@ GetEntity() const</td>
+<td>Gets the Entity this handle refers to.<br/>Returns null if invalid.</td>
+</tr>
+<tr><td>CBaseEntity@ opImplCast() const</td>
+<td>Gets the Entity this handle refers to.<br/>Returns null if invalid.</td>
+</tr>
+<tr><td>CBaseEntity@ opAssign(CBaseEntity@ pEntity)</td>
+<td>Assigns the given entity to this handle.</td>
+</tr>
+<tr><td>EHandle& opAssign(const EHandle& in other)</td>
+<td>Makes this handle refer to the same entity as the given handle.</td>
+</tr>
+<tr><td>int GetSerialNumber() const</td>
+<td>CBaseEntity serial number. Used to determine if the entity is still valid.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>CModuleHookManager</title>
+</head>
+<body>
+<h1>CModuleHookManager</h1>
+<p>Module hook manager</p>
+<p>Type: Reference type</p>
+<div><h2>Methods</h2>
+<table><tr><th>Declaration</th>
+<th>Description</th>
+</tr>
+<tr><td>bool RegisterHook(uint uiHookCode, ?& in pHookFunction)</td>
+<td>Registers a hook. Pass in a hook function or delegate.</td>
+</tr>
+<tr><td>void RemoveHook(uint uiHookCode)</td>
+<td>Removes all functions hooked into the given hook.</td>
+</tr>
+<tr><td>void RemoveHook(uint uiHookCode, ?& in pHookFunction)</td>
+<td>Removes a hook. Pass in the hook function or delegate to remove.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

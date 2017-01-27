@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>CScheduledFunction</title>
+</head>
+<body>
+<h1>CScheduledFunction</h1>
+<p>Handle to a scheduled function</p>
+<p>Type: Reference type</p>
+<div><h2>Methods</h2>
+<table><tr><th>Declaration</th>
+<th>Description</th>
+</tr>
+<tr><td>float GetNextCallTime() const</td>
+<td>Gets the next call time, in seconds</td>
+</tr>
+<tr><td>void SetNextCallTime(const float flNextCallTime)</td>
+<td>Sets the next call time, in seconds. Is an absolute value (g_Engine.time + RepeatTime by default).Times in the past will result in a call on the next frame.</td>
+</tr>
+<tr><td>float GetRepeatTime() const</td>
+<td>Gets the repeat time, in seconds</td>
+</tr>
+<tr><td>void SetRepeatTime(const float flRepeatTime)</td>
+<td>Sets the repeat time, in seconds. Must be a positive value (may be zero)</td>
+</tr>
+<tr><td>int GetRepeatCount() const</td>
+<td>Gets the repeat count</td>
+</tr>
+<tr><td>bool IsInfiniteRepeat() const</td>
+<td>Returns whether this function repeats infinitely</td>
+</tr>
+<tr><td>void SetRepeatCount(const int iRepeatCount)</td>
+<td>Sets the repeat count. Must be a positive value (may be zero) or REPEAT_INFINITE_TIMES</td>
+</tr>
+<tr><td>void MakeInfiniteRepeat()</td>
+<td>Makes this an infinite repeat function</td>
+</tr>
+<tr><td>bool HasBeenRemoved() const</td>
+<td>Returns whether this function has been removed from the scheduler or not</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

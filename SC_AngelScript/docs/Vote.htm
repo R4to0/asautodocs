@@ -1,0 +1,60 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>Vote</title>
+</head>
+<body>
+<h1>Vote</h1>
+<p>Vote class. Can be used to start custom votes.</p>
+<p>Type: Reference type</p>
+<div><h2>Methods</h2>
+<table><tr><th>Declaration</th>
+<th>Description</th>
+</tr>
+<tr><td>Vote@ Vote(const string& in szName, const string& in szVoteText, float flVoteLength, float flPercentageNeeded)</td>
+<td>Constructor</td>
+</tr>
+<tr><td>const string& GetName() const</td>
+<td>Gets name of this vote.</td>
+</tr>
+<tr><td>const string& GetVoteText() const</td>
+<td>Gets the vote text.</td>
+</tr>
+<tr><td>void SetVoteText(const string& in szVoteText)</td>
+<td>Sets the vote text.</td>
+</tr>
+<tr><td>const string& GetYesText() const</td>
+<td>Gets the yes button text.</td>
+</tr>
+<tr><td>void SetYesText(const string& in szYesText)</td>
+<td>Sets the yes button text.</td>
+</tr>
+<tr><td>const string& GetNoText() const</td>
+<td>Gets the no button text.</td>
+</tr>
+<tr><td>void SetNoText(const string& in szNoText)</td>
+<td>Sets the no button text.</td>
+</tr>
+<tr><td>void SetVoteBlockedCallback(VoteBlocked@ pCallback)</td>
+<td>Sets the vote blocked callback.</td>
+</tr>
+<tr><td>void SetVoteEndCallback(VoteEnd@ pCallback)</td>
+<td>Sets the vote end callback.</td>
+</tr>
+<tr><td>void Start()</td>
+<td>Starts this vote.</td>
+</tr>
+<tr><td>any@ GetUserData()</td>
+<td>Gets the user data set on this vote.</td>
+</tr>
+<tr><td>void SetUserData(any@ pUserData)</td>
+<td>Sets the user data on this vote.</td>
+</tr>
+<tr><td>void ClearUserData()</td>
+<td>Clears the user data set on this vote.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

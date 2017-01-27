@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>MOVETYPE</title>
+</head>
+<body>
+<h1>MOVETYPE</h1>
+<p>entvars_t::movetype constants</p>
+<div><h2>Values</h2>
+<table><tr><th>Name</th>
+<th>Description</th>
+</tr>
+<tr><td>MOVETYPE_NONE</td>
+<td>never moves</td>
+</tr>
+<tr><td>MOVETYPE_WALK</td>
+<td>Player only - moving on the ground</td>
+</tr>
+<tr><td>MOVETYPE_STEP</td>
+<td>gravity, special edge handling -- monsters use this</td>
+</tr>
+<tr><td>MOVETYPE_FLY</td>
+<td>No gravity, but still collides with stuff</td>
+</tr>
+<tr><td>MOVETYPE_TOSS</td>
+<td>gravity/collisions</td>
+</tr>
+<tr><td>MOVETYPE_PUSH</td>
+<td>no clip to world, push and crush</td>
+</tr>
+<tr><td>MOVETYPE_NOCLIP</td>
+<td>No gravity, no collisions, still do velocity/avelocity</td>
+</tr>
+<tr><td>MOVETYPE_FLYMISSILE</td>
+<td>extra size to monsters</td>
+</tr>
+<tr><td>MOVETYPE_BOUNCE</td>
+<td>Just like Toss, but reflect velocity when contacting surfaces</td>
+</tr>
+<tr><td>MOVETYPE_BOUNCEMISSILE</td>
+<td>bounce w/o gravity</td>
+</tr>
+<tr><td>MOVETYPE_FOLLOW</td>
+<td>track movement of aiment</td>
+</tr>
+<tr><td>MOVETYPE_PUSHSTEP</td>
+<td>BSP model that needs physics/world collisions (uses nearest hull for world collision)</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

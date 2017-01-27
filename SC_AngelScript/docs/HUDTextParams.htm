@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>HUDTextParams</title>
+</head>
+<body>
+<h1>HUDTextParams</h1>
+<p>Parameters for text output to the HUD.</p>
+<p>Type: Value type</p>
+<div><h2>Methods</h2>
+<table><tr><th>Declaration</th>
+<th>Description</th>
+</tr>
+<tr><td>void HUDTextParams()</td>
+<td>Constructor</td>
+</tr>
+<tr><td>void HUDTextParams(const HUDTextParams& in other)</td>
+<td>Copy constructor</td>
+</tr>
+<tr><td>void DestructHUDTextParams()</td>
+<td>Constructor</td>
+</tr>
+<tr><td>HUDTextParams& opAssign(const HUDTextParams& in other)</td>
+<td>Assignment operator</td>
+</tr>
+</table>
+</div>
+<div><h2>Properties</h2>
+<table><tr><th>Declaration</th>
+<th>Description</th>
+</tr>
+<tr><td>float x</td>
+<td>X (0 - 1.0 = left to right) (-1 centers)</td>
+</tr>
+<tr><td>float y</td>
+<td>Y (0 - 1.0 = top to bottom) (-1 centers)</td>
+</tr>
+<tr><td>int effect</td>
+<td>Effects.<br/>0 : Fade In/Out<br/>1 : Credits<br/>2 : Scan Out</td>
+</tr>
+<tr><td>uint8 r1</td>
+<td>Red 1</td>
+</tr>
+<tr><td>uint8 g1</td>
+<td>Green 1</td>
+</tr>
+<tr><td>uint8 b1</td>
+<td>Blue 1</td>
+</tr>
+<tr><td>uint8 a1</td>
+<td>Alpha 1</td>
+</tr>
+<tr><td>uint8 r2</td>
+<td>Red 2</td>
+</tr>
+<tr><td>uint8 g2</td>
+<td>Green 2</td>
+</tr>
+<tr><td>uint8 b2</td>
+<td>Blue 2</td>
+</tr>
+<tr><td>uint8 a2</td>
+<td>Alpha 2</td>
+</tr>
+<tr><td>float fadeinTime</td>
+<td>Fade in time</td>
+</tr>
+<tr><td>float fadeoutTime</td>
+<td>Fade out time</td>
+</tr>
+<tr><td>float holdTime</td>
+<td>Hold time</td>
+</tr>
+<tr><td>float fxTime</td>
+<td>Scan time (scan effect only)</td>
+</tr>
+<tr><td>int channel</td>
+<td>Channel. 1-4.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

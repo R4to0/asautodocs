@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>ObjectType</title>
+</head>
+<body>
+<h1>ObjectType</h1>
+<p>Namespace: Reflection</p>
+<p>Represents an object type</p>
+<p>Type: Reference type</p>
+<div><h2>Methods</h2>
+<table><tr><th>Declaration</th>
+<th>Description</th>
+</tr>
+<tr><td>uint GetMethodCount() const</td>
+<td>Gets the number of methods this object type has</td>
+</tr>
+<tr><td>Method@ GetMethodByIndex(uint uiIndex) const</td>
+<td>Gets the method at the given index</td>
+</tr>
+<tr><td>Method@ GetMethod(const string& in szFunctionSignature)</td>
+<td>Gets a method by declaration</td>
+</tr>
+<tr><td>bool MethodExists(const string& in szFunctionSignature)</td>
+<td>Gets a method by declaration</td>
+</tr>
+<tr><td>bool Equals(const ObjectType@ pObjectType) const</td>
+<td>Returns whether the given object type is identical to this one.</td>
+</tr>
+<tr><td>bool IsCompatible(const ObjectType@ pObjectType) const</td>
+<td>Returns whether the given object type is compatible with this one.</td>
+</tr>
+<tr><td>bool DerivesFrom(const string& in szName) const</td>
+<td>Returns whether this object derives from the given type</td>
+</tr>
+<tr><td>bool DerivesFrom(const ObjectType@ pObjectType) const</td>
+<td>Returns whether this object derives from the given type</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

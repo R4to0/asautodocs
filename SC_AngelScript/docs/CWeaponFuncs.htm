@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>CWeaponFuncs</title>
+</head>
+<body>
+<h1>CWeaponFuncs</h1>
+<p>Weapon functions class.</p>
+<p>Type: Reference type</p>
+<div><h2>Methods</h2>
+<table><tr><th>Declaration</th>
+<th>Description</th>
+</tr>
+<tr><td>void ClearMultiDamage()</td>
+<td>Clears the multi damage data.</td>
+</tr>
+<tr><td>void ApplyMultiDamage(entvars_t@ pevInflictor, entvars_t@ pevAttacker)</td>
+<td>Applies multi damage.</td>
+</tr>
+<tr><td>void AddMultiDamage(entvars_t@ pevInflictor, CBaseEntity@ pEntity, float flDamage, int bitsDamageType)</td>
+<td>Add multi damage.</td>
+</tr>
+<tr><td>float WeaponTimeBase()</td>
+<td>Gets the weapon time base.</td>
+</tr>
+<tr><td>void DecalGunshot(TraceResult& in trace, int iBulletType)</td>
+<td>Creates a gunshot decal at the trace hit point.</td>
+</tr>
+<tr><td>void SpawnBlood(const Vector& in vecSpot, int bloodColor, float flDamage)</td>
+<td>Spawns blood at the given location.</td>
+</tr>
+<tr><td>int DamageDecal(CBaseEntity@ pEntity, int bitsDamageType)</td>
+<td>Creates a damage decal on the given entity.</td>
+</tr>
+<tr><td>void RadiusDamage(const Vector& in vecSrc, entvars_t@ pevInflictor, entvars_t@ pevAttacker, float flDamage, float flRadius, int iClassIgnore, int bitsDamageType)</td>
+<td>Deals radius damage.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

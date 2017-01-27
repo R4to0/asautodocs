@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>Observer</title>
+</head>
+<body>
+<h1>Observer</h1>
+<p>Observer mode management class.</p>
+<p>Type: Reference type</p>
+<div><h2>Methods</h2>
+<table><tr><th>Declaration</th>
+<th>Description</th>
+</tr>
+<tr><td>CBaseEntity@ GetObserverTarget()</td>
+<td>Gets the current observer target, if any.</td>
+</tr>
+<tr><td>void ResetObserverTarget()</td>
+<td>Resets the observer target and finds the next suitable candidate.</td>
+</tr>
+<tr><td>void SetObserverTarget(CBaseEntity@ pEntity)</td>
+<td>Sets the observer target.</td>
+</tr>
+<tr><td>bool CanUseObserver()</td>
+<td>Returns whether this player can use observer mode.</td>
+</tr>
+<tr><td>bool IsObserver() const</td>
+<td>Returns whether this player is an observer.</td>
+</tr>
+<tr><td>void StartObserver(const Vector& in vecPosition, const Vector& in vecViewAngle, bool fCreateBody = true)</td>
+<td>Starts observer mode.</td>
+</tr>
+<tr><td>void StopObserver(bool fRespawn)</td>
+<td>Stops observer mode.</td>
+</tr>
+<tr><td>void FindNextPlayer(bool fReverse)</td>
+<td>Find the next player to observe.</td>
+</tr>
+<tr><td>void HandleButtons()</td>
+<td>Handles button input.</td>
+</tr>
+<tr><td>void SetMode(ObserverMode iMode)</td>
+<td>Sets the observer mode.</td>
+</tr>
+<tr><td>CBaseEntity@ FindObserverStartPoint()</td>
+<td>Find a point to start a player at for observer.</td>
+</tr>
+<tr><td>bool HasCorpse()</td>
+<td>Returns whether this player has a corpse.</td>
+</tr>
+<tr><td>bool CanControlObserverMode() const</td>
+<td>Returns whether this player can control the observer mode.</td>
+</tr>
+<tr><td>void SetObserverModeControlEnabled(bool fEnabled)</td>
+<td>Sets whether this player can control the observer mode.</td>
+</tr>
+<tr><td>void RemoveDeadBody()</td>
+<td>Removes the player's dead body, if it exists.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>KeyValueBuffer</title>
+</head>
+<body>
+<h1>KeyValueBuffer</h1>
+<p>Buffer containing keyvalue pairs</p>
+<p>Type: Reference type</p>
+<div><h2>Methods</h2>
+<table><tr><th>Declaration</th>
+<th>Description</th>
+</tr>
+<tr><td>edict_t@ GetClient() const</td>
+<td>Gets the client that this buffer belongs to.</td>
+</tr>
+<tr><td>string GetValue(const string& in szKey) const</td>
+<td>Gets a key value</td>
+</tr>
+<tr><td>void SetValue(const string& in szKey, const string& in szValue) const</td>
+<td>Sets a key value.</td>
+</tr>
+<tr><td>void RemoveValue(const string& in szKey)</td>
+<td>Removes a key value. If this is a physics key buffer, this will set the key to an empty string instead.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

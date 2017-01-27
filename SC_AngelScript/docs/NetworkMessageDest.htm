@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>NetworkMessageDest</title>
+</head>
+<body>
+<h1>NetworkMessageDest</h1>
+<p>Network message destination types.</p>
+<div><h2>Values</h2>
+<table><tr><th>Name</th>
+<th>Description</th>
+</tr>
+<tr><td>MSG_BROADCAST</td>
+<td>unreliable to all</td>
+</tr>
+<tr><td>MSG_ONE</td>
+<td>reliable to one (msg_entity)</td>
+</tr>
+<tr><td>MSG_ALL</td>
+<td>reliable to all</td>
+</tr>
+<tr><td>MSG_INIT</td>
+<td>write to the init string</td>
+</tr>
+<tr><td>MSG_PVS</td>
+<td>Ents in PVS of org</td>
+</tr>
+<tr><td>MSG_PAS</td>
+<td>Ents in PAS of org</td>
+</tr>
+<tr><td>MSG_PVS_R</td>
+<td>Reliable to PVS</td>
+</tr>
+<tr><td>MSG_PAS_R</td>
+<td>Reliable to PAS</td>
+</tr>
+<tr><td>MSG_ONE_UNRELIABLE</td>
+<td>Send to one client, but don't put in reliable stream, put in unreliable datagram ( could be dropped )</td>
+</tr>
+<tr><td>MSG_SPEC</td>
+<td>Sends to all spectator proxies</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>RenderModes</title>
+</head>
+<body>
+<h1>RenderModes</h1>
+<p>Render modes used by entities (entvars_t::rendermode)</p>
+<div><h2>Values</h2>
+<table><tr><th>Name</th>
+<th>Description</th>
+</tr>
+<tr><td>kRenderNormal</td>
+<td>src</td>
+</tr>
+<tr><td>kRenderTransColor</td>
+<td>c*a+dest*(1-a)</td>
+</tr>
+<tr><td>kRenderTransTexture</td>
+<td>src*a+dest*(1-a)</td>
+</tr>
+<tr><td>kRenderGlow</td>
+<td>src*a+dest -- No Z buffer checks</td>
+</tr>
+<tr><td>kRenderTransAlpha</td>
+<td>src*srca+dest*(1-srca)</td>
+</tr>
+<tr><td>kRenderTransAdd</td>
+<td>src*a+dest</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

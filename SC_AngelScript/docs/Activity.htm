@@ -1,0 +1,248 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>Activity</title>
+</head>
+<body>
+<h1>Activity</h1>
+<p>Activity currently being played by a monster</p>
+<div><h2>Values</h2>
+<table><tr><th>Name</th>
+<th>Description</th>
+</tr>
+<tr><td>ACT_RESET</td>
+<td>Set m_Activity to this invalid value to force a reset to m_IdealActivity</td>
+</tr>
+<tr><td>ACT_IDLE</td>
+<td></td>
+</tr>
+<tr><td>ACT_GUARD</td>
+<td></td>
+</tr>
+<tr><td>ACT_WALK</td>
+<td></td>
+</tr>
+<tr><td>ACT_RUN</td>
+<td></td>
+</tr>
+<tr><td>ACT_FLY</td>
+<td>Fly (and flap if appropriate)</td>
+</tr>
+<tr><td>ACT_SWIM</td>
+<td></td>
+</tr>
+<tr><td>ACT_HOP</td>
+<td>vertical jump</td>
+</tr>
+<tr><td>ACT_LEAP</td>
+<td>long forward jump</td>
+</tr>
+<tr><td>ACT_FALL</td>
+<td></td>
+</tr>
+<tr><td>ACT_LAND</td>
+<td></td>
+</tr>
+<tr><td>ACT_STRAFE_LEFT</td>
+<td></td>
+</tr>
+<tr><td>ACT_STRAFE_RIGHT</td>
+<td></td>
+</tr>
+<tr><td>ACT_ROLL_LEFT</td>
+<td>tuck and roll, left</td>
+</tr>
+<tr><td>ACT_ROLL_RIGHT</td>
+<td>tuck and roll, right</td>
+</tr>
+<tr><td>ACT_TURN_LEFT</td>
+<td>turn quickly left (stationary)</td>
+</tr>
+<tr><td>ACT_TURN_RIGHT</td>
+<td>turn quickly right (stationary)</td>
+</tr>
+<tr><td>ACT_CROUCH</td>
+<td>the act of crouching down from a standing position</td>
+</tr>
+<tr><td>ACT_CROUCHIDLE</td>
+<td>holding body in crouched position (loops)</td>
+</tr>
+<tr><td>ACT_STAND</td>
+<td>the act of standing from a crouched position</td>
+</tr>
+<tr><td>ACT_USE</td>
+<td></td>
+</tr>
+<tr><td>ACT_SIGNAL1</td>
+<td></td>
+</tr>
+<tr><td>ACT_SIGNAL2</td>
+<td></td>
+</tr>
+<tr><td>ACT_SIGNAL3</td>
+<td></td>
+</tr>
+<tr><td>ACT_TWITCH</td>
+<td></td>
+</tr>
+<tr><td>ACT_COWER</td>
+<td></td>
+</tr>
+<tr><td>ACT_SMALL_FLINCH</td>
+<td></td>
+</tr>
+<tr><td>ACT_BIG_FLINCH</td>
+<td></td>
+</tr>
+<tr><td>ACT_RANGE_ATTACK1</td>
+<td></td>
+</tr>
+<tr><td>ACT_RANGE_ATTACK2</td>
+<td></td>
+</tr>
+<tr><td>ACT_MELEE_ATTACK1</td>
+<td></td>
+</tr>
+<tr><td>ACT_MELEE_ATTACK2</td>
+<td></td>
+</tr>
+<tr><td>ACT_RELOAD</td>
+<td></td>
+</tr>
+<tr><td>ACT_ARM</td>
+<td>pull out gun, for instance</td>
+</tr>
+<tr><td>ACT_DISARM</td>
+<td>reholster gun</td>
+</tr>
+<tr><td>ACT_EAT</td>
+<td>monster chowing on a large food item (loop)</td>
+</tr>
+<tr><td>ACT_DIESIMPLE</td>
+<td></td>
+</tr>
+<tr><td>ACT_DIEBACKWARD</td>
+<td></td>
+</tr>
+<tr><td>ACT_DIEFORWARD</td>
+<td></td>
+</tr>
+<tr><td>ACT_DIEVIOLENT</td>
+<td></td>
+</tr>
+<tr><td>ACT_BARNACLE_HIT</td>
+<td>barnacle tongue hits a monster</td>
+</tr>
+<tr><td>ACT_BARNACLE_PULL</td>
+<td>barnacle is lifting the monster ( loop )</td>
+</tr>
+<tr><td>ACT_BARNACLE_CHOMP</td>
+<td>barnacle latches on to the monster</td>
+</tr>
+<tr><td>ACT_BARNACLE_CHEW</td>
+<td>barnacle is holding the monster in its mouth ( loop )</td>
+</tr>
+<tr><td>ACT_SLEEP</td>
+<td></td>
+</tr>
+<tr><td>ACT_INSPECT_FLOOR</td>
+<td>for active idles, look at something on or near the floor</td>
+</tr>
+<tr><td>ACT_INSPECT_WALL</td>
+<td>for active idles, look at something directly ahead of you ( doesn't HAVE to be a wall or on a wall )</td>
+</tr>
+<tr><td>ACT_IDLE_ANGRY</td>
+<td>alternate idle animation in which the monster is clearly agitated. (loop)</td>
+</tr>
+<tr><td>ACT_WALK_HURT</td>
+<td>limp  (loop)</td>
+</tr>
+<tr><td>ACT_RUN_HURT</td>
+<td>limp  (loop)</td>
+</tr>
+<tr><td>ACT_HOVER</td>
+<td>Idle while in flight</td>
+</tr>
+<tr><td>ACT_GLIDE</td>
+<td>Fly (don't flap)</td>
+</tr>
+<tr><td>ACT_FLY_LEFT</td>
+<td>Turn left in flight</td>
+</tr>
+<tr><td>ACT_FLY_RIGHT</td>
+<td>Turn right in flight</td>
+</tr>
+<tr><td>ACT_DETECT_SCENT</td>
+<td>this means the monster smells a scent carried by the air</td>
+</tr>
+<tr><td>ACT_SNIFF</td>
+<td>this is the act of actually sniffing an item in front of the monster</td>
+</tr>
+<tr><td>ACT_BITE</td>
+<td>some large monsters can eat small things in one bite. This plays one time, EAT loops.</td>
+</tr>
+<tr><td>ACT_THREAT_DISPLAY</td>
+<td>without attacking, monster demonstrates that it is angry. (Yell, stick out chest, etc )</td>
+</tr>
+<tr><td>ACT_FEAR_DISPLAY</td>
+<td>monster just saw something that it is afraid of</td>
+</tr>
+<tr><td>ACT_EXCITED</td>
+<td>for some reason, monster is excited. Sees something he really likes to eat, or whatever.</td>
+</tr>
+<tr><td>ACT_SPECIAL_ATTACK1</td>
+<td>very monster specific special attacks.</td>
+</tr>
+<tr><td>ACT_SPECIAL_ATTACK2</td>
+<td></td>
+</tr>
+<tr><td>ACT_COMBAT_IDLE</td>
+<td>agitated idle.</td>
+</tr>
+<tr><td>ACT_WALK_SCARED</td>
+<td></td>
+</tr>
+<tr><td>ACT_RUN_SCARED</td>
+<td></td>
+</tr>
+<tr><td>ACT_VICTORY_DANCE</td>
+<td>killed a player, do a victory dance.</td>
+</tr>
+<tr><td>ACT_DIE_HEADSHOT</td>
+<td>die, hit in head. </td>
+</tr>
+<tr><td>ACT_DIE_CHESTSHOT</td>
+<td>die, hit in chest</td>
+</tr>
+<tr><td>ACT_DIE_GUTSHOT</td>
+<td>die, hit in gut</td>
+</tr>
+<tr><td>ACT_DIE_BACKSHOT</td>
+<td>die, hit in back</td>
+</tr>
+<tr><td>ACT_FLINCH_HEAD</td>
+<td></td>
+</tr>
+<tr><td>ACT_FLINCH_CHEST</td>
+<td></td>
+</tr>
+<tr><td>ACT_FLINCH_STOMACH</td>
+<td></td>
+</tr>
+<tr><td>ACT_FLINCH_LEFTARM</td>
+<td></td>
+</tr>
+<tr><td>ACT_FLINCH_RIGHTARM</td>
+<td></td>
+</tr>
+<tr><td>ACT_FLINCH_LEFTLEG</td>
+<td></td>
+</tr>
+<tr><td>ACT_FLINCH_RIGHTLEG</td>
+<td></td>
+</tr>
+</table>
+</div>
+</body>
+</html>

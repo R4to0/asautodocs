@@ -1,0 +1,110 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>EdictFlags</title>
+</head>
+<body>
+<h1>EdictFlags</h1>
+<p>entvars_t::flags constants</p>
+<div><h2>Values</h2>
+<table><tr><th>Name</th>
+<th>Description</th>
+</tr>
+<tr><td>FL_FLY</td>
+<td>Changes the SV_Movestep() behavior to not need to be on ground</td>
+</tr>
+<tr><td>FL_SWIM</td>
+<td>Changes the SV_Movestep() behavior to not need to be on ground (but stay in water)</td>
+</tr>
+<tr><td>FL_CONVEYOR</td>
+<td>If set, entities standing on this entity are moved as if this were a conveyor</td>
+</tr>
+<tr><td>FL_CLIENT</td>
+<td>If set, this is a player</td>
+</tr>
+<tr><td>FL_INWATER</td>
+<td>If set, this entity is in water. Only applies to players</td>
+</tr>
+<tr><td>FL_MONSTER</td>
+<td>If set, this is a monster</td>
+</tr>
+<tr><td>FL_GODMODE</td>
+<td>If set, this entity is invincible. Only applies to players</td>
+</tr>
+<tr><td>FL_NOTARGET</td>
+<td>If set, this entity will not be targeted by monster AI</td>
+</tr>
+<tr><td>FL_SKIPLOCALHOST</td>
+<td>Don't send entity to local host, it's predicting this entity itself</td>
+</tr>
+<tr><td>FL_ONGROUND</td>
+<td>At rest / on the ground</td>
+</tr>
+<tr><td>FL_PARTIALGROUND</td>
+<td>not all corners are valid</td>
+</tr>
+<tr><td>FL_WATERJUMP</td>
+<td>player jumping out of water</td>
+</tr>
+<tr><td>FL_FROZEN</td>
+<td>Player is frozen for 3rd person camera</td>
+</tr>
+<tr><td>FL_FAKECLIENT</td>
+<td>JAC: fake client, simulated server side; don't send network messages to them</td>
+</tr>
+<tr><td>FL_DUCKING</td>
+<td>Player flag -- Player is fully crouched</td>
+</tr>
+<tr><td>FL_FLOAT</td>
+<td>Apply floating force to this entity when in water</td>
+</tr>
+<tr><td>FL_GRAPHED</td>
+<td>worldgraph has this ent listed as something that blocks a connection</td>
+</tr>
+<tr><td>FL_IMMUNE_WATER</td>
+<td>If set, players don't take drown damage</td>
+</tr>
+<tr><td>FL_IMMUNE_SLIME</td>
+<td>If set, players don't take damage from slime</td>
+</tr>
+<tr><td>FL_IMMUNE_LAVA</td>
+<td>If set, players don't take damage from lava</td>
+</tr>
+<tr><td>FL_PROXY</td>
+<td>This is a spectator proxy</td>
+</tr>
+<tr><td>FL_ALWAYSTHINK</td>
+<td>Brush model flag -- call think every frame regardless of nextthink - ltime (for constantly changing velocity/path)</td>
+</tr>
+<tr><td>FL_BASEVELOCITY</td>
+<td>Base velocity has been applied this frame (used to convert base velocity into momentum)</td>
+</tr>
+<tr><td>FL_MONSTERCLIP</td>
+<td>Only collide in with monsters who have FL_MONSTERCLIP set</td>
+</tr>
+<tr><td>FL_ONTRAIN</td>
+<td>Player is _controlling_ a train, so movement commands should be ignored on client during prediction.</td>
+</tr>
+<tr><td>FL_WORLDBRUSH</td>
+<td>Not moveable/removeable brush entity (really part of the world, but represented as an entity for transparency or something)</td>
+</tr>
+<tr><td>FL_SPECTATOR</td>
+<td>This client is a spectator, don't run touch functions, etc.</td>
+</tr>
+<tr><td>FL_NOWEAPONS</td>
+<td>This client is being denied weapon usage</td>
+</tr>
+<tr><td>FL_CUSTOMENTITY</td>
+<td>This is a custom entity</td>
+</tr>
+<tr><td>FL_KILLME</td>
+<td>This entity is marked for death -- This allows the engine to kill ents at the appropriate time</td>
+</tr>
+<tr><td>FL_DORMANT</td>
+<td>Entity is dormant, no updates to client</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

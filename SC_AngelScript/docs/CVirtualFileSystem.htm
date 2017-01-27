@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>CVirtualFileSystem</title>
+</head>
+<body>
+<h1>CVirtualFileSystem</h1>
+<p>Virtual File System</p>
+<p>Type: Reference type</p>
+<div><h2>Methods</h2>
+<table><tr><th>Declaration</th>
+<th>Description</th>
+</tr>
+<tr><td>const FileQuota@ GetFileQuota() const</td>
+<td>Gets the file system quota object. Do not store a handle to this object, as it may be replaced at any time.</td>
+</tr>
+<tr><td>File@ OpenFile(const string& in szFilename, const OpenFileFlags_t uiOpenFlags)</td>
+<td>Opens a file. Returns nullptr if the file could not be opened.</td>
+</tr>
+<tr><td>void RemoveFile(const string& in szFilename)</td>
+<td>Removes a file.</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" href="doc.css"></link>
+<title>CGlobalState</title>
+</head>
+<body>
+<h1>CGlobalState</h1>
+<p>Global state manager</p>
+<p>Type: Reference type</p>
+<div><h2>Methods</h2>
+<table><tr><th>Declaration</th>
+<th>Description</th>
+</tr>
+<tr><td>void ClearStates()</td>
+<td>Clears all global states</td>
+</tr>
+<tr><td>void EntityAdd(const string& in globalName, const string& in mapName , GLOBALESTATE state)</td>
+<td>Adds a new global state object</td>
+</tr>
+<tr><td>void EntitySetState(const string& in globalName, GLOBALESTATE state)</td>
+<td>Sets the state of an existing global state object</td>
+</tr>
+<tr><td>void EntityUpdate(const string& in globalName, const string& in mapName)</td>
+<td>Updates the level name of the specified global state object</td>
+</tr>
+<tr><td>const GlobalEntity@ EntityFromTable(const string& in globalName) const</td>
+<td>Finds a global state object by name</td>
+</tr>
+<tr><td>const GLOBALESTATE EntityGetState(const string& in globalName) const</td>
+<td>Gets the state of the specified global state object</td>
+</tr>
+<tr><td>bool EntityInTable(const string& in globalName) const</td>
+<td>Returns whether the global state object is in the table of objects</td>
+</tr>
+<tr><td>void DumpGlobals() const</td>
+<td>Dumps all global state objects to the console</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
