@@ -371,7 +371,7 @@
 			<td>Respawns this entity.</td>
 		</tr>
 		<tr>
-			<td>bool FBecomeProne()</td>
+			<td>bool FBecomeProne(CBaseEntity@ pOther)</td>
 			<td>Makes this entity become prone.</td>
 		</tr>
 		<tr>
@@ -1071,6 +1071,14 @@
 			<td>Clears this monster's list of enemies</td>
 		</tr>
 		<tr>
+			<td>void ApplyEffects()</td>
+			<td>Re-calculate compounded effect modifiers and apply to the monster</td>
+		</tr>
+		<tr>
+			<td>void ResetEffects()</td>
+			<td>Reset all effect modifiers</td>
+		</tr>
+		<tr>
 			<td>CBasePlayerItem@ m_rgpPlayerItems(size_t uiIndex)</td>
 			<td>Get player weapons. Index must be between 0 and MAX_ITEM_TYPES.</td>
 		</tr>
@@ -1105,6 +1113,26 @@
 		<tr>
 			<td>bool SwitchWeapon(CBasePlayerItem@ pWeapon)</td>
 			<td>Switches weapons to the given item.</td>
+		</tr>
+		<tr>
+			<td>void HolsterWeapon()</td>
+			<td>Holster weapon.</td>
+		</tr>
+		<tr>
+			<td>void DeployWeapon()</td>
+			<td>Deploy weapon.</td>
+		</tr>
+		<tr>
+			<td>void BlockWeapons(CBaseEntity@ pSetter)</td>
+			<td>Hides active weapon and blocks weapon selection.</td>
+		</tr>
+		<tr>
+			<td>void UnblockWeapons(CBaseEntity@ pSetter)</td>
+			<td>Shows active weapon and unblocks weapon selection.</td>
+		</tr>
+		<tr>
+			<td>void GetWeaponsBlocked()</td>
+			<td>Returns whether the weapons are currently blocked.</td>
 		</tr>
 		<tr>
 			<td>void SetItemPickupTimes(float flTime)</td>
@@ -1677,6 +1705,46 @@
 		<tr>
 			<td>string_t m_iszGuardEntName</td>
 			<td>Guard entity name.</td>
+		</tr>
+		<tr>
+			<td>Vector m_vecEffectGlowColor</td>
+			<td>Glow shell.</td>
+		</tr>
+		<tr>
+			<td>int m_iEffectBlockWeapons</td>
+			<td>Monster can't use weapons.</td>
+		</tr>
+		<tr>
+			<td>int m_iEffectInvulnerable</td>
+			<td>is invulnerable (god mode)</td>
+		</tr>
+		<tr>
+			<td>int m_iEffectInvisible</td>
+			<td>is invisible (render + non-targetable)</td>
+		</tr>
+		<tr>
+			<td>int m_iEffectNonSolid</td>
+			<td>is non-solid</td>
+		</tr>
+		<tr>
+			<td>float m_flEffectRespiration</td>
+			<td>Extra/less breathing time underwater in seconds</td>
+		</tr>
+		<tr>
+			<td>float m_flEffectGravity</td>
+			<td>Gravity modifier (%)</td>
+		</tr>
+		<tr>
+			<td>float m_flEffectFriction</td>
+			<td>Movement friction modifier (%)</td>
+		</tr>
+		<tr>
+			<td>float m_flEffectSpeed</td>
+			<td>Movement speed modifier (%)</td>
+		</tr>
+		<tr>
+			<td>float m_flEffectDamage</td>
+			<td>Damage modifier (%)</td>
 		</tr>
 		<tr>
 			<td>const int random_seed</td>
