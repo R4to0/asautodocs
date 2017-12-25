@@ -31,10 +31,6 @@
 			<td>Copy constructor</td>
 		</tr>
 		<tr>
-			<td>void DestructHUDTextParams()</td>
-			<td>Constructor</td>
-		</tr>
-		<tr>
 			<td>HUDTextParams& opAssign(const HUDTextParams& in other)</td>
 			<td>Assignment operator</td>
 		</tr>
@@ -48,11 +44,11 @@
 		</tr>
 		<tr>
 			<td>float x</td>
-			<td>X (0 - 1.0 = left to right) (-1 centers)</td>
+			<td>Horizontal position on the screen.<br>&lt;0, 1.0&gt; = left to right<br>(-1.0, 0) = right to left<br>-1.0 = centered</td>
 		</tr>
 		<tr>
 			<td>float y</td>
-			<td>Y (0 - 1.0 = top to bottom) (-1 centers)</td>
+			<td>Vertical position on the screen.<br>&lt;0, 1.0&gt; = top to bottom<br>(-1.0, 0) = bottom to top<br>-1.0 = centered</td>
 		</tr>
 		<tr>
 			<td>int effect</td>
@@ -104,7 +100,7 @@
 		</tr>
 		<tr>
 			<td>float fxTime</td>
-			<td>Scan time (scan effect only)</td>
+			<td>Effect time (scan effect only)</td>
 		</tr>
 		<tr>
 			<td>int channel</td>

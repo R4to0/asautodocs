@@ -91,37 +91,37 @@
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>float atof(const string& in)</td>
-			<td>Converts the given string to a float</td>
+			<td>Converts the given string to a float.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>double atod(const string& in)</td>
-			<td>Converts the given string to a double</td>
+			<td>Converts the given string to a double.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>int atoi(const string& in, int radix = 10)</td>
-			<td>Converts the given string to an integer</td>
+			<td>Converts the given string to an integer.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>int64 atoi64(const string& in, int radix = 10)</td>
-			<td>Converts the given string to a 64 bit integer</td>
+			<td>Converts the given string to a 64 bit integer.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>uint atoui(const string& in, int radix = 10)</td>
-			<td>Converts the given string to an unsigned integer</td>
+			<td>Converts the given string to an unsigned integer.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>uint64 atoui64(const string& in, int radix = 10)</td>
-			<td>Converts the given string to a 64 bit unsigned integer</td>
+			<td>Converts the given string to a 64 bit unsigned integer.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>bool atobool(const string& in)</td>
-			<td>Converts the given string to a boolean</td>
+			<td>Converts the given string to a boolean.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
@@ -131,67 +131,82 @@
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>bool isalnum(const string& in)</td>
-			<td>Returns whether character is alphanumeric</td>
+			<td>Returns whether character is alphanumeric.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>bool isalpha(const string& in)</td>
-			<td>Returns whether character is alphabetic</td>
+			<td>Returns whether character is alphabetic.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>bool iscntrl(const string& in)</td>
-			<td>Returns whether character is control</td>
+			<td>Returns whether character is control.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>bool isdigit(const string& in)</td>
-			<td>Returns whether character is digit</td>
+			<td>Returns whether character is digit.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>bool isgraph(const string& in)</td>
-			<td>Returns whether character is graph</td>
+			<td>Returns whether character is graph.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>bool islower(const string& in)</td>
-			<td>Returns whether character is lower</td>
+			<td>Returns whether character is lower.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>bool isprint(const string& in)</td>
-			<td>Returns whether character is print</td>
+			<td>Returns whether character is print.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>bool ispunct(const string& in)</td>
-			<td>Returns whether character is punctuality</td>
+			<td>Returns whether character is punctuality.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>bool isspace(const string& in)</td>
-			<td>Returns whether character is space</td>
+			<td>Returns whether character is space.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>bool isupper(const string& in)</td>
-			<td>Returns whether character is upper</td>
+			<td>Returns whether character is upper.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
 			<td>bool isxdigit(const string& in)</td>
-			<td>Returns whether character is xdigit</td>
+			<td>Returns whether character is xdigit.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
-			<td>string tolower(const string& in )</td>
-			<td>Converts the given character to lower case</td>
+			<td>string tolower(const string& in)</td>
+			<td>Converts the given character to lower case.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
-			<td>string toupper(const string& in )</td>
-			<td>Converts the given character to upper case</td>
+			<td>string toupper(const string& in)</td>
+			<td>Converts the given character to upper case.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>string formatInt(int64 value, const string &in options = "", uint width = 0)</td>
+			<td>Formats a signed integer into a string.<br>The options string is a combination of the following characters:<br>'l' = left justify<br>'0' = pad with zeroes<br>'+' = always include the sign, even if positive<br>' ' = add a space in case of positive number<br>'h' = hexadecimal integer small letters<br>'H' = hexadecimal integer capital letters<br></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>string formatUInt(uint64 value, const string &in options = "", uint width = 0)</td>
+			<td>Formats a unsigned integer into a string.<br>The options string is a combination of the following characters:<br>'l' = left justify<br>'0' = pad with zeroes<br>'+' = always include the sign, even if positive<br>' ' = add a space in case of positive number<br>'h' = hexadecimal integer small letters<br>'H' = hexadecimal integer capital letters<br></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>string formatFloat(double value, const string &in options = "", uint width = 0, uint precision = 0)</td>
+			<td>Formats a double into a string.<br>The options string is a combination of the following characters:<br>'l' = left justify<br>'0' = pad with zeroes<br>'+' = always include the sign, even if positive<br>' ' = add a space in case of positive number<br>'e' = exponent character with small e<br>'E' = exponent character with capital E<br></td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>

@@ -367,7 +367,7 @@
 			<td>Respawns this entity.</td>
 		</tr>
 		<tr>
-			<td>bool FBecomeProne()</td>
+			<td>bool FBecomeProne(CBaseEntity@ pOther)</td>
 			<td>Makes this entity become prone.</td>
 		</tr>
 		<tr>
@@ -703,11 +703,11 @@
 			<td></td>
 		</tr>
 		<tr>
-			<td>bool AddPrimaryAmmo(int iCount, const string& in szName, int iMaxClip, int iMaxCarry)</td>
+			<td>int AddPrimaryAmmo(int iCount, const string& in szName, int iMaxClip, int iMaxCarry)</td>
 			<td></td>
 		</tr>
 		<tr>
-			<td>bool AddPrimaryAmmo(int iCount, const string& in szName, int iMaxCarry)</td>
+			<td>int AddSecondaryAmmo(int iCount, const string& in szName, int iMaxCarry)</td>
 			<td></td>
 		</tr>
 		<tr>
@@ -992,15 +992,15 @@
 		</tr>
 		<tr>
 			<td>float m_flCustomDmg</td>
-			<td>per-entity weapon damage</td>
+			<td>Per-entity weapon damage</td>
+		</tr>
+		<tr>
+			<td>bool m_fIsAkimbo</td>
+			<td>Weapon is in 'akimbo' mode</td>
 		</tr>
 		<tr>
 			<td>bool m_fInZoom</td>
 			<td>Weapon is zoomed in</td>
-		</tr>
-		<tr>
-			<td>bool m_fBlockWeapons</td>
-			<td>Weapons are blocked, can't be used</td>
 		</tr>
 		<tr>
 			<td>float m_flNextBurstRound</td>

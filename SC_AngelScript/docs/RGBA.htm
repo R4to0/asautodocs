@@ -3,18 +3,18 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<meta name="generator" content="ASDocGenerator 1.1">
-	<meta name="description" content="Script task class">
-	<meta property="og:title" content="ScriptTask">
-	<meta property="og:description" content="Script task class">
+	<meta name="description" content="Color stored as four uint8 components">
+	<meta property="og:title" content="RGBA">
+	<meta property="og:description" content="Color stored as four uint8 components">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="https://github.com/baso88/SC_AngelScript/wiki/images/sc_as_logo_media.png">
 	<meta property="og:site_name" content="Sven Co-op AngelScript API">
 	<link rel="stylesheet" type="text/css" href="doc.css">
-	<title>ScriptTask</title>
+	<title>RGBA</title>
 </head>
 <body>
-	<h1>ScriptTask</h1>
-	<p>Script task class</p>
+	<h1>RGBA</h1>
+	<p>Color stored as four uint8 components</p>
 	<p><b>Type:</b> Value type</p>
 	<div><h2>Methods</h2>
 	<table>
@@ -23,12 +23,20 @@
 			<th>Description</th>
 		</tr>
 		<tr>
-			<td>void ScriptTask()</td>
+			<td>void RGBA()</td>
 			<td>Constructor</td>
 		</tr>
 		<tr>
-			<td>void ScriptTask(int iTask, float flData = 0.0f)</td>
+			<td>void RGBA(uint8 r, uint8 g, uint8 b, uint8 a = 255)</td>
 			<td>Constructor</td>
+		</tr>
+		<tr>
+			<td>void RGBA(const RGBA& in other)</td>
+			<td>Copy constructor</td>
+		</tr>
+		<tr>
+			<td>RGBA& opAssign(const RGBA& in other)</td>
+			<td>Assignment operator</td>
 		</tr>
 	</table>
 	</div>
@@ -39,12 +47,20 @@
 			<th>Description</th>
 		</tr>
 		<tr>
-			<td>int iTask</td>
-			<td>Task to execute.<br>Can be monster-specific.</td>
+			<td>uint8 r</td>
+			<td>Red component</td>
 		</tr>
 		<tr>
-			<td>float flData</td>
-			<td>Task data</td>
+			<td>uint8 g</td>
+			<td>Green component</td>
+		</tr>
+		<tr>
+			<td>uint8 b</td>
+			<td>Blue component</td>
+		</tr>
+		<tr>
+			<td>uint8 a</td>
+			<td>Alpha component</td>
 		</tr>
 	</table>
 	</div>

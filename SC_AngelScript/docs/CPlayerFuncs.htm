@@ -67,6 +67,30 @@
 			<td>Prints a string containing key bindings to the screen of all players.</td>
 		</tr>
 		<tr>
+			<td>void HudToggleElement(CBasePlayer@ pTargetPlayer, uint8 iChannel, bool fVisible)</td>
+			<td>Shows or hides HUD element occupying a given channel.</td>
+		</tr>
+		<tr>
+			<td>void HudCustomSprite(CBasePlayer@ pTargetPlayer, const HUDSpriteParams& in params)</td>
+			<td>Shows a custom HUD sprite to a given player or to all players if pTargetPlayer is not specified.</td>
+		</tr>
+		<tr>
+			<td>void HudNumDisplay(CBasePlayer@ pTargetPlayer, const HUDNumDisplayParams& in params)</td>
+			<td>Shows a custom numeric display to a given player or to all players if pTargetPlayer is not specified.</td>
+		</tr>
+		<tr>
+			<td>void HudUpdateNum(CBasePlayer@ pTargetPlayer, uint8 iChannel, float flValue)</td>
+			<td>Updates value of a custom numberic display.</td>
+		</tr>
+		<tr>
+			<td>void HudTimeDisplay(CBasePlayer@ pTargetPlayer, const HUDNumDisplayParams& in params)</td>
+			<td>Shows a custom time display to a given player or to all players if pTargetPlayer is not specified.</td>
+		</tr>
+		<tr>
+			<td>void HudUpdateTime(CBasePlayer@ pTargetPlayer, uint8 iChannel, float flTime)</td>
+			<td>Updates value of a custom time display.</td>
+		</tr>
+		<tr>
 			<td>CBasePlayer@ FindPlayerByIndex(int index)</td>
 			<td>Finds a player by index</td>
 		</tr>
@@ -93,6 +117,10 @@
 		<tr>
 			<td>void ScreenFadeAll(const Vector& in color, float fadeTime, float fadeHold, int alpha, int flags)</td>
 			<td>Shows a message to all players.</td>
+		</tr>
+		<tr>
+			<td>void ConcussionEffect(CBaseEntity@ pEntity, float amplitude, float frequency, float fadeTime)</td>
+			<td>Applies concussion effect to a given player.</td>
 		</tr>
 		<tr>
 			<td>bool GetNextBestWeapon(CBasePlayer@ pPlayer, CBasePlayerItem@ pCurrentWeapon)</td>
