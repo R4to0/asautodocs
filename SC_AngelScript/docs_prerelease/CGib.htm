@@ -3,18 +3,18 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<meta name="generator" content="ASDocGenerator 1.1">
-	<meta name="description" content="Path track class">
-	<meta property="og:title" content="CPathTrack">
-	<meta property="og:description" content="Path track class">
+	<meta name="description" content="Gib class">
+	<meta property="og:title" content="CGib">
+	<meta property="og:description" content="Gib class">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="https://github.com/baso88/SC_AngelScript/wiki/images/sc_as_logo_media.png">
 	<meta property="og:site_name" content="Sven Co-op AngelScript API">
 	<link rel="stylesheet" type="text/css" href="doc.css">
-	<title>CPathTrack</title>
+	<title>CGib</title>
 </head>
 <body>
-	<h1>CPathTrack</h1>
-	<p>Path track class</p>
+	<h1>CGib</h1>
+	<p>Gib class</p>
 	<p><b>Type:</b> Reference type</p>
 	<div><h2>Methods</h2>
 	<table>
@@ -435,36 +435,12 @@
 			<td>Clears the user data on this entity. WARNING: clears all data.<br>Only map scripts can use this.</td>
 		</tr>
 		<tr>
-			<td>void SetPrevious(CPathTrack@ pPrevious)</td>
-			<td>Sets the previous track in this path</td>
+			<td>void Spawn(const string& in szModelName)</td>
+			<td>Spawns the gib with the given model. Note: this sets several of CGib's variables. Set variables after calling this.</td>
 		</tr>
 		<tr>
-			<td>void Link()</td>
-			<td>Links the tracks together</td>
-		</tr>
-		<tr>
-			<td>CPathTrack@ ValidPath(CPathTrack@ pPath, const bool testFlag)</td>
-			<td>Returns pPath if enabled, null otherwise.</td>
-		</tr>
-		<tr>
-			<td>void Project(CPathTrack@ pStart, CPathTrack@ pEnd, Vector& out vecOrigin, float flDist)</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>CPathTrack@ LookAhead(Vector& in vecOrigin, Vector& out vecResultOrigin, float flDist, const bool bMove)</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>CPathTrack@ Nearest(Vector vecOrigin)</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>CPathTrack@ GetNext()</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>CPathTrack@ GetPrevious()</td>
-			<td></td>
+			<td>void LimitVelocity()</td>
+			<td>Limits the velocity of the gib</td>
 		</tr>
 	</table>
 	</div>
@@ -539,32 +515,20 @@
 			<td>Original render color.</td>
 		</tr>
 		<tr>
-			<td>float m_length</td>
-			<td></td>
+			<td>int m_bloodColor</td>
+			<td>The color of the blood that is sprayed onto walls when the gib touches it.</td>
 		</tr>
 		<tr>
-			<td>string_t m_altName</td>
-			<td></td>
+			<td>int m_cBloodDecals</td>
+			<td>Maximum number of blood decals this gib can spray.</td>
 		</tr>
 		<tr>
-			<td>EHandle m_hNext</td>
-			<td></td>
+			<td>int m_material</td>
+			<td>Gib material type. One of the Materials enum values should be used here.</td>
 		</tr>
 		<tr>
-			<td>EHandle m_hPrevious</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>EHandle m_hAltpath</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>float m_flMaxSpeed</td>
-			<td>New maximum speed</td>
-		</tr>
-		<tr>
-			<td>float m_flNewSpeed</td>
-			<td>New train speed</td>
+			<td>float m_lifeTime</td>
+			<td>Lifetime of this gib, in seconds</td>
 		</tr>
 	</table>
 	</div>

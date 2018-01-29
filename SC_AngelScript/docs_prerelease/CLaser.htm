@@ -3,24 +3,28 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<meta name="generator" content="ASDocGenerator 1.1">
-	<meta name="description" content="Path track class">
-	<meta property="og:title" content="CPathTrack">
-	<meta property="og:description" content="Path track class">
+	<meta name="description" content="Laser class">
+	<meta property="og:title" content="CLaser">
+	<meta property="og:description" content="Laser class">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="https://github.com/baso88/SC_AngelScript/wiki/images/sc_as_logo_media.png">
 	<meta property="og:site_name" content="Sven Co-op AngelScript API">
 	<link rel="stylesheet" type="text/css" href="doc.css">
-	<title>CPathTrack</title>
+	<title>CLaser</title>
 </head>
 <body>
-	<h1>CPathTrack</h1>
-	<p>Path track class</p>
+	<h1>CLaser</h1>
+	<p>Laser class</p>
 	<p><b>Type:</b> Reference type</p>
 	<div><h2>Methods</h2>
 	<table>
 		<tr>
 			<th>Declaration</th>
 			<th>Description</th>
+		</tr>
+		<tr>
+			<td>CBeam@ opImplCast()</td>
+			<td>Implicitly casts to base type.</td>
 		</tr>
 		<tr>
 			<td>CBaseEntity@ opImplCast()</td>
@@ -435,36 +439,180 @@
 			<td>Clears the user data on this entity. WARNING: clears all data.<br>Only map scripts can use this.</td>
 		</tr>
 		<tr>
-			<td>void SetPrevious(CPathTrack@ pPrevious)</td>
-			<td>Sets the previous track in this path</td>
+			<td>void SetType(BeamType type)</td>
+			<td>Sets the type of the beam.</td>
 		</tr>
 		<tr>
-			<td>void Link()</td>
-			<td>Links the tracks together</td>
+			<td>void SetFlags(int flags)</td>
+			<td>Sets the flags of the beam. Must be a combination of BeamFlags values, or 0.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ ValidPath(CPathTrack@ pPath, const bool testFlag)</td>
-			<td>Returns pPath if enabled, null otherwise.</td>
+			<td>void SetStartPos(const Vector& in vecPos)</td>
+			<td>Sets the starting position of the beam. Must be a beam of type BEAM_POINTS, BEAM_ENTPOINT or BEAM_HOSE.</td>
 		</tr>
 		<tr>
-			<td>void Project(CPathTrack@ pStart, CPathTrack@ pEnd, Vector& out vecOrigin, float flDist)</td>
-			<td></td>
+			<td>void SetEndPos(const Vector& in vecPos)</td>
+			<td>Sets the ending position of the beam. Must be a beam of type BEAM_POINTS or BEAM_HOSE.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ LookAhead(Vector& in vecOrigin, Vector& out vecResultOrigin, float flDist, const bool bMove)</td>
-			<td></td>
+			<td>void SetStartEntity(int entityIndex)</td>
+			<td>Sets the starting entity of the beam. Must be a beam of type BEAM_ENTS.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ Nearest(Vector vecOrigin)</td>
-			<td></td>
+			<td>void SetStartEntity(CBaseEntity@ pEntity)</td>
+			<td>Sets the starting entity of the beam. Must be a beam of type BEAM_ENTS.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ GetNext()</td>
-			<td></td>
+			<td>void SetEndEntity(int entityIndex)</td>
+			<td>Sets the ending entity of the beam. Must be a beam of type BEAM_ENTS or BEAM_ENTPOINT.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ GetPrevious()</td>
-			<td></td>
+			<td>void SetEndEntity(CBaseEntity@ pEntity)</td>
+			<td>Sets the ending entity of the beam. Must be a beam of type BEAM_ENTS or BEAM_ENTPOINT.</td>
+		</tr>
+		<tr>
+			<td>void SetStartAttachment(int attachment)</td>
+			<td>Sets the start attachment of the beam. Attachment is a point on the entity's model. Must be a beam of type BEAM_ENTS. Set to 0 to disable.</td>
+		</tr>
+		<tr>
+			<td>void SetEndAttachment(int attachment)</td>
+			<td>Sets the end attachment of the beam. Attachment is a point on the entity's model. Must be a beam of type BEAM_ENTS or BEAM_ENTPOINT. Set to 0 to disable.</td>
+		</tr>
+		<tr>
+			<td>void SetTexture(int spriteIndex)</td>
+			<td>Sets the sprite to use. The index is the one returned from CGame::PrecacheModel.</td>
+		</tr>
+		<tr>
+			<td>void SetWidth(int iWidth)</td>
+			<td>Sets the width of the beam.</td>
+		</tr>
+		<tr>
+			<td>void SetNoise(int iAmplitude)</td>
+			<td>Sets the noise (amplitude) of the beam.</td>
+		</tr>
+		<tr>
+			<td>void SetColor(int r, int g, int b)</td>
+			<td>Sets the color of the beam.</td>
+		</tr>
+		<tr>
+			<td>void SetBrightness(int brightness)</td>
+			<td>Sets the brightness of the beam. Value is between 0-255.</td>
+		</tr>
+		<tr>
+			<td>void SetFrame(float frame)</td>
+			<td>Sets the frame number of the beam.</td>
+		</tr>
+		<tr>
+			<td>void SetScrollRate(int speed)</td>
+			<td>Sets the scroll rate of the beam.</td>
+		</tr>
+		<tr>
+			<td>const Vector& GetStartPos()</td>
+			<td>Gets the beam's starting position.</td>
+		</tr>
+		<tr>
+			<td>const Vector& GetEndPos()</td>
+			<td>Gets the beam's ending position.</td>
+		</tr>
+		<tr>
+			<td>int GetTexture()</td>
+			<td>Gets the beam's texture (sprite) index.</td>
+		</tr>
+		<tr>
+			<td>int GetWidth()</td>
+			<td>Gets the beam's width.</td>
+		</tr>
+		<tr>
+			<td>int GetNoise()</td>
+			<td>Gets the beam's noise.</td>
+		</tr>
+		<tr>
+			<td>void GetColor(int& out r, int& out g, int& out b)</td>
+			<td>Gets the beam's color.</td>
+		</tr>
+		<tr>
+			<td>int GetBrightness()</td>
+			<td>Gets the beam's brightness.</td>
+		</tr>
+		<tr>
+			<td>int GetFrame()</td>
+			<td>Gets the beam's frame number.</td>
+		</tr>
+		<tr>
+			<td>int GetScrollRate()</td>
+			<td>Gets the beam's scroll rate.</td>
+		</tr>
+		<tr>
+			<td>void RelinkBeam()</td>
+			<td>Call after you change start/end positions.</td>
+		</tr>
+		<tr>
+			<td>void DoSparks(const Vector& in vecStart, const Vector& in vecEnd)</td>
+			<td>Creates sparks at the given start and end points, if appropriate spawn flags are set.</td>
+		</tr>
+		<tr>
+			<td>void BeamDamage(TraceResult& in tr)</td>
+			<td>Damages the entity hit by the given trace line with the amount set in this entity's pev-&gt;dmg variable.<br>Also applies decals to BSP models if the appropriate spawnflag is set.</td>
+		</tr>
+		<tr>
+			<td>void BeamInit(const string& in szSpriteName, int iWidth)</td>
+			<td>Initializes this beam with default values and sets the given sprite as the sprite used, with the given width.</td>
+		</tr>
+		<tr>
+			<td>void PointsInit(const Vector& in vecStart, const Vector& in vecEnd)</td>
+			<td>Initializes this beam to be a beam between 2 given points (BEAM_POINTS).</td>
+		</tr>
+		<tr>
+			<td>void PointEntInit(const Vector& in vecStart, int endIndex)</td>
+			<td>Initializes this beam to be a beam between a point and an entity (BEAM_ENTPOINT).</td>
+		</tr>
+		<tr>
+			<td>void PointEntInit(const Vector& in vecStart, CBaseEntity@ pEntEnd)</td>
+			<td>Initializes this beam to be a beam between a point and an entity (BEAM_ENTPOINT).</td>
+		</tr>
+		<tr>
+			<td>void EntsInit(int startIndex, int endIndex)</td>
+			<td>Initializes this beam to be a beam between 2 given entities (BEAM_ENTS).</td>
+		</tr>
+		<tr>
+			<td>void EntsInit(CBaseEntity@ pEntStart, CBaseEntity@ pEntEnd)</td>
+			<td>Initializes this beam to be a beam between 2 given entities (BEAM_ENTS).</td>
+		</tr>
+		<tr>
+			<td>void HoseInit(const Vector& in vecStart, const Vector& in vecDirection)</td>
+			<td>Initializes this beam to be a beam going from a point in a given direction (BEAM_HOSE).</td>
+		</tr>
+		<tr>
+			<td>void LiveForTime(float flTime)</td>
+			<td>Sets this beam to live for the given amount of time, after which it is removed.</td>
+		</tr>
+		<tr>
+			<td>void BeamDamageInstant(TraceResult& in tr, float flDamage)</td>
+			<td>Causes the given amount of damage to be done to the entity hit by the given traceresult, as if the damage occured one second ago.</td>
+		</tr>
+		<tr>
+			<td>void XenTeleportZap(const Vector& in vecSrc, const Vector& in vecDest)</td>
+			<td>Creates a Xen teleport zap effect between the given points.</td>
+		</tr>
+		<tr>
+			<td>void XenTeleport(const Vector& in vecSrc, int iRadius = 256)</td>
+			<td>Creates a Xen teleport effect at the given location, with zaps occuring within the given radius.</td>
+		</tr>
+		<tr>
+			<td>void TurnOn()</td>
+			<td>Turns the laser on</td>
+		</tr>
+		<tr>
+			<td>void TurnOff()</td>
+			<td>Turns the laser off</td>
+		</tr>
+		<tr>
+			<td>bool IsOn()</td>
+			<td>Returns whether the laser is on</td>
+		</tr>
+		<tr>
+			<td>void FireAtPoint(TraceResult& in tr)</td>
+			<td>Fires the laser at a point defined by where the TraceResult hit.<br>Also causes beam damage as if CBeam::BeamDamage were used, and sparks at both ends, if the approprite spawn flags have been set.</td>
 		</tr>
 	</table>
 	</div>
@@ -537,34 +685,6 @@
 		<tr>
 			<td>Vector m_vecOriginalRenderColor</td>
 			<td>Original render color.</td>
-		</tr>
-		<tr>
-			<td>float m_length</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>string_t m_altName</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>EHandle m_hNext</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>EHandle m_hPrevious</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>EHandle m_hAltpath</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>float m_flMaxSpeed</td>
-			<td>New maximum speed</td>
-		</tr>
-		<tr>
-			<td>float m_flNewSpeed</td>
-			<td>New train speed</td>
 		</tr>
 	</table>
 	</div>

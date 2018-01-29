@@ -3,18 +3,18 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<meta name="generator" content="ASDocGenerator 1.1">
-	<meta name="description" content="Path track class">
-	<meta property="og:title" content="CPathTrack">
-	<meta property="og:description" content="Path track class">
+	<meta name="description" content="All entities derive from this">
+	<meta property="og:title" content="CBaseEntity">
+	<meta property="og:description" content="All entities derive from this">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="https://github.com/baso88/SC_AngelScript/wiki/images/sc_as_logo_media.png">
 	<meta property="og:site_name" content="Sven Co-op AngelScript API">
 	<link rel="stylesheet" type="text/css" href="doc.css">
-	<title>CPathTrack</title>
+	<title>CBaseEntity</title>
 </head>
 <body>
-	<h1>CPathTrack</h1>
-	<p>Path track class</p>
+	<h1>CBaseEntity</h1>
+	<p>All entities derive from this</p>
 	<p><b>Type:</b> Reference type</p>
 	<div><h2>Methods</h2>
 	<table>
@@ -23,8 +23,8 @@
 			<th>Description</th>
 		</tr>
 		<tr>
-			<td>CBaseEntity@ opImplCast()</td>
-			<td>Implicitly casts to base type.</td>
+			<td>CItemInventory@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
 		</tr>
 		<tr>
 			<td>const Vector& GetOrigin() const</td>
@@ -435,36 +435,80 @@
 			<td>Clears the user data on this entity. WARNING: clears all data.<br>Only map scripts can use this.</td>
 		</tr>
 		<tr>
-			<td>void SetPrevious(CPathTrack@ pPrevious)</td>
-			<td>Sets the previous track in this path</td>
+			<td>CBaseDelay@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
 		</tr>
 		<tr>
-			<td>void Link()</td>
-			<td>Links the tracks together</td>
+			<td>CBaseAnimating@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ ValidPath(CPathTrack@ pPath, const bool testFlag)</td>
-			<td>Returns pPath if enabled, null otherwise.</td>
+			<td>CBaseToggle@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
 		</tr>
 		<tr>
-			<td>void Project(CPathTrack@ pStart, CPathTrack@ pEnd, Vector& out vecOrigin, float flDist)</td>
-			<td></td>
+			<td>CBasePlayerItem@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ LookAhead(Vector& in vecOrigin, Vector& out vecResultOrigin, float flDist, const bool bMove)</td>
-			<td></td>
+			<td>CBaseMonster@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ Nearest(Vector vecOrigin)</td>
-			<td></td>
+			<td>CCineMonster@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ GetNext()</td>
-			<td></td>
+			<td>CBasePlayer@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ GetPrevious()</td>
-			<td></td>
+			<td>CGrenade@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
+		</tr>
+		<tr>
+			<td>CSprite@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
+		</tr>
+		<tr>
+			<td>CBasePlayerWeapon@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
+		</tr>
+		<tr>
+			<td>CPathTrack@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
+		</tr>
+		<tr>
+			<td>CBeam@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
+		</tr>
+		<tr>
+			<td>CLaser@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
+		</tr>
+		<tr>
+			<td>CBaseTank@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
+		</tr>
+		<tr>
+			<td>CBasePlayerAmmo@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
+		</tr>
+		<tr>
+			<td>CItem@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
+		</tr>
+		<tr>
+			<td>CBaseButton@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
+		</tr>
+		<tr>
+			<td>CBaseDoor@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
+		</tr>
+		<tr>
+			<td>CGib@ opCast()</td>
+			<td>Explicitly casts to sub type.</td>
 		</tr>
 	</table>
 	</div>
@@ -537,34 +581,6 @@
 		<tr>
 			<td>Vector m_vecOriginalRenderColor</td>
 			<td>Original render color.</td>
-		</tr>
-		<tr>
-			<td>float m_length</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>string_t m_altName</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>EHandle m_hNext</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>EHandle m_hPrevious</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>EHandle m_hAltpath</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>float m_flMaxSpeed</td>
-			<td>New maximum speed</td>
-		</tr>
-		<tr>
-			<td>float m_flNewSpeed</td>
-			<td>New train speed</td>
 		</tr>
 	</table>
 	</div>

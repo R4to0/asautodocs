@@ -3,18 +3,18 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<meta name="generator" content="ASDocGenerator 1.1">
-	<meta name="description" content="Path track class">
-	<meta property="og:title" content="CPathTrack">
-	<meta property="og:description" content="Path track class">
+	<meta name="description" content="Item_inventory entity class">
+	<meta property="og:title" content="CItemInventory">
+	<meta property="og:description" content="Item_inventory entity class">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="https://github.com/baso88/SC_AngelScript/wiki/images/sc_as_logo_media.png">
 	<meta property="og:site_name" content="Sven Co-op AngelScript API">
 	<link rel="stylesheet" type="text/css" href="doc.css">
-	<title>CPathTrack</title>
+	<title>CItemInventory</title>
 </head>
 <body>
-	<h1>CPathTrack</h1>
-	<p>Path track class</p>
+	<h1>CItemInventory</h1>
+	<p>Item_inventory entity class<br>Collection rules -- DENY/CAN'T have rules take precedence over REQUIRE/MUST<br>All string filters can be tokenized with a semi-colon ';'</p>
 	<p><b>Type:</b> Reference type</p>
 	<div><h2>Methods</h2>
 	<table>
@@ -435,36 +435,28 @@
 			<td>Clears the user data on this entity. WARNING: clears all data.<br>Only map scripts can use this.</td>
 		</tr>
 		<tr>
-			<td>void SetPrevious(CPathTrack@ pPrevious)</td>
-			<td>Sets the previous track in this path</td>
+			<td>bool CanCollect(CBaseEntity@ pOther)</td>
+			<td>Returns whether this item can be collected by the given entity.</td>
 		</tr>
 		<tr>
-			<td>void Link()</td>
-			<td>Links the tracks together</td>
+			<td>bool Drop(bool fForce = false, CBaseEntity@ pCaller = null)</td>
+			<td>Drops this item, if it's being carried.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ ValidPath(CPathTrack@ pPath, const bool testFlag)</td>
-			<td>Returns pPath if enabled, null otherwise.</td>
+			<td>void Return()</td>
+			<td>Returns this item to its original spawn location.</td>
 		</tr>
 		<tr>
-			<td>void Project(CPathTrack@ pStart, CPathTrack@ pEnd, Vector& out vecOrigin, float flDist)</td>
-			<td></td>
+			<td>void Destroy()</td>
+			<td>Destroys this item.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ LookAhead(Vector& in vecOrigin, Vector& out vecResultOrigin, float flDist, const bool bMove)</td>
-			<td></td>
+			<td>void AddItemEffects()</td>
+			<td>Prepares to add effects to holder.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ Nearest(Vector vecOrigin)</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>CPathTrack@ GetNext()</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>CPathTrack@ GetPrevious()</td>
-			<td></td>
+			<td>void RemoveItemEffects()</td>
+			<td>Prepares to remove effects from holder.</td>
 		</tr>
 	</table>
 	</div>
@@ -539,32 +531,316 @@
 			<td>Original render color.</td>
 		</tr>
 		<tr>
-			<td>float m_length</td>
-			<td></td>
+			<td>EHandle m_hHolder</td>
+			<td>The monster or player holding this item.</td>
 		</tr>
 		<tr>
-			<td>string_t m_altName</td>
-			<td></td>
+			<td>Vector m_vecSpawnOrigin</td>
+			<td>Spawn-time origin.</td>
 		</tr>
 		<tr>
-			<td>EHandle m_hNext</td>
-			<td></td>
+			<td>Vector m_vecSpawnAngles</td>
+			<td>Spawn-time angles.</td>
 		</tr>
 		<tr>
-			<td>EHandle m_hPrevious</td>
-			<td></td>
+			<td>int m_iMoveType</td>
+			<td>Spawn-time move type.</td>
 		</tr>
 		<tr>
-			<td>EHandle m_hAltpath</td>
-			<td></td>
+			<td>string_t m_szItemName</td>
+			<td>Item name referred to by triggers, doesn't need to be unique -- remember the targetname refers to the entity itself only.</td>
 		</tr>
 		<tr>
-			<td>float m_flMaxSpeed</td>
-			<td>New maximum speed</td>
+			<td>string_t m_szItemGroup</td>
+			<td>Group name referred to by triggers.</td>
 		</tr>
 		<tr>
-			<td>float m_flNewSpeed</td>
-			<td>New train speed</td>
+			<td>string m_szDisplayName</td>
+			<td>Friendly item name for client-side UI.</td>
+		</tr>
+		<tr>
+			<td>string_t m_szDescription</td>
+			<td>Friendly item description for client-side UI.</td>
+		</tr>
+		<tr>
+			<td>int m_iCollectLimit</td>
+			<td>How many times the item can be picked up, destroyed when limit is reached (0 = infinite).</td>
+		</tr>
+		<tr>
+			<td>float m_flWeight</td>
+			<td>How heavy the item is (0-100),<br>holders can hold multiple items up to a total weight 100, think of this as KG if you like (though what person can carry 100KG!?).</td>
+		</tr>
+		<tr>
+			<td>bool m_fHiddenWhenCarried</td>
+			<td>Model is hidden while it is being carried.</td>
+		</tr>
+		<tr>
+			<td>int m_iIdleSkin</td>
+			<td>Model skin while IDLE (not carried).</td>
+		</tr>
+		<tr>
+			<td>int m_iIdleBody</td>
+			<td>Model body while IDLE.</td>
+		</tr>
+		<tr>
+			<td>string_t m_szIdleSequenceName</td>
+			<td>Model sequence name while IDLE.</td>
+		</tr>
+		<tr>
+			<td>int m_iIdleSequence</td>
+			<td>Model sequence number while IDLE.</td>
+		</tr>
+		<tr>
+			<td>int m_iCarriedSkin</td>
+			<td>Model skin while CARRIED.</td>
+		</tr>
+		<tr>
+			<td>int m_iCarriedBody</td>
+			<td>Model body while CARRIED.</td>
+		</tr>
+		<tr>
+			<td>string_t m_szCarriedSequenceName</td>
+			<td>Model sequence name while CARRIED.</td>
+		</tr>
+		<tr>
+			<td>int m_iCarriedSequence</td>
+			<td>Model sequence number while CARRIED.</td>
+		</tr>
+		<tr>
+			<td>string_t m_szAllowedTargetNames</td>
+			<td>CBaseEntity target name filters</td>
+		</tr>
+		<tr>
+			<td>string_t m_szAllowedClassNames</td>
+			<td>CBaseEntity class name filters</td>
+		</tr>
+		<tr>
+			<td>string_t m_szAllowedTeams</td>
+			<td>Team filters</td>
+		</tr>
+		<tr>
+			<td>string_t m_szAllowedPlayerClasses</td>
+			<td>Player class filters</td>
+		</tr>
+		<tr>
+			<td>int m_iAllowedNpcClassify</td>
+			<td>NPC classification filter</td>
+		</tr>
+		<tr>
+			<td>string_t m_szRequiresItemName</td>
+			<td>Require these item(s)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szRequiresItemGroup</td>
+			<td>Require an item from these group(s)</td>
+		</tr>
+		<tr>
+			<td>int m_iRequiresItemGroupNum</td>
+			<td>Number of item(s) from the required group(s) required (0 = all)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szItemNameMoved</td>
+			<td>These item(s) must have moved</td>
+		</tr>
+		<tr>
+			<td>string_t m_szCantHaveItemName</td>
+			<td>Must not have these item(s)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szCantHaveItemGroup</td>
+			<td>Must not have an item in these group(s)</td>
+		</tr>
+		<tr>
+			<td>int m_iCantHaveItemGroupNum</td>
+			<td>Number of item(s) from the can't have group(s) (0 = all)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szItemNameNotMoved</td>
+			<td>These item(s) must NOT have moved</td>
+		</tr>
+		<tr>
+			<td>float m_flMaximumHoldTime</td>
+			<td>Limit to how long this item can be held for, forcibly dropped after (0 = no limit)</td>
+		</tr>
+		<tr>
+			<td>float m_flWearOutTime</td>
+			<td>Perform a trigger prior to this item being forcibly dropped (0 = none)</td>
+		</tr>
+		<tr>
+			<td>bool m_fCanBeDropped</td>
+			<td>Holder is allowed to drop this item by choice</td>
+		</tr>
+		<tr>
+			<td>float m_flReturnTime</td>
+			<td>How long this item returns to its' original location when dropped (-1 = never, 0 = instant)</td>
+		</tr>
+		<tr>
+			<td>bool m_fDelayedRespawn</td>
+			<td>Delayed respawn on return (like with weapons/ammo/pickups)</td>
+		</tr>
+		<tr>
+			<td>bool m_fKeepOnDeath</td>
+			<td>Holder still has the item after dying (i.e. so they can keep it while being revived)</td>
+		</tr>
+		<tr>
+			<td>bool m_fKeepOnRespawn</td>
+			<td>Holder still has the item after respawning (only applies to players -- re-equip NPC's manually)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnCollectSelf</td>
+			<td>On successful collection (for collector)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnCollectTeam</td>
+			<td>On successful collection (for collector's team)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnCollectOther</td>
+			<td>On successful collection (for everyone else)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnCantCollectSelf</td>
+			<td>On failed collection (for collector)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnCantCollectTeam</td>
+			<td>On failed collection (for collector's team)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnCantCollectOther</td>
+			<td>On failed collection (for everyone else)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnDropSelf</td>
+			<td>On successful drop (for collector)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnDropTeam</td>
+			<td>On successful drop (for collector's team)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnDropOther</td>
+			<td>On successful drop (for everyone else)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnCantDropSelf</td>
+			<td>On failed drop (for collector)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnCantDropTeam</td>
+			<td>On failed drop (for collector's team)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnCantDropOther</td>
+			<td>On failed drop (for everyone else)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnUseSelf</td>
+			<td>On use by trigger (for collector)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnUseTeam</td>
+			<td>On use by trigger (for collector's team)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnUseOther</td>
+			<td>On use by trigger (for everyone else)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnWearingOutSelf</td>
+			<td>On wearing out (for collector)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnWearingOutTeam</td>
+			<td>On wearing out (for collector's team)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnWearingOutOther</td>
+			<td>On wearing out (for everyone else)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnReturnSelf</td>
+			<td>On return (for collector)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnReturnTeam</td>
+			<td>On return (for collector's team)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnReturnOther</td>
+			<td>On return (for everyone else)</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnMaterialise</td>
+			<td>On materialise after return</td>
+		</tr>
+		<tr>
+			<td>string_t m_szTriggerOnDestroy</td>
+			<td>On destroy</td>
+		</tr>
+		<tr>
+			<td>bool m_fEffectsPermanent</td>
+			<td>Holder keeps effects after dropping the item</td>
+		</tr>
+		<tr>
+			<td>Vector m_vecEffectGlowColor</td>
+			<td>Holder has a glow shell</td>
+		</tr>
+		<tr>
+			<td>bool m_fEffectBlockWeapons</td>
+			<td>Holder can't use weapons</td>
+		</tr>
+		<tr>
+			<td>bool m_fEffectInvulnerable</td>
+			<td>Holder is invulnerable (god mode)</td>
+		</tr>
+		<tr>
+			<td>bool m_fEffectInvisible</td>
+			<td>Holder is invisible (render + non-targetable)</td>
+		</tr>
+		<tr>
+			<td>bool m_fEffectNonSolid</td>
+			<td>Holder is non-solid</td>
+		</tr>
+		<tr>
+			<td>float m_flEffectRespiration</td>
+			<td>Extra/less breathing time underwater in seconds</td>
+		</tr>
+		<tr>
+			<td>float m_flEffectGravity</td>
+			<td>Gravity modifier (%)</td>
+		</tr>
+		<tr>
+			<td>float m_flEffectFriction</td>
+			<td>Movement friction modifier (%)</td>
+		</tr>
+		<tr>
+			<td>float m_flEffectSpeed</td>
+			<td>Movement speed modifier (%)</td>
+		</tr>
+		<tr>
+			<td>float m_flEffectDamage</td>
+			<td>Damage modifier (%)</td>
+		</tr>
+		<tr>
+			<td>int m_iCollectCount</td>
+			<td>Number of times the item has been collected</td>
+		</tr>
+		<tr>
+			<td>float m_flTouchedTime</td>
+			<td>Time the item was last touched</td>
+		</tr>
+		<tr>
+			<td>float m_flCollectTime</td>
+			<td>Time the item was last collected</td>
+		</tr>
+		<tr>
+			<td>float m_flDropTime</td>
+			<td>Time the item was last dropped</td>
+		</tr>
+		<tr>
+			<td>bool m_fRemovedByForced</td>
+			<td>Item was just removed by force</td>
 		</tr>
 	</table>
 	</div>

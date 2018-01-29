@@ -3,18 +3,18 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<meta name="generator" content="ASDocGenerator 1.1">
-	<meta name="description" content="Path track class">
-	<meta property="og:title" content="CPathTrack">
-	<meta property="og:description" content="Path track class">
+	<meta name="description" content="Sprite class">
+	<meta property="og:title" content="CSprite">
+	<meta property="og:description" content="Sprite class">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="https://github.com/baso88/SC_AngelScript/wiki/images/sc_as_logo_media.png">
 	<meta property="og:site_name" content="Sven Co-op AngelScript API">
 	<link rel="stylesheet" type="text/css" href="doc.css">
-	<title>CPathTrack</title>
+	<title>CSprite</title>
 </head>
 <body>
-	<h1>CPathTrack</h1>
-	<p>Path track class</p>
+	<h1>CSprite</h1>
+	<p>Sprite class</p>
 	<p><b>Type:</b> Reference type</p>
 	<div><h2>Methods</h2>
 	<table>
@@ -435,36 +435,56 @@
 			<td>Clears the user data on this entity. WARNING: clears all data.<br>Only map scripts can use this.</td>
 		</tr>
 		<tr>
-			<td>void SetPrevious(CPathTrack@ pPrevious)</td>
-			<td>Sets the previous track in this path</td>
+			<td>void Animate(float flFrames)</td>
+			<td>Advances this sprite's frame by the given amount of frames.</td>
 		</tr>
 		<tr>
-			<td>void Link()</td>
-			<td>Links the tracks together</td>
+			<td>void Expand(float flScaleSpeed, float flFadeSpeed)</td>
+			<td>Causes this sprite to scale up and fade at the given rates.<br>This sprite will be removed once faded.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ ValidPath(CPathTrack@ pPath, const bool testFlag)</td>
-			<td>Returns pPath if enabled, null otherwise.</td>
+			<td>void SpriteInit(const string& in szSpriteName, const Vector& in vecOrigin)</td>
+			<td>Initializes this sprite.</td>
 		</tr>
 		<tr>
-			<td>void Project(CPathTrack@ pStart, CPathTrack@ pEnd, Vector& out vecOrigin, float flDist)</td>
-			<td></td>
+			<td>void SetAttachment(edict_t@ pEntity, int iAttachment)</td>
+			<td>Makes this sprite follow the given entity.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ LookAhead(Vector& in vecOrigin, Vector& out vecResultOrigin, float flDist, const bool bMove)</td>
-			<td></td>
+			<td>void TurnOff()</td>
+			<td>Turns off this sprite.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ Nearest(Vector vecOrigin)</td>
-			<td></td>
+			<td>void TurnOn()</td>
+			<td>Turns on this sprite.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ GetNext()</td>
-			<td></td>
+			<td>float Frames() const</td>
+			<td>Gets the number of frames in this sprite.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ GetPrevious()</td>
-			<td></td>
+			<td>void SetTransparency(int renderMode, int r, int g, int b, int renderAmount, int renderFx)</td>
+			<td>Sets the transparency of this sprite.</td>
+		</tr>
+		<tr>
+			<td>void SetTexture(int iSpriteIndex)</td>
+			<td>Sets the texture used by this sprite. Is a model index returned by g_Game.PrecacheModel.</td>
+		</tr>
+		<tr>
+			<td>void SetScale(float flScale)</td>
+			<td>Sets the current scale.</td>
+		</tr>
+		<tr>
+			<td>void SetColor(int r, int g, int b)</td>
+			<td>Sets the color.</td>
+		</tr>
+		<tr>
+			<td>void SetBrightness(int brightness)</td>
+			<td>Sets the brightness (render amount).</td>
+		</tr>
+		<tr>
+			<td>void AnimateAndDie(float flFramerate)</td>
+			<td>Makes this sprite play until time pev-&gt;dmgtime has been passed, then removes itself.</td>
 		</tr>
 	</table>
 	</div>
@@ -537,34 +557,6 @@
 		<tr>
 			<td>Vector m_vecOriginalRenderColor</td>
 			<td>Original render color.</td>
-		</tr>
-		<tr>
-			<td>float m_length</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>string_t m_altName</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>EHandle m_hNext</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>EHandle m_hPrevious</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>EHandle m_hAltpath</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>float m_flMaxSpeed</td>
-			<td>New maximum speed</td>
-		</tr>
-		<tr>
-			<td>float m_flNewSpeed</td>
-			<td>New train speed</td>
 		</tr>
 	</table>
 	</div>

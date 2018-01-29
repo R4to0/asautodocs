@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta name="generator" content="ASDocGenerator 1.1">
+	<meta name="description" content="Properties that are accessible at a global level.">
+	<meta property="og:title" content="Properties">
+	<meta property="og:description" content="Properties that are accessible at a global level.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://github.com/baso88/SC_AngelScript/wiki/images/sc_as_logo_media.png">
+	<meta property="og:site_name" content="Sven Co-op AngelScript API">
+	<link rel="stylesheet" type="text/css" href="doc.css">
+	<title>Properties</title>
+</head>
+<body>
+	<div><h1>Global Properties</h1>
+	<p>Properties that are accessible at a global level.</p>
+	</div>
+	<div><h2>Properties</h2>
+	<table>
+		<tr>
+			<th>Namespace</th>
+			<th>Declaration</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const float WORLD_BOUNDARY</td>
+			<td>Distance from the world origin to the world boundary in a single axis</td>
+		</tr>
+		<tr>
+			<td>String</td>
+			<td>const CompareType DEFAULT_COMPARE</td>
+			<td>Default comparison type.</td>
+		</tr>
+		<tr>
+			<td>String</td>
+			<td>const string EMPTY_STRING</td>
+			<td>Empty string. Useful when a reference to a string is needed.</td>
+		</tr>
+		<tr>
+			<td>String</td>
+			<td>const string WHITESPACE_CHARACTERS</td>
+			<td>A string that contains one instance of every whitespace character.</td>
+		</tr>
+		<tr>
+			<td>String</td>
+			<td>const size_t INVALID_INDEX</td>
+			<td>Sentinel value used by string methods.</td>
+		</tr>
+		<tr>
+			<td>Reflection</td>
+			<td>CReflection g_Reflection</td>
+			<td>Reflection global class instance.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CVirtualFileSystem g_FileSystem</td>
+			<td>Global file system instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td> CDebugger g_Debugger</td>
+			<td>Debugger instance.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector g_vecZero</td>
+			<td>Zero vector (0, 0, 0)</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CMath Math</td>
+			<td>Math functions instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const float VIEW_FIELD_FULL</td>
+			<td>Full view field</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const float VIEW_FIELD_WIDE</td>
+			<td>Wide view field</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const float VIEW_FIELD_NARROW</td>
+			<td>Narrow view field</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const float VIEW_FIELD_ULTRA_NARROW</td>
+			<td>Ultra narrow view field</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CDecals g_Decals</td>
+			<td>Dynamic decal manager instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CActivityMap g_ActivityMap</td>
+			<td>Activity map instance</td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slIdleStand</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slIdleTrigger</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slIdleWalk</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slWakeAngry</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slAlertFace</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slAlertStand</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slCombatStand</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slCombatFace</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slReload</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slRangeAttack1</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slRangeAttack2</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slChaseEnemy</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slSmallFlinch</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slDie</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slError</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slWalkToScript</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slRunToScript</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slWaitScript</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slTakeCoverFromBestSound</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Schedules</td>
+			<td>Schedule slFail</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const size_t MAX_OLD_ENEMIES</td>
+			<td>How many old enemies to remember</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const size_t ROUTE_SIZE</td>
+			<td>How many waypoints a monster can store at one time</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VEC_HULL_MIN</td>
+			<td>Default hull minimum. Used with CEntityFuncs::SetSize</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VEC_HULL_MAX</td>
+			<td>Default hull maximum. Used with CEntityFuncs::SetSize</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VEC_HUMAN_HULL_MIN</td>
+			<td>Default human hull maximum. Used with CEntityFuncs::SetSize</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VEC_HUMAN_HULL_MAX</td>
+			<td>Default human hull maximum while standing. Used with CEntityFuncs::SetSize</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VEC_HUMAN_HULL_DUCK</td>
+			<td>Default human hull maximum while ducking. Used with CEntityFuncs::SetSize</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VEC_VIEW</td>
+			<td>View offset.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VEC_DUCK_HULL_MIN</td>
+			<td>Hull minimum while ducking. Used with CEntityFuncs::SetSize</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VEC_DUCK_HULL_MAX</td>
+			<td>Hull maximum while ducking. Used with CEntityFuncs::SetSize</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VEC_DUCK_VIEW</td>
+			<td>Hull view offset while ducking.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const size_t MAX_AMMO_TYPES</td>
+			<td>Maximum number of ammo types</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const size_t MAX_ITEM_TYPES</td>
+			<td>HUD item selection slots</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const float AUTOAIM_2DEGREES</td>
+			<td>Autoaim</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const float AUTOAIM_5DEGREES</td>
+			<td>Autoaim</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const float AUTOAIM_8DEGREES</td>
+			<td>Autoaim</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const float AUTOAIM_10DEGREES</td>
+			<td>Autoaim</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const float PLAYERCOMMAND_WAIT</td>
+			<td>Time between player vocal client commands</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CEngineFuncs g_EngineFuncs</td>
+			<td>Engine functions instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const size_t MAX_WORLD_SOUNDS</td>
+			<td>maximum number of sounds handled by the world at one time.<br>See CSoundEnt.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const int SOUNDLIST_EMPTY</td>
+			<td>Indicates that the sound list is empty.<br>See CSoundEnt.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const int SOUNDLISTTYPE_FREE</td>
+			<td>Identifiers passed to functions that can operate on either list, to indicate which list to operate on.<br>See CSoundEnt.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const int SOUNDLISTTYPE_ACTIVE</td>
+			<td>Identifiers passed to functions that can operate on either list, to indicate which list to operate on.<br>See CSoundEnt.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const int SOUND_NEVER_EXPIRE</td>
+			<td>With this set as a sound's ExpireTime, the sound will never expire.<br>See CSoundEnt.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CInventoryMisc g_InventoryMisc</td>
+			<td>Inventory misc functions instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const int LOUD_GUN_VOLUME</td>
+			<td>Parameter for CSoundEnt::InsertSound iVolume</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const int NORMAL_GUN_VOLUME</td>
+			<td>Parameter for CSoundEnt::InsertSound iVolume</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const int QUIET_GUN_VOLUME</td>
+			<td>Parameter for CSoundEnt::InsertSound iVolume</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const int BRIGHT_GUN_FLASH</td>
+			<td>Value used in CBasePlayer::m_iWeaponFlash</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const int NORMAL_GUN_FLASH</td>
+			<td>Value used in CBasePlayer::m_iWeaponFlash</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const int DIM_GUN_FLASH</td>
+			<td>Value used in CBasePlayer::m_iWeaponFlash</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const int BIG_EXPLOSION_VOLUME</td>
+			<td>Parameter for CSoundEnt::InsertSound iVolume</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const int NORMAL_EXPLOSION_VOLUME</td>
+			<td>Parameter for CSoundEnt::InsertSound iVolume</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const int SMALL_EXPLOSION_VOLUME</td>
+			<td>Parameter for CSoundEnt::InsertSound iVolume</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const int WEAPON_ACTIVITY_VOLUME</td>
+			<td>Parameter for CSoundEnt::InsertSound iVolume</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VECTOR_CONE_1DEGREES</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VECTOR_CONE_2DEGREES</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VECTOR_CONE_3DEGREES</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VECTOR_CONE_4DEGREES</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VECTOR_CONE_5DEGREES</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VECTOR_CONE_6DEGREES</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VECTOR_CONE_7DEGREES</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VECTOR_CONE_8DEGREES</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VECTOR_CONE_9DEGREES</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VECTOR_CONE_10DEGREES</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VECTOR_CONE_15DEGREES</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const Vector VECTOR_CONE_20DEGREES</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const int WEAPON_NOCLIP</td>
+			<td>Used for clips that don't use ammo.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CItemRegistry g_ItemRegistry</td>
+			<td>Item registry global instance.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CEntityLoader g_EntityLoader</td>
+			<td>Entity loader global instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CCustomEntityFuncs g_CustomEntityFuncs</td>
+			<td>Custom entity functions global instance.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CUtility g_Utility</td>
+			<td>Utility methods instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CGame g_Game</td>
+			<td>Game functions instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const float ATTN_NONE</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const float ATTN_NORM</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const float ATTN_IDLE</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const float ATTN_STATIC</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const float VOL_NORM</td>
+			<td>Volume value normal</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CSoundEngine g_SoundSystem</td>
+			<td>Sound engine instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CEngine g_Engine</td>
+			<td>Engine global variables instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const uint FTRACE_SIMPLEBOX</td>
+			<td>Goes into g_Engine.trace_flags<br>Traceline with a simple box</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CEntityFuncs g_EntityFuncs</td>
+			<td>Global entity functions instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const RGBA RGBA_WHITE</td>
+			<td>White</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const RGBA RGBA_BLACK</td>
+			<td>Black</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const RGBA RGBA_RED</td>
+			<td>Red</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const RGBA RGBA_GREEN</td>
+			<td>Green</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const RGBA RGBA_BLUE</td>
+			<td>Blue</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const RGBA RGBA_YELLOW</td>
+			<td>Yellow</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const RGBA RGBA_ORANGE</td>
+			<td>Orange</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const RGBA RGBA_SVENCOOP</td>
+			<td>Sven Co-op HUD color</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CPlayerFuncs g_PlayerFuncs</td>
+			<td>Global player functions instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CWeaponFuncs g_WeaponFuncs</td>
+			<td>Weapon functions global instance.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CGlobalState g_GlobalState</td>
+			<td>Global state manager instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CAngelscript g_Angelscript</td>
+			<td>Angelscript debugging functions instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CMapCycle g_MapCycle</td>
+			<td>Map cycle manager instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CMap g_Map</td>
+			<td>Map state variables instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CPluginManager g_PluginManager</td>
+			<td>Plugin manager global instance.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CStartInventory g_StartInventory</td>
+			<td>Player start inventory manager instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CTextMenus g_TextMenus</td>
+			<td>Text menu manager global instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CAdminControl g_AdminControl</td>
+			<td>CAdminControl instance for plugins</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CLog g_Log</td>
+			<td>Log global instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CConCommandSystem g_ConCommandSystem</td>
+			<td>CConCommandSystem global instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CClassicMode g_ClassicMode</td>
+			<td>Classic Mode global instance.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CSurvivalMode g_SurvivalMode</td>
+			<td>Survival Mode global instance.</td>
+		</tr>
+		<tr>
+			<td>Hooks::Weapon</td>
+			<td>const uint32 WeaponTertiaryAttack</td>
+			<td>Weapon Tertiary attack function</td>
+		</tr>
+		<tr>
+			<td>Hooks::Weapon</td>
+			<td>const uint32 WeaponSecondaryAttack</td>
+			<td>Weapon Secondary attack function</td>
+		</tr>
+		<tr>
+			<td>Hooks::Weapon</td>
+			<td>const uint32 WeaponPrimaryAttack</td>
+			<td>Weapon Primary attack function</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 PlayerDecal</td>
+			<td>Player sprayed a decal</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 GetPlayerSpawnSpot</td>
+			<td>Is called when a player spawns to get a spawn point for the player</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 PlayerPostThink</td>
+			<td>Player PostThink hook function</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 PlayerPreThink</td>
+			<td>Player PreThink hook function</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 PlayerUse</td>
+			<td>Player use hook function</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 PlayerLeftObserver</td>
+			<td>PlayerLeftObserver function</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 PlayerEnteredObserver</td>
+			<td>PlayerEnteredObserver function</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 PlayerKilled</td>
+			<td>PlayerKilled function</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 PlayerCanRespawn</td>
+			<td>PlayerCanRespawn function</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 PlayerSpawn</td>
+			<td>PlayerSpawn function</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 ClientConnected</td>
+			<td>ClientConnected function</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 CanPlayerUseReservedSlot</td>
+			<td>CanPlayerUseReservedSlot function</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 ClientSay</td>
+			<td>ClientSay function</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 ClientPutInServer</td>
+			<td>ClientPutInServer function</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 ClientDisconnect</td>
+			<td>ClientDisconnect function</td>
+		</tr>
+		<tr>
+			<td>Hooks::Game</td>
+			<td>const uint32 MapChange</td>
+			<td>Map change function. Called on all modules regardless of the HookReturnCode returned by a call.</td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>

@@ -3,18 +3,18 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<meta name="generator" content="ASDocGenerator 1.1">
-	<meta name="description" content="Path track class">
-	<meta property="og:title" content="CPathTrack">
-	<meta property="og:description" content="Path track class">
+	<meta name="description" content="Tank base class">
+	<meta property="og:title" content="CBaseTank">
+	<meta property="og:description" content="Tank base class">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="https://github.com/baso88/SC_AngelScript/wiki/images/sc_as_logo_media.png">
 	<meta property="og:site_name" content="Sven Co-op AngelScript API">
 	<link rel="stylesheet" type="text/css" href="doc.css">
-	<title>CPathTrack</title>
+	<title>CBaseTank</title>
 </head>
 <body>
-	<h1>CPathTrack</h1>
-	<p>Path track class</p>
+	<h1>CBaseTank</h1>
+	<p>Tank base class</p>
 	<p><b>Type:</b> Reference type</p>
 	<div><h2>Methods</h2>
 	<table>
@@ -435,36 +435,96 @@
 			<td>Clears the user data on this entity. WARNING: clears all data.<br>Only map scripts can use this.</td>
 		</tr>
 		<tr>
-			<td>void SetPrevious(CPathTrack@ pPrevious)</td>
-			<td>Sets the previous track in this path</td>
+			<td>void TrackTarget()</td>
+			<td>Updates the tank's angles to match either its controlling player, or its current target.Accounts for rotation speed. Will fire at the target if it's automated.</td>
 		</tr>
 		<tr>
-			<td>void Link()</td>
-			<td>Links the tracks together</td>
+			<td>bool PointAt(const Vector& in vecDestination)</td>
+			<td>Points the tank at the target location.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ ValidPath(CPathTrack@ pPath, const bool testFlag)</td>
-			<td>Returns pPath if enabled, null otherwise.</td>
+			<td>void Fire(const Vector& in vecBarrelEnd, const Vector& in vecForward, entvars_t@ pevAttacker)</td>
+			<td>Fires the tank. Barrel end position, aiming direction and attacker entvars_t must be given.</td>
 		</tr>
 		<tr>
-			<td>void Project(CPathTrack@ pStart, CPathTrack@ pEnd, Vector& out vecOrigin, float flDist)</td>
-			<td></td>
+			<td>void Fire()</td>
+			<td>Fires the tank. Uses this tank's settings to fire, does not determine if it is targeting anything.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ LookAhead(Vector& in vecOrigin, Vector& out vecResultOrigin, float flDist, const bool bMove)</td>
-			<td></td>
+			<td>Vector UpdateTargetPosition(CBaseEntity@ pTargetEntity)</td>
+			<td>Gets the updated position of the given target. Target must be valid.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ Nearest(Vector vecOrigin)</td>
-			<td></td>
+			<td>void StartRotSound()</td>
+			<td>Start playing the rotating sound, if defined.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ GetNext()</td>
-			<td></td>
+			<td>void StopRotSound()</td>
+			<td>Stop playing the rotating sound.</td>
 		</tr>
 		<tr>
-			<td>CPathTrack@ GetPrevious()</td>
-			<td></td>
+			<td>bool IsActive() const</td>
+			<td>Returns whether the tank is active. Active tanks are AI controlled.</td>
+		</tr>
+		<tr>
+			<td>void TankActivate()</td>
+			<td>Activates the tank. Active tanks are AI controlled.</td>
+		</tr>
+		<tr>
+			<td>void TankDeactivate()</td>
+			<td>Deactivates the tank. Active tanks are AI controlled.</td>
+		</tr>
+		<tr>
+			<td>bool CanFire() const</td>
+			<td>Returns whether this tank is able to fire.</td>
+		</tr>
+		<tr>
+			<td>bool InRange(float flRange)</td>
+			<td>Returns whether the given range is within the minimum and maximum range of this tank.</td>
+		</tr>
+		<tr>
+			<td>CBaseEntity@ FindTarget()</td>
+			<td>Finds a target to attack, if any.</td>
+		</tr>
+		<tr>
+			<td>void MonsterStartup(CBaseMonster@ pMonster)</td>
+			<td>Makes the given monster begin controlling this tank, if no other monster had control before.</td>
+		</tr>
+		<tr>
+			<td>void TankTrace(const Vector& in vecStart, const Vector& in vecForward, const Vector& in vecSpread, TraceResult& out tr)</td>
+			<td>Performs a traceline using a random spread based on the given spread amount.</td>
+		</tr>
+		<tr>
+			<td>Vector BarrelPosition()</td>
+			<td>Returns the barrel position.</td>
+		</tr>
+		<tr>
+			<td>int BulletCount()</td>
+			<td>Gets the bullet count at this time.</td>
+		</tr>
+		<tr>
+			<td>Vector AdjustAnglesForBarrel(const Vector& in vecInAngles, float flDistance)</td>
+			<td>Adjusts the given angles to point at the target.</td>
+		</tr>
+		<tr>
+			<td>bool StartControl(CBasePlayer@ pController)</td>
+			<td>Makes the given player start controlling this tank.</td>
+		</tr>
+		<tr>
+			<td>void StopControl()</td>
+			<td>If a player is controlling this tank, makes the player stop controlling the tank.</td>
+		</tr>
+		<tr>
+			<td>void MonsterStopControl()</td>
+			<td>If a monster is controlling this tank, makes the monster stop controlling the tank.</td>
+		</tr>
+		<tr>
+			<td>void Look(int iDistance)</td>
+			<td>Looks around itself in a box that is iDistance * 2 in width and height for possible targets and stores the list in m_pLink.<br>The target stores the next target in the list in its m_pLink, and so on.</td>
+		</tr>
+		<tr>
+			<td>const CBasePlayer@ GetController()</td>
+			<td>Gets the current player controlling this tank, if any.</td>
 		</tr>
 	</table>
 	</div>
@@ -539,32 +599,100 @@
 			<td>Original render color.</td>
 		</tr>
 		<tr>
-			<td>float m_length</td>
-			<td></td>
+			<td>Vector m_StartAngles</td>
+			<td>Angles that the tank starts with</td>
 		</tr>
 		<tr>
-			<td>string_t m_altName</td>
-			<td></td>
+			<td>Vector m_vecControllerUsePos</td>
+			<td>Start origin of the player that is currently controlling this tank.<br>Used to determine when a player has moved too far to continue controlling this tank.</td>
 		</tr>
 		<tr>
-			<td>EHandle m_hNext</td>
-			<td></td>
+			<td>float m_flNextAttack</td>
+			<td>Next attack time</td>
 		</tr>
 		<tr>
-			<td>EHandle m_hPrevious</td>
-			<td></td>
+			<td>float m_yawCenter</td>
+			<td>"Center" yaw</td>
 		</tr>
 		<tr>
-			<td>EHandle m_hAltpath</td>
-			<td></td>
+			<td>float m_yawRate</td>
+			<td>Max turn rate to track targets</td>
 		</tr>
 		<tr>
-			<td>float m_flMaxSpeed</td>
-			<td>New maximum speed</td>
+			<td>float m_yawRange</td>
+			<td>Range of turning motion (one-sided: 30 is +/- 30 degress from center)<br>Zero is full rotation</td>
 		</tr>
 		<tr>
-			<td>float m_flNewSpeed</td>
-			<td>New train speed</td>
+			<td>float m_yawTolerance</td>
+			<td>Tolerance angle</td>
+		</tr>
+		<tr>
+			<td>float m_pitchCenter</td>
+			<td>"Center" pitch</td>
+		</tr>
+		<tr>
+			<td>float m_pitchRate</td>
+			<td>Max turn rate on pitch</td>
+		</tr>
+		<tr>
+			<td>float m_pitchRange</td>
+			<td>Range of pitch motion as above</td>
+		</tr>
+		<tr>
+			<td>float m_pitchTolerance</td>
+			<td>Tolerance angle</td>
+		</tr>
+		<tr>
+			<td>float m_fireLast</td>
+			<td>Last time I fired</td>
+		</tr>
+		<tr>
+			<td>float m_fireRate</td>
+			<td>How many rounds/second</td>
+		</tr>
+		<tr>
+			<td>float m_lastSightTime</td>
+			<td>Last time I saw target</td>
+		</tr>
+		<tr>
+			<td>float m_persist</td>
+			<td>Persistence of firing (how long do I shoot when I can't see)</td>
+		</tr>
+		<tr>
+			<td>float m_minRange</td>
+			<td>Minimum range to aim/track</td>
+		</tr>
+		<tr>
+			<td>float m_maxRange</td>
+			<td>Max range to aim/track</td>
+		</tr>
+		<tr>
+			<td>Vector m_barrelPos</td>
+			<td>Length of the freakin barrel</td>
+		</tr>
+		<tr>
+			<td>float m_spriteScale</td>
+			<td>Scale of any sprites we shoot</td>
+		</tr>
+		<tr>
+			<td>TANKBULLET m_bulletType</td>
+			<td>Bullet type</td>
+		</tr>
+		<tr>
+			<td>int m_iBulletDamage</td>
+			<td>0 means use Bullet type's default damage</td>
+		</tr>
+		<tr>
+			<td>Vector m_sightOrigin</td>
+			<td>Last sight of target</td>
+		</tr>
+		<tr>
+			<td>int m_spread</td>
+			<td>firing spread</td>
+		</tr>
+		<tr>
+			<td>string_t m_iszMaster</td>
+			<td>Master entity (game_team_master or multisource)</td>
 		</tr>
 	</table>
 	</div>
