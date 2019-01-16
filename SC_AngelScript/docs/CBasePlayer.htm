@@ -1191,7 +1191,7 @@
 			<td>Gets the Observer instance that represents this player.</td>
 		</tr>
 		<tr>
-			<td>CBasePlayerItem@ DropItem(const string& in szItemName)</td>
+			<td>CBaseEntity@ DropItem(const string& in szItemName)</td>
 			<td>Drops the given item, or if no name, the current weapon.</td>
 		</tr>
 		<tr>
@@ -1309,6 +1309,14 @@
 		<tr>
 			<td>void ShowOverheadSprite(const string& in szSpriteName, const float flZOffset, const float flLifeTime)</td>
 			<td>Creates a sprite above the player's head</td>
+		</tr>
+		<tr>
+			<td>void SetVModelPos( const Vector& in vecPos )</td>
+			<td>Set custom viewmodel position.</td>
+		</tr>
+		<tr>
+			<td>void ResetVModelPos()</td>
+			<td>Reset viewmodel position.</td>
 		</tr>
 	</table>
 	</div>
