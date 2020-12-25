@@ -139,8 +139,12 @@
 			<td>Clears this entity's classification override.</td>
 		</tr>
 		<tr>
-			<td>int IRelationship(CBaseEntity@ other)</td>
+			<td>int IRelationship(CBaseEntity@ other, bool ignoreNoTarget = false)</td>
 			<td>Gets the relationship between this entity and the given entity. See the RELATIONSHIP enum.</td>
+		</tr>
+		<tr>
+			<td>int IRelationshipByClass(CLASS iClass)</td>
+			<td>Gets the relationship between this entity and the given entity classification. See the RELATIONSHIP enum.</td>
 		</tr>
 		<tr>
 			<td>int Classify()</td>
@@ -1127,7 +1131,7 @@
 			<td>Shows active weapon and unblocks weapon selection.</td>
 		</tr>
 		<tr>
-			<td>void GetWeaponsBlocked()</td>
+			<td>bool GetWeaponsBlocked()</td>
 			<td>Returns whether the weapons are currently blocked.</td>
 		</tr>
 		<tr>
@@ -1313,6 +1317,22 @@
 		<tr>
 			<td>void ResetVModelPos()</td>
 			<td>Reset viewmodel position.</td>
+		</tr>
+		<tr>
+			<td>void SetMaxSpeed(int Speed)</td>
+			<td>Set player persistent max speed. default: sv_maxspeed</td>
+		</tr>
+		<tr>
+			<td>void SetMaxSpeedOverride(int Speed)</td>
+			<td>Override players max speed (temporarily) -1 will restore</td>
+		</tr>
+		<tr>
+			<td>int GetMaxSpeed()</td>
+			<td>Get the player persistent max speed. default: sv_maxspeed</td>
+		</tr>
+		<tr>
+			<td>int GetMaxSpeedOverride()</td>
+			<td>Get the player max speed override (-1 = not overriding)</td>
 		</tr>
 	</table>
 	</div>
@@ -1817,10 +1837,6 @@
 		<tr>
 			<td>float m_flSwimTime</td>
 			<td>How long this player has been underwater.</td>
-		</tr>
-		<tr>
-			<td>float m_flMaxSpeed</td>
-			<td>How fast the player can move.</td>
 		</tr>
 		<tr>
 			<td>int m_lastPlayerDamageAmount</td>
