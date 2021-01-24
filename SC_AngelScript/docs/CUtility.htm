@@ -154,6 +154,18 @@
 			<td>void FindHullIntersection(const Vector& in vecSrc, TraceResult& in inTr, TraceResult& out outTr,const Vector& in vecMins, const Vector& in vecMaxs, edict_t@ pEntity, float flDistance = 1e6f)</td>
 			<td>Finds the hull intersection from a traceline in a given set of bounds. The bounds are relative to the input traceline's endpoint.<br>The given entity is the entity performing the traceline.</td>
 		</tr>
+		<tr>
+			<td>string BuildEntityLogString(const string& in szName, const string& in szUserID = NULL, const string& in szAuthID = NULL, const string& in szTeam = NULL) const</td>
+			<td>Builds a generic entity log string.</td>
+		</tr>
+		<tr>
+			<td>string BuildPlayerLogString(const string& in szName, const string& in szUserID = NULL, const string& in szAuthID = NULL) const</td>
+			<td>Builds a generic player log string.</td>
+		</tr>
+		<tr>
+			<td>string GetPlayerLog(edict_t@ pPlayerEdict) const</td>
+			<td>Get a player log string.</td>
+		</tr>
 	</table>
 	</div>
 </body>

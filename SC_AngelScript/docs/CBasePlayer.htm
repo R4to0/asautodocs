@@ -127,6 +127,14 @@
 			<td>Gets this entity's classification. Returns the given value if none is set. See the CLASSIFICATION enum.</td>
 		</tr>
 		<tr>
+			<td>const string& GetClassificationTag()</td>
+			<td>Gets this entity's classification tag.</td>
+		</tr>
+		<tr>
+			<td>const string& GetClassificationName()</td>
+			<td>Gets this entity's classification name.</td>
+		</tr>
+		<tr>
 			<td>void SetClassification(int cl)</td>
 			<td>Sets this entity's classification override. Can override the entity's player ally setting.</td>
 		</tr>
@@ -1333,6 +1341,30 @@
 		<tr>
 			<td>int GetMaxSpeedOverride()</td>
 			<td>Get the player max speed override (-1 = not overriding)</td>
+		</tr>
+		<tr>
+			<td>void ResetOverriddenPlayerModel(const bool bResetToClModel, const bool bForceReset)</td>
+			<td>Reset an overriden player model.</td>
+		</tr>
+		<tr>
+			<td>void SetOverriddenPlayerModel(const string& in szOverrideModel)</td>
+			<td>Set an overriden player model.</td>
+		</tr>
+		<tr>
+			<td>void SendScoreInfo(edict_t@ edPlayer = null)</td>
+			<td>Refresh the player's score information with one or all players.</td>
+		</tr>
+		<tr>
+			<td>bool SetCheat(int iBit, bool fValue, bool fRequestedBySelf = false)</td>
+			<td>Set a player's cheat bit. (Requires cheat permission. If requested by self a permission message will be shown/logged.)</td>
+		</tr>
+		<tr>
+			<td>bool GetCheat(int iBit)</td>
+			<td>Get a player's cheat bit.</td>
+		</tr>
+		<tr>
+			<td>int GetCheats()</td>
+			<td>Get a player's cheat bits.</td>
 		</tr>
 	</table>
 	</div>
