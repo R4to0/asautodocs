@@ -79,6 +79,14 @@
 			<td>Returns this entity's class name.</td>
 		</tr>
 		<tr>
+			<td>string GetClassificationTag() const</td>
+			<td>Returns this entity's classification tag.</td>
+		</tr>
+		<tr>
+			<td>string GetClassificationName() const</td>
+			<td>Returns this entity's classification name.</td>
+		</tr>
+		<tr>
 			<td>string GetTargetname() const</td>
 			<td>Returns this entity's target name.</td>
 		</tr>
@@ -139,7 +147,7 @@
 			<td>Clears this entity's classification override.</td>
 		</tr>
 		<tr>
-			<td>int IRelationship(CBaseEntity@ other)</td>
+			<td>int IRelationship(CBaseEntity@ other, bool ignoreNoTarget = false)</td>
 			<td>Gets the relationship between this entity and the given entity. See the RELATIONSHIP enum.</td>
 		</tr>
 		<tr>
@@ -421,6 +429,10 @@
 		<tr>
 			<td>void OnDestroy()</td>
 			<td>Entity destructor.</td>
+		</tr>
+		<tr>
+			<td>void OnSetOriginByMap()</td>
+			<td>Entity callback after trigger_setorigin has moved the entity.</td>
 		</tr>
 		<tr>
 			<td>bool IsRevivable()</td>
@@ -1131,7 +1143,7 @@
 			<td>Shows active weapon and unblocks weapon selection.</td>
 		</tr>
 		<tr>
-			<td>void GetWeaponsBlocked()</td>
+			<td>bool GetWeaponsBlocked()</td>
 			<td>Returns whether the weapons are currently blocked.</td>
 		</tr>
 		<tr>
@@ -1317,6 +1329,46 @@
 		<tr>
 			<td>void ResetVModelPos()</td>
 			<td>Reset viewmodel position.</td>
+		</tr>
+		<tr>
+			<td>void SetMaxSpeed(int Speed)</td>
+			<td>Set player persistent max speed. default: sv_maxspeed</td>
+		</tr>
+		<tr>
+			<td>void SetMaxSpeedOverride(int Speed)</td>
+			<td>Override players max speed (temporarily) -1 will restore</td>
+		</tr>
+		<tr>
+			<td>int GetMaxSpeed()</td>
+			<td>Get the player persistent max speed. default: sv_maxspeed</td>
+		</tr>
+		<tr>
+			<td>int GetMaxSpeedOverride()</td>
+			<td>Get the player max speed override (-1 = not overriding)</td>
+		</tr>
+		<tr>
+			<td>void ResetOverriddenPlayerModel(const bool bResetToClModel, const bool bForceReset)</td>
+			<td>Reset an overriden player model.</td>
+		</tr>
+		<tr>
+			<td>void SetOverriddenPlayerModel(const string& in szOverrideModel)</td>
+			<td>Set an overriden player model.</td>
+		</tr>
+		<tr>
+			<td>void SendScoreInfo(edict_t@ edPlayer = null)</td>
+			<td>Refresh the player's score information with one or all players.</td>
+		</tr>
+		<tr>
+			<td>bool SetCheat(int iBit, bool fValue, bool fRequestedBySelf = false)</td>
+			<td>Set a player's cheat bit. (Requires cheat permission. If requested by self a permission message will be shown/logged.)</td>
+		</tr>
+		<tr>
+			<td>bool GetCheat(int iBit)</td>
+			<td>Get a player's cheat bit.</td>
+		</tr>
+		<tr>
+			<td>int GetCheats()</td>
+			<td>Get a player's cheat bits.</td>
 		</tr>
 	</table>
 	</div>
@@ -1821,10 +1873,6 @@
 		<tr>
 			<td>float m_flSwimTime</td>
 			<td>How long this player has been underwater.</td>
-		</tr>
-		<tr>
-			<td>float m_flMaxSpeed</td>
-			<td>How fast the player can move.</td>
 		</tr>
 		<tr>
 			<td>int m_lastPlayerDamageAmount</td>

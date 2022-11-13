@@ -79,6 +79,14 @@
 			<td>Returns this entity's class name.</td>
 		</tr>
 		<tr>
+			<td>string GetClassificationTag() const</td>
+			<td>Returns this entity's classification tag.</td>
+		</tr>
+		<tr>
+			<td>string GetClassificationName() const</td>
+			<td>Returns this entity's classification name.</td>
+		</tr>
+		<tr>
 			<td>string GetTargetname() const</td>
 			<td>Returns this entity's target name.</td>
 		</tr>
@@ -139,7 +147,7 @@
 			<td>Clears this entity's classification override.</td>
 		</tr>
 		<tr>
-			<td>int IRelationship(CBaseEntity@ other)</td>
+			<td>int IRelationship(CBaseEntity@ other, bool ignoreNoTarget = false)</td>
 			<td>Gets the relationship between this entity and the given entity. See the RELATIONSHIP enum.</td>
 		</tr>
 		<tr>
@@ -421,6 +429,10 @@
 		<tr>
 			<td>void OnDestroy()</td>
 			<td>Entity destructor.</td>
+		</tr>
+		<tr>
+			<td>void OnSetOriginByMap()</td>
+			<td>Entity callback after trigger_setorigin has moved the entity.</td>
 		</tr>
 		<tr>
 			<td>bool IsRevivable()</td>
