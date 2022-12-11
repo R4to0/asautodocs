@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("pen",["Function"],[["PEntityOfEntIndex",,[["[Global Namespace]::CEngineFuncs",,,,0,"File:Classes/CEngineFuncs.as:[Global_Namespace].CEngineFuncs.PEntityOfEntIndex","AngelscriptClass:[Global_Namespace].CEngineFuncs:PEntityOfEntIndex"]]]]);

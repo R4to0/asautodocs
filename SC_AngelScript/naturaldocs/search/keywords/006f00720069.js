@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("ori",["Variable"],[["origin",,[["[Global Namespace]::entvars_t",,,,0,"File:Classes/entvars_t.as:[Global_Namespace].entvars_t.origin","AngelscriptClass:[Global_Namespace].entvars_t:origin"]]]]);

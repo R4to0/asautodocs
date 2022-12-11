@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("dum",["Function"],[["DumpGlobals",,[["[Global Namespace]::CGlobalState",,,,0,"File:Classes/CGlobalState.as:[Global_Namespace].CGlobalState.DumpGlobals","AngelscriptClass:[Global_Namespace].CGlobalState:DumpGlobals"]]]]);

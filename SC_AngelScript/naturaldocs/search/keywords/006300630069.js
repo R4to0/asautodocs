@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cci",["Class"],[["CCineMonster",,[["[Global Namespace]",,,,0,"File:Classes/CCineMonster.as:[Global_Namespace].CCineMonster","AngelscriptClass:[Global_Namespace].CCineMonster"]]]]);

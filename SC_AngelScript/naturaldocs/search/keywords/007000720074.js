@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("prt",["Constant"],[["PrtlUpdt",,[["NetworkMessages",,,,0,"File:Enums/NetworkMessageType.as:NetworkMessages.PrtlUpdt","AngelscriptClass:NetworkMessages:PrtlUpdt"]]]]);

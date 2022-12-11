@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:Functions/Search@2.as","Search@2.as");NDSummary.OnSummaryLoaded("File:Functions/Search@2.as",[["C/C++","Angelscript"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[8099,0,0,"Regex","Regex"],[8100,0,2,"Functions","Regex.Functions"],[8101,0,1,"Search","Regex.Search"]]);

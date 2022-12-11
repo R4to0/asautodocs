@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("min",["Function","Variable"],[["min",,[["[Global Namespace]::CMath",,,,0,"File:Classes/CMath.as:[Global_Namespace].CMath.min","AngelscriptClass:[Global_Namespace].CMath:min"]]],["mins",,[["[Global Namespace]::entvars_t",,,,1,"File:Classes/entvars_t.as:[Global_Namespace].entvars_t.mins","AngelscriptClass:[Global_Namespace].entvars_t:mins"]]]]);

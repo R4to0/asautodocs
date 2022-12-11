@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("b1",["Variable"],[["b1",,[["[Global Namespace]::HUDTextParams",,,,0,"File:Classes/HUDTextParams.as:[Global_Namespace].HUDTextParams.b1","AngelscriptClass:[Global_Namespace].HUDTextParams:b1"]]]]);

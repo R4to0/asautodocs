@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("ica",["Constant"],[["icase",,[["Regex",,,,0,"File:Enums/FlagType.as:Regex.icase","AngelscriptClass:Regex:icase"]]]]);

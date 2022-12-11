@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("phi",["Variable"],[["pHit",,[["[Global Namespace]::TraceResult",,,,0,"File:Classes/TraceResult.as:[Global_Namespace].TraceResult.pHit","AngelscriptClass:[Global_Namespace].TraceResult:pHit"]]]]);

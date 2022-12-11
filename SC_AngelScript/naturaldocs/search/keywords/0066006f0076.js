@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("fov",["Variable"],[["fov",,[["[Global Namespace]::entvars_t",,,,0,"File:Classes/entvars_t.as:[Global_Namespace].entvars_t.fov","AngelscriptClass:[Global_Namespace].entvars_t:fov"]]]]);

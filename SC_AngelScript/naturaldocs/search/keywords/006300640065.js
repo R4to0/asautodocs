@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cde",["Class"],[["CDebugger",,[["[Global Namespace]",,,,0,"File:Classes/CDebugger.as:[Global_Namespace].CDebugger","AngelscriptClass:[Global_Namespace].CDebugger"]]],["CDecals",,[["[Global Namespace]",,,,0,"File:Classes/CDecals.as:[Global_Namespace].CDecals","AngelscriptClass:[Global_Namespace].CDecals"]]]]);

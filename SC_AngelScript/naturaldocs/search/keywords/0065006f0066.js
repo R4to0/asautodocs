@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("eof",["Function"],[["EOFReached",,[["[Global Namespace]::File",,,,0,"File:Classes/File.as:[Global_Namespace].File.EOFReached","AngelscriptClass:[Global_Namespace].File:EOFReached"]]]]);

@@ -1,0 +1,1 @@
+﻿NDSummary.OnToolTipsLoaded("File:Properties/slSmallFlinch.as",{8389:"<div class=\"NDToolTip TVariable LAngelscript\"><div id=\"NDPrototype8389\" class=\"NDPrototype\"><div class=\"PSection PPlainSection\">Schedule Schedules::slSmallFlinch</div></div></div>"});

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("vmo",["Constant"],[["VModelPos",,[["NetworkMessages",,,,0,"File:Enums/NetworkMessageType.as:NetworkMessages.VModelPos","AngelscriptClass:NetworkMessages:VModelPos"]]]]);

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("g_l",["Variable"],[["g_Log",,[["[Global Namespace]",,,,0,"File:Properties/g_Log.as:[Global_Namespace].g_Log","AngelscriptClass:[Global_Namespace]:g_Log"]]]]);

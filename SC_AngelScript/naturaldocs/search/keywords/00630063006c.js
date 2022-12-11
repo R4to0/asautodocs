@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("ccl",["Class"],[["CClassicMode",,[["[Global Namespace]",,,,0,"File:Classes/CClassicMode.as:[Global_Namespace].CClassicMode","AngelscriptClass:[Global_Namespace].CClassicMode"]]],["CClientCommand",,[["[Global Namespace]",,,,0,"File:Classes/CClientCommand.as:[Global_Namespace].CClientCommand","AngelscriptClass:[Global_Namespace].CClientCommand"]]]]);

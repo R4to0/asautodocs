@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("z",["Variable"],[["z",,[["[Global Namespace]::Vector",,,,0,"File:Classes/Vector.as:[Global_Namespace].Vector.z","AngelscriptClass:[Global_Namespace].Vector:z"]]]]);

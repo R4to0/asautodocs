@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("snp",["Function"],[["snprintf",,[["[Global Namespace]",,,,0,"File:Functions/snprintf.as:[Global_Namespace].snprintf","AngelscriptClass:[Global_Namespace]:snprintf"]]]]);

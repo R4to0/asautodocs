@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("ity",["Variable"],[["iType",,[["[Global Namespace]::Waypoint",,,,0,"File:Classes/Waypoint.as:[Global_Namespace].Waypoint.iType","AngelscriptClass:[Global_Namespace].Waypoint:iType"]]]]);

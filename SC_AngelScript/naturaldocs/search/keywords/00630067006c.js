@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cgl",["Class"],[["CGlobalState",,[["[Global Namespace]",,,,0,"File:Classes/CGlobalState.as:[Global_Namespace].CGlobalState","AngelscriptClass:[Global_Namespace].CGlobalState"]]]]);

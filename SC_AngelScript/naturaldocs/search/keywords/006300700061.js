@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cpa",["Class"],[["CPathCondition",,[["[Global Namespace]",,,,0,"File:Classes/CPathCondition.as:[Global_Namespace].CPathCondition","AngelscriptClass:[Global_Namespace].CPathCondition"]]],["CPathTrack",,[["[Global Namespace]",,,,0,"File:Classes/CPathTrack.as:[Global_Namespace].CPathTrack","AngelscriptClass:[Global_Namespace].CPathTrack"]]]]);

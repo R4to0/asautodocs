@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("swi",["Function"],[["SwitchWeapon",,[["[Global Namespace]::CBasePlayer",,,,0,"File:Classes/CBasePlayer.as:[Global_Namespace].CBasePlayer.SwitchWeapon","AngelscriptClass:[Global_Namespace].CBasePlayer:SwitchWeapon"]]]]);

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cdm",["Enumeration","Constant"],[["CDMG",,[["[Global Namespace]",,,,0,"File:Enums/CDMG.as:[Global_Namespace].CDMG","AngelscriptClass:[Global_Namespace]:CDMG"]]],["CDMG_TIMEBASED",,[["[Global Namespace]",,,,1,"File:Enums/CDMG.as:[Global_Namespace].CDMG_TIMEBASED","AngelscriptClass:[Global_Namespace]:CDMG_TIMEBASED"]]]]);

@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:Properties/slIdleTrigger.as","slIdleTrigger.as");NDSummary.OnSummaryLoaded("File:Properties/slIdleTrigger.as",[["C/C++","Angelscript"]],[["Classes","Class"],["Groups","Group"],["Variables","Variable"]],[[8399,0,0,"Schedules","Schedules"],[8400,0,1,"Variables","Schedules.Variables"],[8401,0,2,"slIdleTrigger","Schedules.slIdleTrigger"]]);

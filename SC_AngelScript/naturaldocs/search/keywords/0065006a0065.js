@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("eje",["Function"],[["EjectBrass",,[["[Global Namespace]::CEntityFuncs",,,,0,"File:Classes/CEntityFuncs.as:[Global_Namespace].CEntityFuncs.EjectBrass","AngelscriptClass:[Global_Namespace].CEntityFuncs:EjectBrass"]]]]);

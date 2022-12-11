@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("par",["Function"],[["ParticleEffect",,[["[Global Namespace]::CEngineFuncs",,,,0,"File:Classes/CEngineFuncs.as:[Global_Namespace].CEngineFuncs.ParticleEffect","AngelscriptClass:[Global_Namespace].CEngineFuncs:ParticleEffect"]]]]);

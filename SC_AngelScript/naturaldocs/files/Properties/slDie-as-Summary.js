@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:Properties/slDie.as","slDie.as");NDSummary.OnSummaryLoaded("File:Properties/slDie.as",[["C/C++","Angelscript"]],[["Classes","Class"],["Groups","Group"],["Variables","Variable"]],[[8414,0,0,"Schedules","Schedules"],[8415,0,1,"Variables","Schedules.Variables"],[8416,0,2,"slDie","Schedules.slDie"]]);

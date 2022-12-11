@@ -1,0 +1,1 @@
+﻿NDSummary.OnToolTipsLoaded("File:Properties/slReload.as",{8392:"<div class=\"NDToolTip TVariable LAngelscript\"><div id=\"NDPrototype8392\" class=\"NDPrototype\"><div class=\"PSection PPlainSection\">Schedule Schedules::slReload</div></div></div>"});

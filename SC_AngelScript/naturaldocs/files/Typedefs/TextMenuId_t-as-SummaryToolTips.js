@@ -1,0 +1,1 @@
+﻿NDSummary.OnToolTipsLoaded("File:Typedefs/TextMenuId_t.as",{8708:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

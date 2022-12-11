@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("nea",["Function"],[["Nearest",,[["[Global Namespace]::CPathTrack",,,,0,"File:Classes/CPathTrack.as:[Global_Namespace].CPathTrack.Nearest","AngelscriptClass:[Global_Namespace].CPathTrack:Nearest"]]]]);

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cpl",["Class"],[["CPlayerFuncs",,[["[Global Namespace]",,,,0,"File:Classes/CPlayerFuncs.as:[Global_Namespace].CPlayerFuncs","AngelscriptClass:[Global_Namespace].CPlayerFuncs"]]],["CPluginManager",,[["[Global Namespace]",,,,0,"File:Classes/CPluginManager.as:[Global_Namespace].CPluginManager","AngelscriptClass:[Global_Namespace].CPluginManager"]]]]);

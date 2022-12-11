@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("bin",["Constant","Variable"],[["BINARY",,[["OpenFile",,,,0,"File:Enums/OpenFile.as:OpenFile.BINARY","AngelscriptClass:OpenFile:BINARY"]]],["bInDuck",,[["[Global Namespace]::entvars_t",,,,1,"File:Classes/entvars_t.as:[Global_Namespace].entvars_t.bInDuck","AngelscriptClass:[Global_Namespace].entvars_t:bInDuck"]]]]);

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("[gl",["Class"],[["[Global",,[[,"[Global Namespace]",,,0,"File:Classes/BaseEntity.as:[Global_Namespace]","AngelscriptClass:[Global_Namespace]"]]]]);

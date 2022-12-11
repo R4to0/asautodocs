@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("duc",["Function"],[["Duck",,[["[Global Namespace]::CBasePlayer",,,,0,"File:Classes/CBasePlayer.as:[Global_Namespace].CBasePlayer.Duck","AngelscriptClass:[Global_Namespace].CBasePlayer:Duck"]]]]);

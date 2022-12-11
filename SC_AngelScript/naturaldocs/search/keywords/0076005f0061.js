@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("v_a",["Variable"],[["v_angle",,[["[Global Namespace]::entvars_t",,,,0,"File:Classes/entvars_t.as:[Global_Namespace].entvars_t.v_angle","AngelscriptClass:[Global_Namespace].entvars_t:v_angle"]]]]);
