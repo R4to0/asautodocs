@@ -205,8 +205,8 @@
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
-			<td>HookReturnCode MapChangeHook()</td>
-			<td>Called when the map changes. This happens when the world is destroyed. There may still be entities that exist at this point.</td>
+			<td>HookReturnCode MapChangeHook(const string& in)</td>
+			<td>Called when the map changes. This happens when the world is destroyed. There may still be entities that exist at this point. String will show the next map will be, or empty if the server is shutting down.</td>
 		</tr>
 	</table>
 	</div>
