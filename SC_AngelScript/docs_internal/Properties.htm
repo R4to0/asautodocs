@@ -49,6 +49,11 @@
 			<td>Sentinel value used by string methods.</td>
 		</tr>
 		<tr>
+			<td>String</td>
+			<td>const size_t NO_MORE_TOKENS</td>
+			<td>Sentinel value used by string tokenization when there are no tokens remaining.</td>
+		</tr>
+		<tr>
 			<td>Reflection</td>
 			<td>CReflection g_Reflection</td>
 			<td>Reflection global class instance.</td>
@@ -297,6 +302,11 @@
 			<td>&lt;Global&gt;</td>
 			<td>CEngineFuncs g_EngineFuncs</td>
 			<td>Engine functions instance</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>CModelFuncs g_ModelFuncs</td>
+			<td>Model functions instance</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
@@ -626,97 +636,137 @@
 		<tr>
 			<td>Hooks::Weapon</td>
 			<td>const uint32 WeaponTertiaryAttack</td>
-			<td>Weapon Tertiary attack function</td>
+			<td>Called when a player fires a weapon's tertiary attack.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Weapon</td>
 			<td>const uint32 WeaponSecondaryAttack</td>
-			<td>Weapon Secondary attack function</td>
+			<td>Called when a player fires a weapon's secondary attack.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Weapon</td>
 			<td>const uint32 WeaponPrimaryAttack</td>
-			<td>Weapon Primary attack function</td>
+			<td>Called when a player fires a weapon's primary attack.</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 PlayerPreDecal</td>
+			<td>Called when a player attempts to spraypaint a decal onto a surface. The given trace result contains the surface information. Set bResult to false if the player shouldn't be able to spray. </td>
 		</tr>
 		<tr>
 			<td>Hooks::Player</td>
 			<td>const uint32 PlayerDecal</td>
-			<td>Player sprayed a decal</td>
+			<td>Called when a player is spraypainting a decal onto a surface. The given trace result contains the surface information. </td>
 		</tr>
 		<tr>
 			<td>Hooks::Player</td>
 			<td>const uint32 GetPlayerSpawnSpot</td>
-			<td>Is called when a player spawns to get a spawn point for the player</td>
+			<td>Called when a player is about to get a spawn point before (re)spawning.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Player</td>
 			<td>const uint32 PlayerPostThink</td>
-			<td>Player PostThink hook function</td>
+			<td>Called when the player is processing post think events.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Player</td>
 			<td>const uint32 PlayerPreThink</td>
-			<td>Player PreThink hook function</td>
+			<td>Called when the player is processing pre think events.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Player</td>
 			<td>const uint32 PlayerUse</td>
-			<td>Player use hook function</td>
+			<td>Called when the game is processing player use input. Note that this occurs even if the player has not pressed their use key.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Player</td>
 			<td>const uint32 PlayerLeftObserver</td>
-			<td>PlayerLeftObserver function</td>
+			<td>Called when a player leaves observer mode.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Player</td>
 			<td>const uint32 PlayerEnteredObserver</td>
-			<td>PlayerEnteredObserver function</td>
+			<td>Called when a player enters observer mode.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Player</td>
 			<td>const uint32 PlayerKilled</td>
-			<td>PlayerKilled function</td>
+			<td>Called when a player is killed.</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 PlayerTakeDamage</td>
+			<td>Called when a player takes damage. Note that the victim entity can't be changed at this point.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Player</td>
 			<td>const uint32 PlayerCanRespawn</td>
-			<td>PlayerCanRespawn function</td>
+			<td>Called when the game wants to know if the player should be able to respawn or not.Set bCanRespawn to false to disallow, default true.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Player</td>
 			<td>const uint32 PlayerSpawn</td>
-			<td>PlayerSpawn function</td>
+			<td>Called when a player (re)spawns.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Player</td>
 			<td>const uint32 ClientConnected</td>
-			<td>ClientConnected function</td>
+			<td>Called when a player connects to the server. if bDisallowJoin is set to false, the player is disconnected. szRejectReason is shown to the player if disconnected. The maximum length of the reject reason string is 127 characters.</td>
+		</tr>
+		<tr>
+			<td>Hooks::PickupObject</td>
+			<td>const uint32 Collected</td>
+			<td>Called when a pickup object is collected by a player. </td>
+		</tr>
+		<tr>
+			<td>Hooks::PickupObject</td>
+			<td>const uint32 Materialize</td>
+			<td>Called when a pickup object materializes.</td>
+		</tr>
+		<tr>
+			<td>Hooks::PickupObject</td>
+			<td>const uint32 CanCollect</td>
+			<td>Called when a pickup object is about to be collected by a player. Note that basic checks are done before this hook is called.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Player</td>
 			<td>const uint32 CanPlayerUseReservedSlot</td>
-			<td>CanPlayerUseReservedSlot function</td>
+			<td>Called when a player connects to the server, and the number of slots left on the server is &lt;= the number of reserved slots. Set bAllowJoin to true to allow the player to join (default false).</td>
+		</tr>
+		<tr>
+			<td>Hooks::Monster</td>
+			<td>const uint32 MonsterTakeDamage</td>
+			<td>Called when a monster takes damage.Note that the victim entity can't be changed at this point. Players also appear there as they're technically monsters too.</td>
+		</tr>
+		<tr>
+			<td>Hooks::Monster</td>
+			<td>const uint32 MonsterKilled</td>
+			<td>Called when a monster is killed.This may still be called even when the monster is taking damage while in a event (eg.: death animation). Players also appear there as they're technically monsters too.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Player</td>
 			<td>const uint32 ClientSay</td>
-			<td>ClientSay function</td>
+			<td>Called when a player says something in game chat. The SayParameters class can be used to manipulate input and veto the message.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Player</td>
 			<td>const uint32 ClientPutInServer</td>
-			<td>ClientPutInServer function</td>
+			<td>Called when a player has finished connecting and is put into the world. It is safe to send network messages to the player at this point.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Player</td>
 			<td>const uint32 ClientDisconnect</td>
-			<td>ClientDisconnect function</td>
+			<td>Called when a player disconnects. Note that this is only called if the player was fully connected, meaning the player went through ClientPutInServer. This is never called for the local host.</td>
+		</tr>
+		<tr>
+			<td>Hooks::Game</td>
+			<td>const uint32 EntityCreated</td>
+			<td>Called when a new entity is created. At this point the entity is not spawned yet and may not be fully initialized.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Game</td>
 			<td>const uint32 MapChange</td>
-			<td>Map change function. Called on all modules regardless of the HookReturnCode returned by a call.</td>
+			<td>Called when the map changes. This happens when the world is destroyed. There may still be entities that exist at this point. String will show the next map will be, or empty if the server is shutting down.</td>
 		</tr>
 	</table>
 	</div>

@@ -24,11 +24,11 @@
 		</tr>
 		<tr>
 			<td>bool IsOpen() const</td>
-			<td>Returns whether the file was successfully opened</td>
+			<td>Returns whether the file was successfully opened.</td>
 		</tr>
 		<tr>
 			<td>void Close()</td>
-			<td>Closes the file if it is open</td>
+			<td>Closes the file if it is open.</td>
 		</tr>
 		<tr>
 			<td>void Remove()</td>
@@ -40,19 +40,23 @@
 		</tr>
 		<tr>
 			<td>size_t Tell() const</td>
-			<td>Tells the positon of the read/write pointer.</td>
+			<td>Tells the position of the read/write pointer.</td>
+		</tr>
+		<tr>
+			<td>size_t Seek(const size_t uiPosition, const SeekFileFlags_t uiSeekMode)</td>
+			<td>Sets the read/write pointer to a new position. Returns the new position within the file.</td>
 		</tr>
 		<tr>
 			<td>bool EOFReached() const</td>
-			<td>Returns whether end of file was reached</td>
+			<td>Returns whether end of file was reached.</td>
 		</tr>
 		<tr>
 			<td>string ReadCharacter()</td>
-			<td>Reads a single character</td>
+			<td>Reads a single character.</td>
 		</tr>
 		<tr>
 			<td>void ReadLine(string& out szOutLine, const string& in szDelim = '<br>')</td>
-			<td>Reads a line from the file</td>
+			<td>Reads a line from the file.</td>
 		</tr>
 		<tr>
 			<td>bool Read(BLOB@ pBlob, size_t uiSizeInBytes)</td>
@@ -72,11 +76,11 @@
 		</tr>
 		<tr>
 			<td>void Write(const string& in szString)</td>
-			<td>Writes a string to the file</td>
+			<td>Writes a string to the file.</td>
 		</tr>
 		<tr>
 			<td>void Write(const BLOB@ pBlob)</td>
-			<td>Writes a blob to the file</td>
+			<td>Writes a blob to the file.</td>
 		</tr>
 	</table>
 	</div>

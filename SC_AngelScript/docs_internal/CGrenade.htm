@@ -79,6 +79,14 @@
 			<td>Returns this entity's class name.</td>
 		</tr>
 		<tr>
+			<td>string GetClassificationTag() const</td>
+			<td>Returns this entity's classification tag.</td>
+		</tr>
+		<tr>
+			<td>string GetClassificationName() const</td>
+			<td>Returns this entity's classification name.</td>
+		</tr>
+		<tr>
 			<td>string GetTargetname() const</td>
 			<td>Returns this entity's target name.</td>
 		</tr>
@@ -139,7 +147,7 @@
 			<td>Clears this entity's classification override.</td>
 		</tr>
 		<tr>
-			<td>int IRelationship(CBaseEntity@ other)</td>
+			<td>int IRelationship(CBaseEntity@ other, bool ignoreNoTarget = false)</td>
 			<td>Gets the relationship between this entity and the given entity. See the RELATIONSHIP enum.</td>
 		</tr>
 		<tr>
@@ -423,6 +431,10 @@
 			<td>Entity destructor.</td>
 		</tr>
 		<tr>
+			<td>void OnSetOriginByMap()</td>
+			<td>Entity callback after trigger_setorigin has moved the entity.</td>
+		</tr>
+		<tr>
 			<td>bool IsRevivable()</td>
 			<td>Returns whether this entity is revivable at this time.</td>
 		</tr>
@@ -433,6 +445,22 @@
 		<tr>
 			<td>void EndRevive(float flTimeUntilRevive)</td>
 			<td>Called when this entity should be revived. flTimeUntilRevive is the time until the revival should start.</td>
+		</tr>
+		<tr>
+			<td>void AddEntityFlag(int FlagMask)</td>
+			<td>Add a entity flag mask (EFLAG)</td>
+		</tr>
+		<tr>
+			<td>void RemoveEntityFlag(int FlagMask)</td>
+			<td>Remove a entity flag mask (EFLAG)</td>
+		</tr>
+		<tr>
+			<td>bool HasEntityFlag(int FlagMask) const</td>
+			<td>Check if it has such entity flag mask (EFLAG) set</td>
+		</tr>
+		<tr>
+			<td>void ClearEntityFlags()</td>
+			<td>Clear all entity flag masks (EFLAG)</td>
 		</tr>
 		<tr>
 			<td>dictionary@ GetUserData()</td>
@@ -540,7 +568,7 @@
 		</tr>
 		<tr>
 			<td>int GetSequenceActivityName(int iSequence)</td>
-			<td>Sets the sequence box.</td>
+			<td>Gets activity for the given sequence.</td>
 		</tr>
 		<tr>
 			<td>void LinearMove(Vector vecDest, float flSpeed)</td>

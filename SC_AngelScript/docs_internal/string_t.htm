@@ -32,7 +32,11 @@
 		</tr>
 		<tr>
 			<td>void string_t(const string& in str)</td>
-			<td>Copy Constructor</td>
+			<td>Construct a string_t from a string</td>
+		</tr>
+		<tr>
+			<td>void string_t(int str)</td>
+			<td>Construct a string_t from an integer</td>
 		</tr>
 		<tr>
 			<td>string_t& opAssign(const string_t& in str)</td>
@@ -43,8 +47,16 @@
 			<td>Assignment operator</td>
 		</tr>
 		<tr>
+			<td>string_t& opAssign(int str)</td>
+			<td>Assignment operator</td>
+		</tr>
+		<tr>
 			<td>string opImplConv() const</td>
 			<td>Converts this string_t to a string.</td>
+		</tr>
+		<tr>
+			<td>int opImplConv() const</td>
+			<td>Converts this string_t to an integer.</td>
 		</tr>
 	</table>
 	</div>

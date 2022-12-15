@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:Classes/CPathCondition.as",{1230:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:Classes/CPathCondition.as",{1236:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

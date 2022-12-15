@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:Properties/slWakeAngry.as",{8380:"<div class=\"NDToolTip TVariable LAngelscript\"><div id=\"NDPrototype8380\" class=\"NDPrototype\"><div class=\"PSection PPlainSection\">Schedule Schedules::slWakeAngry</div></div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:Properties/slWakeAngry.as",{8471:"<div class=\"NDToolTip TVariable LAngelscript\"><div id=\"NDPrototype8471\" class=\"NDPrototype\"><div class=\"PSection PPlainSection\">Schedule Schedules::slWakeAngry</div></div></div>"});
