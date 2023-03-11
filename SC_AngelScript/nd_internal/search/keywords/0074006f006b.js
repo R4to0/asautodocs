@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("tok",["Function"],[["Tokenize",,[["[Global Namespace]::string",,,,0,"File:Classes/string.as:[Global_Namespace].string.Tokenize","AngelscriptClass:[Global_Namespace].string:Tokenize"]]]]);

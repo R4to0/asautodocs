@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("ccv",["Class"],[["CCVar",,[["[Global Namespace]",,,,0,"File:Classes/CCVar.as:[Global_Namespace].CCVar","AngelscriptClass:[Global_Namespace].CCVar"]]]]);

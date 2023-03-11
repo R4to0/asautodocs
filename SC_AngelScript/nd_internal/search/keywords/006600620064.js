@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("fbd",["Constant"],[["FBDM_DONTDRAW",,[["[Global Namespace]",,,,0,"File:Enums/FireBulletsDrawMode.as:[Global_Namespace].FBDM_DONTDRAW","AngelscriptClass:[Global_Namespace]:FBDM_DONTDRAW"]]],["FBDM_DRAW",,[["[Global Namespace]",,,,0,"File:Enums/FireBulletsDrawMode.as:[Global_Namespace].FBDM_DRAW","AngelscriptClass:[Global_Namespace]:FBDM_DRAW"]]]]);

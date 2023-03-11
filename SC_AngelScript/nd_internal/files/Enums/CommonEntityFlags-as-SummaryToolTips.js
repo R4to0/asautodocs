@@ -1,0 +1,1 @@
+﻿NDSummary.OnToolTipsLoaded("File:Enums/CommonEntityFlags.as",{7777:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

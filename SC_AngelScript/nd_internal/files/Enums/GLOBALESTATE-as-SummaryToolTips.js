@@ -1,0 +1,1 @@
+﻿NDSummary.OnToolTipsLoaded("File:Enums/GLOBALESTATE.as",{7522:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

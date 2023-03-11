@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cwe",["Class"],[["CWeaponFuncs",,[["[Global Namespace]",,,,0,"File:Classes/CWeaponFuncs.as:[Global_Namespace].CWeaponFuncs","AngelscriptClass:[Global_Namespace].CWeaponFuncs"]]]]);

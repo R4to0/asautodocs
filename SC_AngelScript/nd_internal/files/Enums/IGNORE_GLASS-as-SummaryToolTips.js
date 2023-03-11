@@ -1,0 +1,1 @@
+﻿NDSummary.OnToolTipsLoaded("File:Enums/IGNORE_GLASS.as",{7303:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("pne",["Variable"],[["pNext",,[["[Global Namespace]::InventoryList",,,,0,"File:Classes/InventoryList.as:[Global_Namespace].InventoryList.pNext","AngelscriptClass:[Global_Namespace].InventoryList:pNext"]]]]);

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("tem",["Enumeration"],[["TempEntityType",,[["[Global Namespace]",,,,0,"File:Enums/TempEntityType.as:[Global_Namespace].TempEntityType","AngelscriptClass:[Global_Namespace]:TempEntityType"]]]]);

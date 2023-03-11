@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:Properties/slIdleWalk.as","slIdleWalk.as");NDSummary.OnSummaryLoaded("File:Properties/slIdleWalk.as",[["C/C++","Angelscript"]],[["Classes","Class"],["Groups","Group"],["Variables","Variable"]],[[8531,0,0,"Schedules","Schedules"],[8532,0,1,"Variables","Schedules.Variables"],[8533,0,2,"slIdleWalk","Schedules.slIdleWalk"]]);

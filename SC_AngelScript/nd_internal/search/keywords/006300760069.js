@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cvi",["Class"],[["CVirtualFileSystem",,[["[Global Namespace]",,,,0,"File:Classes/CVirtualFileSystem.as:[Global_Namespace].CVirtualFileSystem","AngelscriptClass:[Global_Namespace].CVirtualFileSystem"]]]]);

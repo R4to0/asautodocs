@@ -1,0 +1,1 @@
+﻿NDSummary.OnToolTipsLoaded("File:Enums/TempEntityType.as",{6598:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

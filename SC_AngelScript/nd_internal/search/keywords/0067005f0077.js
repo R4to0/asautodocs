@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("g_w",["Variable"],[["g_WeaponFuncs",,[["[Global Namespace]",,,,0,"File:Properties/g_WeaponFuncs.as:[Global_Namespace].g_WeaponFuncs","AngelscriptClass:[Global_Namespace]:g_WeaponFuncs"]]]]);

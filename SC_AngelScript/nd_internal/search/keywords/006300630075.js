@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("ccu",["Class"],[["CCustomEntityFuncs",,[["[Global Namespace]",,,,0,"File:Classes/CCustomEntityFuncs.as:[Global_Namespace].CCustomEntityFuncs","AngelscriptClass:[Global_Namespace].CCustomEntityFuncs"]]]]);

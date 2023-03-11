@@ -1,0 +1,1 @@
+﻿NDSummary.OnToolTipsLoaded("File:Typedefs/PersistID_t.as",{8852:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

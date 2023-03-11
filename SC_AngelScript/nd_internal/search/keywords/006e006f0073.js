@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("nos",["Constant"],[["nosubs",,[["Regex",,,,0,"File:Enums/FlagType.as:Regex.nosubs","AngelscriptClass:Regex:nosubs"]]]]);

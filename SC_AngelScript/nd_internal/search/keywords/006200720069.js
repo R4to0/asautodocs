@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("bri",["Variable"],[["BRIGHT_GUN_FLASH",,[["[Global Namespace]",,,,0,"File:Properties/BRIGHT_GUN_FLASH.as:[Global_Namespace].BRIGHT_GUN_FLASH","AngelscriptClass:[Global_Namespace]:BRIGHT_GUN_FLASH"]]]]);

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("how",["Variable"],[["hOwner",,[["[Global Namespace]::CSound",,,,0,"File:Classes/CSound.as:[Global_Namespace].CSound.hOwner","AngelscriptClass:[Global_Namespace].CSound:hOwner"]]]]);

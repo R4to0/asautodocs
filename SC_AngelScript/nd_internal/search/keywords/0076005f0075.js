@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("v_u",["Variable"],[["v_up",,[["[Global Namespace]::CEngine",,,,0,"File:Classes/CEngine.as:[Global_Namespace].CEngine.v_up","AngelscriptClass:[Global_Namespace].CEngine:v_up"]]]]);

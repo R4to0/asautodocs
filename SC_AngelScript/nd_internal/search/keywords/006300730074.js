@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cst",["Class"],[["CStartInventory",,[["[Global Namespace]",,,,0,"File:Classes/CStartInventory.as:[Global_Namespace].CStartInventory","AngelscriptClass:[Global_Namespace].CStartInventory"]]]]);

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("bat",["Constant"],[["Battery",,[["NetworkMessages",,,,0,"File:Enums/NetworkMessageType.as:NetworkMessages.Battery","AngelscriptClass:NetworkMessages:Battery"]]]]);

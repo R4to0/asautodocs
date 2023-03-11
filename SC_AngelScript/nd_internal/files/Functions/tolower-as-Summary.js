@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:Functions/tolower.as","tolower.as");NDSummary.OnSummaryLoaded("File:Functions/tolower.as",[["C/C++","Angelscript"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[8201,0,0,"[Global Namespace]","[Global_Namespace]"],[8202,0,2,"Functions","[Global_Namespace].Functions"],[8203,0,1,"tolower","[Global_Namespace].tolower"]]);

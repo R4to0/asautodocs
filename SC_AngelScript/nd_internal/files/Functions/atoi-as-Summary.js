@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:Functions/atoi.as","atoi.as");NDSummary.OnSummaryLoaded("File:Functions/atoi.as",[["C/C++","Angelscript"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[8375,0,0,"[Global Namespace]","[Global_Namespace]"],[8376,0,2,"Functions","[Global_Namespace].Functions"],[8377,0,1,"atoi","[Global_Namespace].atoi"]]);

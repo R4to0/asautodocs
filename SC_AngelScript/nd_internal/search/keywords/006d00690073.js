@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("mis",["Constant"],[["missile",,[["[Global Namespace]",,,,0,"File:Enums/IGNORE_MONSTERS.as:[Global_Namespace].missile","AngelscriptClass:[Global_Namespace]:missile"]]]]);

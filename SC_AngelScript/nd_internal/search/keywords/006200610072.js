@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("bar",["Function"],[["BarrelPosition",,[["[Global Namespace]::CBaseTank",,,,0,"File:Classes/CBaseTank.as:[Global_Namespace].CBaseTank.BarrelPosition","AngelscriptClass:[Global_Namespace].CBaseTank:BarrelPosition"]]]]);

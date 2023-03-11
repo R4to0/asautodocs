@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("no_",["Variable"],[["NO_MORE_TOKENS",,[["String",,,,0,"File:Properties/NO_MORE_TOKENS.as:String.NO_MORE_TOKENS","AngelscriptClass:String:NO_MORE_TOKENS"]]]]);

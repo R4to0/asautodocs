@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:Functions/FilterFlags.as","FilterFlags.as");NDSummary.OnSummaryLoaded("File:Functions/FilterFlags.as",[["C/C++","Angelscript"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[8348,0,0,"FileSystem","FileSystem"],[8349,0,2,"Functions","FileSystem.Functions"],[8350,0,1,"FilterFlags","FileSystem.FilterFlags"]]);

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("kee",["Function"],[["KeepIfPrevious",,[["[Global Namespace]::CPersistence",,,,0,"File:Classes/CPersistence.as:[Global_Namespace].CPersistence.KeepIfPrevious","AngelscriptClass:[Global_Namespace].CPersistence:KeepIfPrevious"]]]]);

@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:Functions/atof.as","atof.as");NDSummary.OnSummaryLoaded("File:Functions/atof.as",[["C/C++","Angelscript"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[8381,0,0,"[Global Namespace]","[Global_Namespace]"],[8382,0,2,"Functions","[Global_Namespace].Functions"],[8383,0,1,"atof","[Global_Namespace].atof"]]);

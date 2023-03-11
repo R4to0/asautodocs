@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("dos",["Function"],[["DoSparks",,[["[Global Namespace]::CBeam",,,,0,"File:Classes/CBeam.as:[Global_Namespace].CBeam.DoSparks","AngelscriptClass:[Global_Namespace].CBeam:DoSparks"],["[Global Namespace]::CLaser",,,,0,"File:Classes/CLaser.as:[Global_Namespace].CLaser.DoSparks","AngelscriptClass:[Global_Namespace].CLaser:DoSparks"]]]]);

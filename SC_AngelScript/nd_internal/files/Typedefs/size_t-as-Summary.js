@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:Typedefs/size_t.as","size_t.as");NDSummary.OnSummaryLoaded("File:Typedefs/size_t.as",[["C/C++","Angelscript"]],[["Classes","Class"],["Groups","Group"],["Types","Type"]],[[8846,0,0,"[Global Namespace]","[Global_Namespace]"],[8847,0,1,"Types","[Global_Namespace].Types"],[8848,0,2,"size_t","[Global_Namespace].size_t"]]);

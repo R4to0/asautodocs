@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("isx",["Function"],[["isxdigit",,[["[Global Namespace]",,,,0,"File:Functions/isxdigit.as:[Global_Namespace].isxdigit","AngelscriptClass:[Global_Namespace]:isxdigit"]]]]);

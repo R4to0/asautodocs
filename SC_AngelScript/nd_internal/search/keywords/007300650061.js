@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("sea",["Function"],[["Search",,[["Regex",,,,0,"File:Functions/Search.as:Regex.Search","AngelscriptClass:Regex:Search"]]]]);

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("shi",["Constant"],[["ShieldRic",,[["NetworkMessages",,,,0,"File:Enums/NetworkMessageType.as:NetworkMessages.ShieldRic","AngelscriptClass:NetworkMessages:ShieldRic"]]]]);

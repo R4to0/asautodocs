@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("pic",["Class"],[["PickupObject",,[["Hooks",,,,0,"File:Properties/CanCollect.as:Hooks.PickupObject","AngelscriptClass:Hooks.PickupObject"]]]]);

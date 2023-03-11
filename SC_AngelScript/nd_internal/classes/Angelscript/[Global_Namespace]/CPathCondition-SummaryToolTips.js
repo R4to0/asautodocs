@@ -1,0 +1,1 @@
+﻿NDSummary.OnToolTipsLoaded("AngelscriptClass:[Global_Namespace].CPathCondition",{});

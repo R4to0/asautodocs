@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("AngelscriptClass:SeekFile","SeekFile");NDSummary.OnSummaryLoaded("AngelscriptClass:SeekFile",[["C/C++","Angelscript"]],[["Classes","Class"],["Constants","Constant"],["Enums","Enumeration"],["Groups","Group"]],[[6804,0,0,"SeekFile"],[6805,0,3,"Types","Types"],[6806,0,2,"SeekFile","SeekFile"],[6807,0,1,,"SET"],[6808,0,1,,"CUR"],[6809,0,1,,"END"]]);

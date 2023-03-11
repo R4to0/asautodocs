@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("g_g",["Variable"],[["g_Game",,[["[Global Namespace]",,,,0,"File:Properties/g_Game.as:[Global_Namespace].g_Game","AngelscriptClass:[Global_Namespace]:g_Game"]]],["g_GlobalState",,[["[Global Namespace]",,,,0,"File:Properties/g_GlobalState.as:[Global_Namespace].g_GlobalState","AngelscriptClass:[Global_Namespace]:g_GlobalState"]]]]);

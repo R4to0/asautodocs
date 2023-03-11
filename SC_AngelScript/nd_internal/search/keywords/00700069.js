@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("pi",["Variable"],[["PI",,[["[Global Namespace]::CMath",,,,0,"File:Classes/CMath.as:[Global_Namespace].CMath.PI","AngelscriptClass:[Global_Namespace].CMath:PI"]]]]);

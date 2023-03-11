@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("inr",["Function"],[["InRange",,[["[Global Namespace]::CBaseTank",,,,0,"File:Classes/CBaseTank.as:[Global_Namespace].CBaseTank.InRange","AngelscriptClass:[Global_Namespace].CBaseTank:InRange"]]]]);

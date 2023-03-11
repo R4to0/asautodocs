@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cam",["Constant"],[["CameraMouse",,[["NetworkMessages",,,,0,"File:Enums/NetworkMessageType.as:NetworkMessages.CameraMouse","AngelscriptClass:NetworkMessages:CameraMouse"]]]]);

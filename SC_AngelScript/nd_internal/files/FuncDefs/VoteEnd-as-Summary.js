@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:FuncDefs/VoteEnd.as","VoteEnd.as");NDSummary.OnSummaryLoaded("File:FuncDefs/VoteEnd.as",[["C/C++","Angelscript"]],[["Classes","Class"],["Groups","Group"],["Types","Type"]],[[8007,0,0,"[Global Namespace]","[Global_Namespace]"],[8008,0,1,"Types","[Global_Namespace].Types"],[8009,0,2,"VoteEnd","[Global_Namespace].VoteEnd"]]);

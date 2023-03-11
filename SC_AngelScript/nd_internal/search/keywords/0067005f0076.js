@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("g_v",["Variable"],[["g_vecZero",,[["[Global Namespace]",,,,0,"File:Properties/g_vecZero.as:[Global_Namespace].g_vecZero","AngelscriptClass:[Global_Namespace]:g_vecZero"]]]]);

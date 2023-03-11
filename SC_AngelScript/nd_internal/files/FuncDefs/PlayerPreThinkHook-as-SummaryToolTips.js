@@ -1,0 +1,1 @@
+﻿NDSummary.OnToolTipsLoaded("File:FuncDefs/PlayerPreThinkHook.as",{8117:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

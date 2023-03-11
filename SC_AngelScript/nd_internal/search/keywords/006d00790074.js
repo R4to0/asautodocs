@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("myt",["Function"],[["MyTouch",,[["[Global Namespace]::CItem",,,,0,"File:Classes/CItem.as:[Global_Namespace].CItem.MyTouch","AngelscriptClass:[Global_Namespace].CItem:MyTouch"]]]]);

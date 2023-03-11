@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("liv",["Function"],[["LiveForTime",,[["[Global Namespace]::CBeam",,,,0,"File:Classes/CBeam.as:[Global_Namespace].CBeam.LiveForTime","AngelscriptClass:[Global_Namespace].CBeam:LiveForTime"],["[Global Namespace]::CLaser",,,,0,"File:Classes/CLaser.as:[Global_Namespace].CLaser.LiveForTime","AngelscriptClass:[Global_Namespace].CLaser:LiveForTime"]]]]);

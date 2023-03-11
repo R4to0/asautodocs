@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("a",["Variable"],[["a",,[["[Global Namespace]::RGBA",,,,0,"File:Classes/RGBA.as:[Global_Namespace].RGBA.a","AngelscriptClass:[Global_Namespace].RGBA:a"]]]]);

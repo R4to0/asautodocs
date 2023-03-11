@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("mot",["Constant"],[["MOTD",,[["NetworkMessages",,,,0,"File:Enums/NetworkMessageType.as:NetworkMessages.MOTD","AngelscriptClass:NetworkMessages:MOTD"]]]]);

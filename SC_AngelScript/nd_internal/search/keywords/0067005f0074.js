@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("g_t",["Variable"],[["g_TextMenus",,[["[Global Namespace]",,,,0,"File:Properties/g_TextMenus.as:[Global_Namespace].g_TextMenus","AngelscriptClass:[Global_Namespace]:g_TextMenus"]]]]);
