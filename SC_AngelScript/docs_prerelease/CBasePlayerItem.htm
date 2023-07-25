@@ -163,7 +163,7 @@
 			<td>Takes armor from this entity. Note: flArmor is added to entity armor. Use negative values to subtract.If armor_cap is non-zero, won't add more than armor_cap. Returns 1 if it took damage, 0 otherwise.</td>
 		</tr>
 		<tr>
-			<td>void Killed(entvars_t@pevAtttacker, int iGibbed)</td>
+			<td>void Killed(entvars_t@ pevAttacker, int iGibbed)</td>
 			<td>Tells this entity it's been killed. See the GIB enum for possible values.</td>
 		</tr>
 		<tr>
@@ -439,6 +439,22 @@
 			<td>Called when this entity should be revived. flTimeUntilRevive is the time until the revival should start.</td>
 		</tr>
 		<tr>
+			<td>void AddEntityFlag(int FlagMask)</td>
+			<td>Add a entity flag mask (EFLAG)</td>
+		</tr>
+		<tr>
+			<td>void RemoveEntityFlag(int FlagMask)</td>
+			<td>Remove a entity flag mask (EFLAG)</td>
+		</tr>
+		<tr>
+			<td>bool HasEntityFlag(int FlagMask) const</td>
+			<td>Check if it has such entity flag mask (EFLAG) set</td>
+		</tr>
+		<tr>
+			<td>void ClearEntityFlags()</td>
+			<td>Clear all entity flag masks (EFLAG)</td>
+		</tr>
+		<tr>
 			<td>dictionary@ GetUserData()</td>
 			<td>Gets the user data on this entity. Do not keep references to this data, the object might be removed from this entity.<br>Only map scripts can use this.</td>
 		</tr>
@@ -595,7 +611,7 @@
 			<td>Check respawn.</td>
 		</tr>
 		<tr>
-			<td>void GetItemInfo(ItemInfo& out info)</td>
+			<td>bool GetItemInfo(ItemInfo& out info)</td>
 			<td>Gets item info.</td>
 		</tr>
 		<tr>
