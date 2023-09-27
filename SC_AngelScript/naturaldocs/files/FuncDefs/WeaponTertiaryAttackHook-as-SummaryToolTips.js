@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:FuncDefs/WeaponTertiaryAttackHook.as",{7951:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:FuncDefs/WeaponTertiaryAttackHook.as",{7990:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

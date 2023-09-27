@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:Typedefs/SeekFileFlags_t.as",{8802:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:Typedefs/SeekFileFlags_t.as",{8848:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

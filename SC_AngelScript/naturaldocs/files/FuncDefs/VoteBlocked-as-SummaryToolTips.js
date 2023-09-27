@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:FuncDefs/VoteBlocked.as",{8046:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:FuncDefs/VoteBlocked.as",{8086:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

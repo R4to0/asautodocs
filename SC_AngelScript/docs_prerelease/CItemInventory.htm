@@ -463,20 +463,24 @@
 			<td>Clears the user data on this entity. WARNING: clears all data.<br>Only map scripts can use this.</td>
 		</tr>
 		<tr>
+			<td>bool TryCollect(CBaseEntity@ pOther, bool fIgnoreTriggers = false)</td>
+			<td>Try to collect this item.</td>
+		</tr>
+		<tr>
 			<td>bool CanCollect(CBaseEntity@ pOther)</td>
 			<td>Returns whether this item can be collected by the given entity.</td>
 		</tr>
 		<tr>
-			<td>bool Drop(bool fForce = false, CBaseEntity@ pCaller = null)</td>
-			<td>Drops this item, if it's being carried.</td>
+			<td>bool Drop(bool fForce = false, CBaseEntity@ pCaller = null, bool fIgnoreTriggers = false)</td>
+			<td>Drop this item if it's being carried.</td>
 		</tr>
 		<tr>
-			<td>void Return()</td>
-			<td>Returns this item to its original spawn location.</td>
+			<td>void Return(bool fIgnoreTriggers = false)</td>
+			<td>Return this item to its original spawn location.</td>
 		</tr>
 		<tr>
-			<td>void Destroy()</td>
-			<td>Destroys this item.</td>
+			<td>void Destroy(bool fIgnoreTriggers = false)</td>
+			<td>Destroy this item.</td>
 		</tr>
 		<tr>
 			<td>void AddItemEffects()</td>

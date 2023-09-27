@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:FuncDefs/CollectedHook.as",{8163:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:FuncDefs/CollectedHook.as",{8166:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

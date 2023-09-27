@@ -171,7 +171,7 @@
 			<td>Takes armor from this entity. Note: flArmor is added to entity armor. Use negative values to subtract.If armor_cap is non-zero, won't add more than armor_cap. Returns 1 if it took damage, 0 otherwise.</td>
 		</tr>
 		<tr>
-			<td>void Killed(entvars_t@pevAtttacker, int iGibbed)</td>
+			<td>void Killed(entvars_t@ pevAttacker, int iGibbed)</td>
 			<td>Tells this entity it's been killed. See the GIB enum for possible values.</td>
 		</tr>
 		<tr>
@@ -1135,7 +1135,7 @@
 			<td>Packs player weapons into a weapon box if possible.</td>
 		</tr>
 		<tr>
-			<td>void RemoveAllItems(const bool fRemoveSuit, const bool fRemoveLongJump)</td>
+			<td>void RemoveAllItems(const bool removeSuit = false, const bool removeLongJump = false)</td>
 			<td>Removes all items from the player's inventory.</td>
 		</tr>
 		<tr>

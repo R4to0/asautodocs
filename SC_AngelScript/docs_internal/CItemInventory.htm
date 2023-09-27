@@ -155,7 +155,7 @@
 			<td>Takes armor from this entity. Note: flArmor is added to entity armor. Use negative values to subtract.If armor_cap is non-zero, won't add more than armor_cap. Returns 1 if it took damage, 0 otherwise.</td>
 		</tr>
 		<tr>
-			<td>void Killed(entvars_t@pevAtttacker, int iGibbed)</td>
+			<td>void Killed(entvars_t@ pevAttacker, int iGibbed)</td>
 			<td>Tells this entity it's been killed. See the GIB enum for possible values.</td>
 		</tr>
 		<tr>
@@ -463,20 +463,24 @@
 			<td>Clears the user data on this entity. WARNING: clears all data.<br>Only map scripts can use this.</td>
 		</tr>
 		<tr>
+			<td>bool TryCollect(CBaseEntity@ pOther, bool fIgnoreTriggers = false)</td>
+			<td>Try to collect this item.</td>
+		</tr>
+		<tr>
 			<td>bool CanCollect(CBaseEntity@ pOther)</td>
 			<td>Returns whether this item can be collected by the given entity.</td>
 		</tr>
 		<tr>
-			<td>bool Drop(bool fForce = false, CBaseEntity@ pCaller = null)</td>
-			<td>Drops this item, if it's being carried.</td>
+			<td>bool Drop(bool fForce = false, CBaseEntity@ pCaller = null, bool fIgnoreTriggers = false)</td>
+			<td>Drop this item if it's being carried.</td>
 		</tr>
 		<tr>
-			<td>void Return()</td>
-			<td>Returns this item to its original spawn location.</td>
+			<td>void Return(bool fIgnoreTriggers = false)</td>
+			<td>Return this item to its original spawn location.</td>
 		</tr>
 		<tr>
-			<td>void Destroy()</td>
-			<td>Destroys this item.</td>
+			<td>void Destroy(bool fIgnoreTriggers = false)</td>
+			<td>Destroy this item.</td>
 		</tr>
 		<tr>
 			<td>void AddItemEffects()</td>

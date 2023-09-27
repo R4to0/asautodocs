@@ -8,114 +8,114 @@
 
 <body onload="NDLoader.OnLoad('Content');" class="NDPage NDContentPage">
 
-<a name="Topic8754"></a><div class="CTopic TClass LAngelscript first">
+<a name="Topic8821"></a><div class="CTopic TClass LAngelscript first">
  <div class="CTitle"><span class="Qualifier">Hooks::</span>&#8203;Player</div>
  <div class="CBody"><pre class="CCode"><span class="SHKeyword">namespace</span> Hooks::Player {...}</pre></div>
 </div>
 
-<a name="Variables"></a><a name="Topic8755"></a><div class="CTopic TGroup LAngelscript">
+<a name="Variables"></a><a name="Topic8822"></a><div class="CTopic TGroup LAngelscript">
  <div class="CTitle">Variables</div>
 </div>
 
-<a name="CanPlayerUseReservedSlot"></a><a name="Topic8756"></a><div class="CTopic TVariable LAngelscript">
+<a name="CanPlayerUseReservedSlot"></a><a name="Topic8823"></a><div class="CTopic TVariable LAngelscript">
  <div class="CTitle">CanPlayerUseReservedSlot</div>
- <div id="NDPrototype8756" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::CanPlayerUseReservedSlot</div></div>
+ <div id="NDPrototype8823" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::CanPlayerUseReservedSlot</div></div>
  <div class="CBody"><p>Called when a player connects to the server, and the number of slots left on the server is &lt;= the number of reserved slots. Set bAllowJoin to true to allow the player to join (default false).</p></div>
 </div>
 
-<a name="ClientConnected"></a><a name="Topic8759"></a><div class="CTopic TVariable LAngelscript">
+<a name="ClientConnected"></a><a name="Topic8805"></a><div class="CTopic TVariable LAngelscript">
  <div class="CTitle">ClientConnected</div>
- <div id="NDPrototype8759" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::ClientConnected</div></div>
+ <div id="NDPrototype8805" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::ClientConnected</div></div>
  <div class="CBody"><p>Called when a player connects to the server. if bDisallowJoin is set to false, the player is disconnected. szRejectReason is shown to the player if disconnected. The maximum length of the reject reason string is 127 characters.</p></div>
 </div>
 
-<a name="ClientDisconnect"></a><a name="Topic8753"></a><div class="CTopic TVariable LAngelscript">
+<a name="ClientDisconnect"></a><a name="Topic8799"></a><div class="CTopic TVariable LAngelscript">
  <div class="CTitle">ClientDisconnect</div>
- <div id="NDPrototype8753" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::ClientDisconnect</div></div>
+ <div id="NDPrototype8799" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::ClientDisconnect</div></div>
  <div class="CBody"><p>Called when a player disconnects. Note that this is only called if the player was fully connected, meaning the player went through ClientPutInServer. This is never called for the local host.</p></div>
 </div>
 
-<a name="ClientPutInServer"></a><a name="Topic8762"></a><div class="CTopic TVariable LAngelscript">
+<a name="ClientPutInServer"></a><a name="Topic8829"></a><div class="CTopic TVariable LAngelscript">
  <div class="CTitle">ClientPutInServer</div>
- <div id="NDPrototype8762" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::ClientPutInServer</div></div>
+ <div id="NDPrototype8829" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::ClientPutInServer</div></div>
  <div class="CBody"><p>Called when a player has finished connecting and is put into the world. It is safe to send network messages to the player at this point.</p></div>
 </div>
 
-<a name="ClientSay"></a><a name="Topic8744"></a><div class="CTopic TVariable LAngelscript">
+<a name="ClientSay"></a><a name="Topic8793"></a><div class="CTopic TVariable LAngelscript">
  <div class="CTitle">ClientSay</div>
- <div id="NDPrototype8744" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::ClientSay</div></div>
+ <div id="NDPrototype8793" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::ClientSay</div></div>
  <div class="CBody"><p>Called when a player says something in game chat. The SayParameters class can be used to manipulate input and veto the message.</p></div>
 </div>
 
-<a name="GetPlayerSpawnSpot"></a><a name="Topic8729"></a><div class="CTopic TVariable LAngelscript">
+<a name="GetPlayerSpawnSpot"></a><a name="Topic8778"></a><div class="CTopic TVariable LAngelscript">
  <div class="CTitle">GetPlayerSpawnSpot</div>
- <div id="NDPrototype8729" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::GetPlayerSpawnSpot</div></div>
+ <div id="NDPrototype8778" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::GetPlayerSpawnSpot</div></div>
  <div class="CBody"><p>Called when a player is about to get a spawn point before (re)spawning.</p></div>
 </div>
 
-<a name="PlayerCanRespawn"></a><a name="Topic8591"></a><div class="CTopic TVariable LAngelscript">
+<a name="PlayerCanRespawn"></a><a name="Topic8634"></a><div class="CTopic TVariable LAngelscript">
  <div class="CTitle">PlayerCanRespawn</div>
- <div id="NDPrototype8591" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerCanRespawn</div></div>
+ <div id="NDPrototype8634" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerCanRespawn</div></div>
  <div class="CBody"><p>Called when the game wants to know if the player should be able to respawn or not.Set bCanRespawn to false to disallow, default true.</p></div>
 </div>
 
-<a name="PlayerDecal"></a><a name="Topic8579"></a><div class="CTopic TVariable LAngelscript">
+<a name="PlayerDecal"></a><a name="Topic8628"></a><div class="CTopic TVariable LAngelscript">
  <div class="CTitle">PlayerDecal</div>
- <div id="NDPrototype8579" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerDecal</div></div>
+ <div id="NDPrototype8628" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerDecal</div></div>
  <div class="CBody"><p>Called when a player is spraypainting a decal onto a surface. The given trace result contains the surface information.</p></div>
 </div>
 
-<a name="PlayerEnteredObserver"></a><a name="Topic8570"></a><div class="CTopic TVariable LAngelscript">
+<a name="PlayerEnteredObserver"></a><a name="Topic8643"></a><div class="CTopic TVariable LAngelscript">
  <div class="CTitle">PlayerEnteredObserver</div>
- <div id="NDPrototype8570" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerEnteredObserver</div></div>
+ <div id="NDPrototype8643" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerEnteredObserver</div></div>
  <div class="CBody"><p>Called when a player enters observer mode.</p></div>
 </div>
 
-<a name="PlayerKilled"></a><a name="Topic8576"></a><div class="CTopic TVariable LAngelscript">
+<a name="PlayerKilled"></a><a name="Topic8631"></a><div class="CTopic TVariable LAngelscript">
  <div class="CTitle">PlayerKilled</div>
- <div id="NDPrototype8576" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerKilled</div></div>
+ <div id="NDPrototype8631" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerKilled</div></div>
  <div class="CBody"><p>Called when a player is killed.</p></div>
 </div>
 
-<a name="PlayerLeftObserver"></a><a name="Topic8582"></a><div class="CTopic TVariable LAngelscript">
+<a name="PlayerLeftObserver"></a><a name="Topic8625"></a><div class="CTopic TVariable LAngelscript">
  <div class="CTitle">PlayerLeftObserver</div>
- <div id="NDPrototype8582" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerLeftObserver</div></div>
+ <div id="NDPrototype8625" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerLeftObserver</div></div>
  <div class="CBody"><p>Called when a player leaves observer mode.</p></div>
 </div>
 
-<a name="PlayerPostThink"></a><a name="Topic8567"></a><div class="CTopic TVariable LAngelscript">
+<a name="PlayerPostThink"></a><a name="Topic8622"></a><div class="CTopic TVariable LAngelscript">
  <div class="CTitle">PlayerPostThink</div>
- <div id="NDPrototype8567" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerPostThink</div></div>
+ <div id="NDPrototype8622" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerPostThink</div></div>
  <div class="CBody"><p>Called when the player is processing post think events.</p></div>
 </div>
 
-<a name="PlayerPreDecal"></a><a name="Topic8564"></a><div class="CTopic TVariable LAngelscript">
+<a name="PlayerPreDecal"></a><a name="Topic8613"></a><div class="CTopic TVariable LAngelscript">
  <div class="CTitle">PlayerPreDecal</div>
- <div id="NDPrototype8564" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerPreDecal</div></div>
+ <div id="NDPrototype8613" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerPreDecal</div></div>
  <div class="CBody"><p>Called when a player attempts to spraypaint a decal onto a surface. The given trace result contains the surface information. Set bResult to false if the player shouldn't be able to spray.</p></div>
 </div>
 
-<a name="PlayerPreThink"></a><a name="Topic8573"></a><div class="CTopic TVariable LAngelscript">
+<a name="PlayerPreThink"></a><a name="Topic8619"></a><div class="CTopic TVariable LAngelscript">
  <div class="CTitle">PlayerPreThink</div>
- <div id="NDPrototype8573" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerPreThink</div></div>
+ <div id="NDPrototype8619" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerPreThink</div></div>
  <div class="CBody"><p>Called when the player is processing pre think events.</p></div>
 </div>
 
-<a name="PlayerSpawn"></a><a name="Topic8558"></a><div class="CTopic TVariable LAngelscript">
+<a name="PlayerSpawn"></a><a name="Topic8607"></a><div class="CTopic TVariable LAngelscript">
  <div class="CTitle">PlayerSpawn</div>
- <div id="NDPrototype8558" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerSpawn</div></div>
+ <div id="NDPrototype8607" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerSpawn</div></div>
  <div class="CBody"><p>Called when a player (re)spawns.</p></div>
 </div>
 
-<a name="PlayerTakeDamage"></a><a name="Topic8561"></a><div class="CTopic TVariable LAngelscript">
+<a name="PlayerTakeDamage"></a><a name="Topic8601"></a><div class="CTopic TVariable LAngelscript">
  <div class="CTitle">PlayerTakeDamage</div>
- <div id="NDPrototype8561" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerTakeDamage</div></div>
+ <div id="NDPrototype8601" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerTakeDamage</div></div>
  <div class="CBody"><p>Called when a player takes damage. Note that the victim entity can't be changed at this point.</p></div>
 </div>
 
-<a name="PlayerUse"></a><a name="Topic8555"></a><div class="CTopic TVariable LAngelscript last">
+<a name="PlayerUse"></a><a name="Topic8616"></a><div class="CTopic TVariable LAngelscript last">
  <div class="CTitle">PlayerUse</div>
- <div id="NDPrototype8555" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerUse</div></div>
+ <div id="NDPrototype8616" class="NDPrototype"><div class="PSection PPlainSection"><span class="SHKeyword">const</span> <span class="SHKeyword">uint32</span> Hooks::Player::PlayerUse</div></div>
  <div class="CBody"><p>Called when the game is processing player use input. Note that this occurs even if the player has not pressed their use key.</p></div>
 </div>
 
