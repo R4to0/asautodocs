@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("eha",["Class"],[["EHandle",,[["[Global Namespace]",,,,0,"File:Classes/EHandle.as:[Global_Namespace].EHandle","AngelscriptClass:[Global_Namespace].EHandle"]]]]);

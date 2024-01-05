@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("deg",["Function"],[["DegreesToRadians",,[["[Global Namespace]::CMath",,,,0,"File:Classes/CMath.as:[Global_Namespace].CMath.DegreesToRadians","AngelscriptClass:[Global_Namespace].CMath:DegreesToRadians"]]]]);

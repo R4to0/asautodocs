@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("awk",["Constant"],[["awk",,[["Regex",,,,0,"File:Enums/FlagType.as:Regex.awk","AngelscriptClass:Regex:awk"]]]]);

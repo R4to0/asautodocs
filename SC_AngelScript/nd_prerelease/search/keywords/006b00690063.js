@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("kic",["Function"],[["KickPlayer",,[["[Global Namespace]::CAdminControl",,,,0,"File:Classes/CAdminControl.as:[Global_Namespace].CAdminControl.KickPlayer","AngelscriptClass:[Global_Namespace].CAdminControl:KickPlayer"]]]]);

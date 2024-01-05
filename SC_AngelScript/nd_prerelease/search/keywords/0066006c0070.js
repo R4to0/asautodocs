@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("flp",["Variable"],[["flPlaneDist",,[["[Global Namespace]::TraceResult",,,,0,"File:Classes/TraceResult.as:[Global_Namespace].TraceResult.flPlaneDist","AngelscriptClass:[Global_Namespace].TraceResult:flPlaneDist"]]]]);

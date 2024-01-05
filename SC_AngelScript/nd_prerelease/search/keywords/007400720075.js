@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("tru",["Function"],[["Truncate",,[["[Global Namespace]::string",,,,0,"File:Classes/string.as:[Global_Namespace].string.Truncate","AngelscriptClass:[Global_Namespace].string:Truncate"]]]]);

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("r_f",["Constant"],[["R_FR",,[["[Global Namespace]",,,,0,"File:Enums/RELATIONSHIP.as:[Global_Namespace].R_FR","AngelscriptClass:[Global_Namespace]:R_FR"]]]]);

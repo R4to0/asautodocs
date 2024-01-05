@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("hul",["Enumeration"],[["HULL_NUMBER",,[["[Global Namespace]",,,,0,"File:Enums/HULL_NUMBER.as:[Global_Namespace].HULL_NUMBER","AngelscriptClass:[Global_Namespace]:HULL_NUMBER"]]]]);

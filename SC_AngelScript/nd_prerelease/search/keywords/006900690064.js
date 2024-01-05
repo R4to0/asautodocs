@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("iid",["Variable"],[["iId",,[["[Global Namespace]::ItemInfo",,,,0,"File:Classes/ItemInfo.as:[Global_Namespace].ItemInfo.iId","AngelscriptClass:[Global_Namespace].ItemInfo:iId"]]]]);

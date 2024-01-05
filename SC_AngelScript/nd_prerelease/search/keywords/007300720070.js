@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("srp",["Constant"],[["SRPrimed",,[["NetworkMessages",,,,0,"File:Enums/NetworkMessageType.as:NetworkMessages.SRPrimed","AngelscriptClass:NetworkMessages:SRPrimed"]]],["SRPrimedOff",,[["NetworkMessages",,,,0,"File:Enums/NetworkMessageType.as:NetworkMessages.SRPrimedOff","AngelscriptClass:NetworkMessages:SRPrimedOff"]]]]);

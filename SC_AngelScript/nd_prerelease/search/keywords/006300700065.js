@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cpe",["Class"],[["CPersistence",,[["[Global Namespace]",,,,0,"File:Classes/CPersistence.as:[Global_Namespace].CPersistence","AngelscriptClass:[Global_Namespace].CPersistence"]]]]);

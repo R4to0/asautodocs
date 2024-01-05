@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("fog",["Constant"],[["Fog",,[["NetworkMessages",,,,0,"File:Enums/NetworkMessageType.as:NetworkMessages.Fog","AngelscriptClass:NetworkMessages:Fog"]]]]);

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cei",["Function"],[["Ceil",,[["[Global Namespace]::CMath",,,,0,"File:Classes/CMath.as:[Global_Namespace].CMath.Ceil","AngelscriptClass:[Global_Namespace].CMath:Ceil"]]]]);

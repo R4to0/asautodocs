@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("coo",["Variable"],[["coop",,[["[Global Namespace]::CEngine",,,,0,"File:Classes/CEngine.as:[Global_Namespace].CEngine.coop","AngelscriptClass:[Global_Namespace].CEngine:coop"]]]]);

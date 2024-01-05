@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:Properties/slCombatStand.as","slCombatStand.as");NDSummary.OnSummaryLoaded("File:Properties/slCombatStand.as",[["C/C++","Angelscript"]],[["Classes","Class"],["Groups","Group"],["Variables","Variable"]],[[8571,0,0,"Schedules","Schedules"],[8572,0,1,"Variables","Schedules.Variables"],[8573,0,2,"slCombatStand","Schedules.slCombatStand"]]);

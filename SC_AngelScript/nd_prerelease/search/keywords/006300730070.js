@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("csp",["Class"],[["CSprite",,[["[Global Namespace]",,,,0,"File:Classes/CSprite.as:[Global_Namespace].CSprite","AngelscriptClass:[Global_Namespace].CSprite"]]]]);

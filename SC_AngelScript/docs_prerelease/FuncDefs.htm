@@ -145,21 +145,6 @@
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
-			<td>HookReturnCode PlayerCanRespawnHook(CBasePlayer@, bool& out)</td>
-			<td>Called when the game wants to know if the player should be able to respawn or not.Set bCanRespawn to false to disallow, default true.</td>
-		</tr>
-		<tr>
-			<td>&lt;Global&gt;</td>
-			<td>HookReturnCode PlayerSpawnHook(CBasePlayer@)</td>
-			<td>Called when a player (re)spawns.</td>
-		</tr>
-		<tr>
-			<td>&lt;Global&gt;</td>
-			<td>HookReturnCode ClientConnectedHook(edict_t@, const string& in, const string& in, bool& out, string& out)</td>
-			<td>Called when a player connects to the server. if bDisallowJoin is set to false, the player is disconnected. szRejectReason is shown to the player if disconnected. The maximum length of the reject reason string is 127 characters.</td>
-		</tr>
-		<tr>
-			<td>&lt;Global&gt;</td>
 			<td>HookReturnCode CollectedHook(CBaseEntity@, CBaseEntity@)</td>
 			<td>Called when a pickup object is collected by a player. </td>
 		</tr>
@@ -172,6 +157,21 @@
 			<td>&lt;Global&gt;</td>
 			<td>HookReturnCode CanCollectHook(CBaseEntity@, CBaseEntity@, bool& out)</td>
 			<td>Called when a pickup object is about to be collected by a player. Note that basic checks are done before this hook is called.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>HookReturnCode PlayerCanRespawnHook(CBasePlayer@, bool& out)</td>
+			<td>Called when the game wants to know if the player should be able to respawn or not.Set bCanRespawn to false to disallow, default true.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>HookReturnCode PlayerSpawnHook(CBasePlayer@)</td>
+			<td>Called when a player (re)spawns.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>HookReturnCode ClientConnectedHook(edict_t@, const string& in, const string& in, bool& out, string& out)</td>
+			<td>Called when a player connects to the server. if bDisallowJoin is set to false, the player is disconnected. szRejectReason is shown to the player if disconnected. The maximum length of the reject reason string is 127 characters.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>

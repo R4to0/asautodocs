@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("typ",["Enumeration"],[["Type",,[["ConCommandKind",,,,0,"File:Enums/Type.as:ConCommandKind.Type","AngelscriptClass:ConCommandKind:Type"]]]]);

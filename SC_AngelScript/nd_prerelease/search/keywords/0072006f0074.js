@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("rot",["Function"],[["RotateVector",,[["[Global Namespace]::CMath",,,,0,"File:Classes/CMath.as:[Global_Namespace].CMath.RotateVector","AngelscriptClass:[Global_Namespace].CMath:RotateVector"]]]]);

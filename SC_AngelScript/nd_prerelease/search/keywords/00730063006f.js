@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("sco",["Constant"],[["ScoreInfo",,[["NetworkMessages",,,,0,"File:Enums/NetworkMessageType.as:NetworkMessages.ScoreInfo","AngelscriptClass:NetworkMessages:ScoreInfo"]]]]);

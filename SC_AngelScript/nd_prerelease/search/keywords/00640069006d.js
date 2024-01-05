@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("dim",["Variable"],[["DIM_GUN_FLASH",,[["[Global Namespace]",,,,0,"File:Properties/DIM_GUN_FLASH.as:[Global_Namespace].DIM_GUN_FLASH","AngelscriptClass:[Global_Namespace]:DIM_GUN_FLASH"]]]]);

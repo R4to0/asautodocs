@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cga",["Class"],[["CGame",,[["[Global Namespace]",,,,0,"File:Classes/CGame.as:[Global_Namespace].CGame","AngelscriptClass:[Global_Namespace].CGame"]]]]);

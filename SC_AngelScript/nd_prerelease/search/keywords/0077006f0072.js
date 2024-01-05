@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("wor",["Variable"],[["WORLD_BOUNDARY",,[["[Global Namespace]",,,,0,"File:Properties/WORLD_BOUNDARY.as:[Global_Namespace].WORLD_BOUNDARY","AngelscriptClass:[Global_Namespace]:WORLD_BOUNDARY"]]]]);

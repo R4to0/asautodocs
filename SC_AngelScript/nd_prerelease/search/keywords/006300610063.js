@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cac",["Class"],[["CActivityMap",,[["[Global Namespace]",,,,0,"File:Classes/CActivityMap.as:[Global_Namespace].CActivityMap","AngelscriptClass:[Global_Namespace].CActivityMap"]]]]);

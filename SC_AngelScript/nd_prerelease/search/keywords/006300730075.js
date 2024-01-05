@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("csu",["Class"],[["CSurvivalMode",,[["[Global Namespace]",,,,0,"File:Classes/CSurvivalMode.as:[Global_Namespace].CSurvivalMode","AngelscriptClass:[Global_Namespace].CSurvivalMode"]]]]);

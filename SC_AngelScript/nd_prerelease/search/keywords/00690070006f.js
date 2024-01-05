@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("ipo",["Variable"],[["iPosition",,[["[Global Namespace]::ItemInfo",,,,0,"File:Classes/ItemInfo.as:[Global_Namespace].ItemInfo.iPosition","AngelscriptClass:[Global_Namespace].ItemInfo:iPosition"]]]]);

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("lou",["Variable"],[["LOUD_GUN_VOLUME",,[["[Global Namespace]",,,,0,"File:Properties/LOUD_GUN_VOLUME.as:[Global_Namespace].LOUD_GUN_VOLUME","AngelscriptClass:[Global_Namespace]:LOUD_GUN_VOLUME"]]]]);

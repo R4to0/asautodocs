@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("fri",["Variable"],[["friction",,[["[Global Namespace]::entvars_t",,,,0,"File:Classes/entvars_t.as:[Global_Namespace].entvars_t.friction","AngelscriptClass:[Global_Namespace].entvars_t:friction"]]]]);

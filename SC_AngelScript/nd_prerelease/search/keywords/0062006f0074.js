@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("bot",["Function"],[["BotDisconnect",,[["[Global Namespace]::CPlayerFuncs",,,,0,"File:Classes/CPlayerFuncs.as:[Global_Namespace].CPlayerFuncs.BotDisconnect","AngelscriptClass:[Global_Namespace].CPlayerFuncs:BotDisconnect"]]]]);

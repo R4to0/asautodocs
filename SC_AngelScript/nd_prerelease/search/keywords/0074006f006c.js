@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("tol",["Function"],[["tolower",,[["[Global Namespace]",,,,0,"File:Functions/tolower.as:[Global_Namespace].tolower","AngelscriptClass:[Global_Namespace]:tolower"]]],["ToLowercase",,[["[Global Namespace]::string",,,,0,"File:Classes/string.as:[Global_Namespace].string.ToLowercase","AngelscriptClass:[Global_Namespace].string:ToLowercase"]]]]);

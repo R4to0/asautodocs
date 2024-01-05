@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:Properties/slError.as","slError.as");NDSummary.OnSummaryLoaded("File:Properties/slError.as",[["C/C++","Angelscript"]],[["Classes","Class"],["Groups","Group"],["Variables","Variable"]],[[8553,0,0,"Schedules","Schedules"],[8554,0,1,"Variables","Schedules.Variables"],[8555,0,2,"slError","Schedules.slError"]]);

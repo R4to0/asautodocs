@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("ban",["Function"],[["BanPlayer",,[["[Global Namespace]::CAdminControl",,,,0,"File:Classes/CAdminControl.as:[Global_Namespace].CAdminControl.BanPlayer","AngelscriptClass:[Global_Namespace].CAdminControl:BanPlayer"]]]]);

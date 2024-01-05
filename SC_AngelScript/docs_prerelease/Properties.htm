@@ -560,6 +560,26 @@
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
+			<td>const RGBA RGBA_PURPLE</td>
+			<td>Purple</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const RGBA RGBA_PINK</td>
+			<td>Pink</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const RGBA RGBA_TEAL</td>
+			<td>Teal</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>const RGBA RGBA_GRAY</td>
+			<td>Gray</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
 			<td>const RGBA RGBA_SVENCOOP</td>
 			<td>Sven Co-op HUD color</td>
 		</tr>
@@ -704,21 +724,6 @@
 			<td>Called when a player takes damage. Note that the victim entity can't be changed at this point.</td>
 		</tr>
 		<tr>
-			<td>Hooks::Player</td>
-			<td>const uint32 PlayerCanRespawn</td>
-			<td>Called when the game wants to know if the player should be able to respawn or not.Set bCanRespawn to false to disallow, default true.</td>
-		</tr>
-		<tr>
-			<td>Hooks::Player</td>
-			<td>const uint32 PlayerSpawn</td>
-			<td>Called when a player (re)spawns.</td>
-		</tr>
-		<tr>
-			<td>Hooks::Player</td>
-			<td>const uint32 ClientConnected</td>
-			<td>Called when a player connects to the server. if bDisallowJoin is set to false, the player is disconnected. szRejectReason is shown to the player if disconnected. The maximum length of the reject reason string is 127 characters.</td>
-		</tr>
-		<tr>
 			<td>Hooks::PickupObject</td>
 			<td>const uint32 Collected</td>
 			<td>Called when a pickup object is collected by a player. </td>
@@ -732,6 +737,21 @@
 			<td>Hooks::PickupObject</td>
 			<td>const uint32 CanCollect</td>
 			<td>Called when a pickup object is about to be collected by a player. Note that basic checks are done before this hook is called.</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 PlayerCanRespawn</td>
+			<td>Called when the game wants to know if the player should be able to respawn or not.Set bCanRespawn to false to disallow, default true.</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 PlayerSpawn</td>
+			<td>Called when a player (re)spawns.</td>
+		</tr>
+		<tr>
+			<td>Hooks::Player</td>
+			<td>const uint32 ClientConnected</td>
+			<td>Called when a player connects to the server. if bDisallowJoin is set to false, the player is disconnected. szRejectReason is shown to the player if disconnected. The maximum length of the reject reason string is 127 characters.</td>
 		</tr>
 		<tr>
 			<td>Hooks::Player</td>

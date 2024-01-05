@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("pac",["Function"],[["PackDeadPlayerItems",,[["[Global Namespace]::CBasePlayer",,,,0,"File:Classes/CBasePlayer.as:[Global_Namespace].CBasePlayer.PackDeadPlayerItems","AngelscriptClass:[Global_Namespace].CBasePlayer:PackDeadPlayerItems"]]]]);

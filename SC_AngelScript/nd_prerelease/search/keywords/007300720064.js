@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("srd",["Constant"],[["SRDetonate",,[["NetworkMessages",,,,0,"File:Enums/NetworkMessageType.as:NetworkMessages.SRDetonate","AngelscriptClass:NetworkMessages:SRDetonate"]]]]);

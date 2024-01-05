@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("whi",["Variable"],[["WHITESPACE_CHARACTERS",,[["String",,,,0,"File:Properties/WHITESPACE_CHARACTERS.as:String.WHITESPACE_CHARACTERS","AngelscriptClass:String:WHITESPACE_CHARACTERS"]]]]);

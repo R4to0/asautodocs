@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("emp",["Variable"],[["EMPTY_STRING",,[["String",,,,0,"File:Properties/EMPTY_STRING.as:String.EMPTY_STRING","AngelscriptClass:String:EMPTY_STRING"]]]]);

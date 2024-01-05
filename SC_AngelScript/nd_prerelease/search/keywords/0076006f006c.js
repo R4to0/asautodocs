@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("vol",["Variable"],[["VOL_NORM",,[["[Global Namespace]",,,,0,"File:Properties/VOL_NORM.as:[Global_Namespace].VOL_NORM","AngelscriptClass:[Global_Namespace]:VOL_NORM"]]]]);

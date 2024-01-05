@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("hdo",["Variable"],[["hDoor",,[["[Global Namespace]::Waypoint",,,,0,"File:Classes/Waypoint.as:[Global_Namespace].Waypoint.hDoor","AngelscriptClass:[Global_Namespace].Waypoint:hDoor"]]]]);

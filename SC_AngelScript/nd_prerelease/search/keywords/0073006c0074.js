@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("slt",["Variable"],[["slTakeCoverFromBestSound",,[["Schedules",,,,0,"File:Properties/slTakeCoverFromBestSound.as:Schedules.slTakeCoverFromBestSound","AngelscriptClass:Schedules:slTakeCoverFromBestSound"]]]]);

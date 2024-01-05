@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("swa",["Function"],[["Swap",,[["Regex::MatchResults",,,,0,"File:Classes/MatchResults.as:Regex.MatchResults.Swap","AngelscriptClass:Regex.MatchResults:Swap"],["Regex::Regex",,,,0,"File:Classes/Regex.as:Regex.Regex.Swap","AngelscriptClass:Regex.Regex:Swap"]]]]);

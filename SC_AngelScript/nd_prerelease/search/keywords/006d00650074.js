@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("met",["Class","Function"],[["Method",,[["Reflection",,,,0,"File:Classes/Method.as:Reflection.Method","AngelscriptClass:Reflection.Method"]]],["MethodExists",,[["Reflection::ObjectType",,,,1,"File:Classes/ObjectType.as:Reflection.ObjectType.MethodExists","AngelscriptClass:Reflection.ObjectType:MethodExists"]]]]);

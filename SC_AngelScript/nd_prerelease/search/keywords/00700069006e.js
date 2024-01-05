@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("pin",["Variable"],[["pInflictor",,[["[Global Namespace]::DamageInfo",,,,0,"File:Classes/DamageInfo.as:[Global_Namespace].DamageInfo.pInflictor","AngelscriptClass:[Global_Namespace].DamageInfo:pInflictor"]]]]);

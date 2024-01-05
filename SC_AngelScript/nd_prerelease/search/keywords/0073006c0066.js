@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("slf",["Variable"],[["slFail",,[["Schedules",,,,0,"File:Properties/slFail.as:Schedules.slFail","AngelscriptClass:Schedules:slFail"]]]]);

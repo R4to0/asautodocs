@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("big",["Variable"],[["BIG_EXPLOSION_VOLUME",,[["[Global Namespace]",,,,0,"File:Properties/BIG_EXPLOSION_VOLUME.as:[Global_Namespace].BIG_EXPLOSION_VOLUME","AngelscriptClass:[Global_Namespace]:BIG_EXPLOSION_VOLUME"]]]]);

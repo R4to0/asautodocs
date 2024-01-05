@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cgi",["Class"],[["CGib",,[["[Global Namespace]",,,,0,"File:Classes/CGib.as:[Global_Namespace].CGib","AngelscriptClass:[Global_Namespace].CGib"]]]]);

@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:Properties/slWalkToScript.as","slWalkToScript.as");NDSummary.OnSummaryLoaded("File:Properties/slWalkToScript.as",[["C/C++","Angelscript"]],[["Classes","Class"],["Groups","Group"],["Variables","Variable"]],[[8517,0,0,"Schedules","Schedules"],[8518,0,1,"Variables","Schedules.Variables"],[8519,0,2,"slWalkToScript","Schedules.slWalkToScript"]]);

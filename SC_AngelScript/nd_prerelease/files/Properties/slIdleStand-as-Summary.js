@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:Properties/slIdleStand.as","slIdleStand.as");NDSummary.OnSummaryLoaded("File:Properties/slIdleStand.as",[["C/C++","Angelscript"]],[["Classes","Class"],["Groups","Group"],["Variables","Variable"]],[[8550,0,0,"Schedules","Schedules"],[8551,0,1,"Variables","Schedules.Variables"],[8552,0,2,"slIdleStand","Schedules.slIdleStand"]]);

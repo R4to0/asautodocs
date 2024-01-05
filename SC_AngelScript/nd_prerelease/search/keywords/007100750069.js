@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("qui",["Variable"],[["QUIET_GUN_VOLUME",,[["[Global Namespace]",,,,0,"File:Properties/QUIET_GUN_VOLUME.as:[Global_Namespace].QUIET_GUN_VOLUME","AngelscriptClass:[Global_Namespace]:QUIET_GUN_VOLUME"]]]]);

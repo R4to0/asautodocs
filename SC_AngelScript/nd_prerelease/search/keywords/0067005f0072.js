@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("g_r",["Variable"],[["g_Reflection",,[["Reflection",,,,0,"File:Properties/g_Reflection.as:Reflection.g_Reflection","AngelscriptClass:Reflection:g_Reflection"]]]]);

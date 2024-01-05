@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("isg",["Function"],[["isgraph",,[["[Global Namespace]",,,,0,"File:Functions/isgraph.as:[Global_Namespace].isgraph","AngelscriptClass:[Global_Namespace]:isgraph"]]]]);

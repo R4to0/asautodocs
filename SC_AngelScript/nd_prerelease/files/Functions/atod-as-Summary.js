@@ -1,0 +1,1 @@
+﻿NDFramePage.OnPageTitleLoaded("File:Functions/atod.as","atod.as");NDSummary.OnSummaryLoaded("File:Functions/atod.as",[["C/C++","Angelscript"]],[["Classes","Class"],["Functions","Function"],["Groups","Group"]],[[8382,0,0,"[Global Namespace]","[Global_Namespace]"],[8383,0,2,"Functions","[Global_Namespace].Functions"],[8384,0,1,"atod","[Global_Namespace].atod"]]);

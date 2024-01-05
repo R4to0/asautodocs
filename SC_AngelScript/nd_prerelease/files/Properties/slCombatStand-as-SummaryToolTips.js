@@ -1,0 +1,1 @@
+﻿NDSummary.OnToolTipsLoaded("File:Properties/slCombatStand.as",{8573:"<div class=\"NDToolTip TVariable LAngelscript\"><div id=\"NDPrototype8573\" class=\"NDPrototype\"><div class=\"PSection PPlainSection\">Schedule Schedules::slCombatStand</div></div></div>"});

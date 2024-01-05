@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("hos",["Function"],[["HoseInit",,[["[Global Namespace]::CBeam",,,,0,"File:Classes/CBeam.as:[Global_Namespace].CBeam.HoseInit","AngelscriptClass:[Global_Namespace].CBeam:HoseInit"],["[Global Namespace]::CLaser",,,,0,"File:Classes/CLaser.as:[Global_Namespace].CLaser.HoseInit","AngelscriptClass:[Global_Namespace].CLaser:HoseInit"]]]]);

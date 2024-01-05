@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("spl",["Function"],[["Split",,[["[Global Namespace]::string",,,,0,"File:Classes/string.as:[Global_Namespace].string.Split","AngelscriptClass:[Global_Namespace].string:Split"]]]]);

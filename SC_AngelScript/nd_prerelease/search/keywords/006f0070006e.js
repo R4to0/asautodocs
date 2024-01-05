@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("opn",["Function"],[["opNeg",,[["[Global Namespace]::Vector",,,,0,"File:Classes/Vector.as:[Global_Namespace].Vector.opNeg","AngelscriptClass:[Global_Namespace].Vector:opNeg"]]]]);

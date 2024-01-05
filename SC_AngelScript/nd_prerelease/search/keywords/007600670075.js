@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("vgu",["Constant"],[["VGUIMenu",,[["NetworkMessages",,,,0,"File:Enums/NetworkMessageType.as:NetworkMessages.VGUIMenu","AngelscriptClass:NetworkMessages:VGUIMenu"]]]]);

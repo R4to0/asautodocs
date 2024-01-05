@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("unb",["Function"],[["UnblockWeapons",,[["[Global Namespace]::CBasePlayer",,,,0,"File:Classes/CBasePlayer.as:[Global_Namespace].CBasePlayer.UnblockWeapons","AngelscriptClass:[Global_Namespace].CBasePlayer:UnblockWeapons"]]]]);
