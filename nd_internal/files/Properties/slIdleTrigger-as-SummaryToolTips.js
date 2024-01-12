@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:Properties/slIdleTrigger.as",{8552:"<div class=\"NDToolTip TVariable LAngelscript\"><div id=\"NDPrototype8552\" class=\"NDPrototype\"><div class=\"PSection PPlainSection\">Schedule Schedules::slIdleTrigger</div></div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:Properties/slIdleTrigger.as",{8556:"<div class=\"NDToolTip TVariable LAngelscript\"><div id=\"NDPrototype8556\" class=\"NDPrototype\"><div class=\"PSection PPlainSection\">Schedule Schedules::slIdleTrigger</div></div></div>"});
