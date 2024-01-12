@@ -1,1 +1,0 @@
-﻿NDSearch.OnPrefixDataLoaded("try",["Function"],[["TryCollect",,[["[Global Namespace]::CItemInventory",,,,0,"File:Classes/CItemInventory.as:[Global_Namespace].CItemInventory.TryCollect","AngelscriptClass:[Global_Namespace].CItemInventory:TryCollect"]]]]);

@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:Properties/slRangeAttack2.as",{8538:"<div class=\"NDToolTip TVariable LAngelscript\"><div id=\"NDPrototype8538\" class=\"NDPrototype\"><div class=\"PSection PPlainSection\">Schedule Schedules::slRangeAttack2</div></div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:Properties/slRangeAttack2.as",{8355:"<div class=\"NDToolTip TVariable LAngelscript\"><div id=\"NDPrototype8355\" class=\"NDPrototype\"><div class=\"PSection PPlainSection\">Schedule Schedules::slRangeAttack2</div></div></div>"});

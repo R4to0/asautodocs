@@ -1,1 +1,0 @@
-﻿NDSummary.OnToolTipsLoaded("File:FuncDefs/MonsterTakeDamageHook.as",{8140:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});
