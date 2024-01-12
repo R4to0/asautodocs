@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:Enums/HUD_TIME.as",{7404:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:Enums/HUD_TIME.as",{7449:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

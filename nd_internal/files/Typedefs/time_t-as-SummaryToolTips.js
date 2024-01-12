@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:Typedefs/time_t.as",{9283:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:Typedefs/time_t.as",{9271:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

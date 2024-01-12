@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:Enums/HideHUDFlags.as",{7510:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:Enums/HideHUDFlags.as",{7536:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

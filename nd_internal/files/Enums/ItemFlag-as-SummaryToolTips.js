@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:Enums/ItemFlag.as",{7382:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:Enums/ItemFlag.as",{7388:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

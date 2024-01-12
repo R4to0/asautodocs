@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:FuncDefs/ClientCommandCallback.as",{8188:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:FuncDefs/ClientCommandCallback.as",{8197:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});

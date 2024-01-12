@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:Properties/slTakeCoverFromBestSound.as",{8529:"<div class=\"NDToolTip TVariable LAngelscript\"><div id=\"NDPrototype8529\" class=\"NDPrototype\"><div class=\"PSection PPlainSection\">Schedule Schedules::slTakeCoverFromBestSound</div></div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:Properties/slTakeCoverFromBestSound.as",{8538:"<div class=\"NDToolTip TVariable LAngelscript\"><div id=\"NDPrototype8538\" class=\"NDPrototype\"><div class=\"PSection PPlainSection\">Schedule Schedules::slTakeCoverFromBestSound</div></div></div>"});
