@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:Interfaces/ScriptClassInterface.as",{8404:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:Interfaces/ScriptClassInterface.as",{8403:"<div class=\"NDToolTip TClass LAngelscript\"><div class=\"TTSummary\">Global namespace.</div></div>"});
