@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:Properties/slCombatStand.as",{8370:"<div class=\"NDToolTip TVariable LAngelscript\"><div id=\"NDPrototype8370\" class=\"NDPrototype\"><div class=\"PSection PPlainSection\">Schedule Schedules::slCombatStand</div></div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:Properties/slCombatStand.as",{8578:"<div class=\"NDToolTip TVariable LAngelscript\"><div id=\"NDPrototype8578\" class=\"NDPrototype\"><div class=\"PSection PPlainSection\">Schedule Schedules::slCombatStand</div></div></div>"});

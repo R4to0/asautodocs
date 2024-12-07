@@ -71,6 +71,14 @@
 			<td>Returns this entity's class name.</td>
 		</tr>
 		<tr>
+			<td>string GetClassificationTag() const</td>
+			<td>Returns this entity's classification tag.</td>
+		</tr>
+		<tr>
+			<td>string GetClassificationName() const</td>
+			<td>Returns this entity's classification name.</td>
+		</tr>
+		<tr>
 			<td>string GetTargetname() const</td>
 			<td>Returns this entity's target name.</td>
 		</tr>
@@ -119,14 +127,6 @@
 			<td>Gets this entity's classification. Returns the given value if none is set. See the CLASSIFICATION enum.</td>
 		</tr>
 		<tr>
-			<td>const string& GetClassificationTag()</td>
-			<td>Gets this entity's classification tag.</td>
-		</tr>
-		<tr>
-			<td>const string& GetClassificationName()</td>
-			<td>Gets this entity's classification name.</td>
-		</tr>
-		<tr>
 			<td>void SetClassification(int cl)</td>
 			<td>Sets this entity's classification override. Can override the entity's player ally setting.</td>
 		</tr>
@@ -163,7 +163,7 @@
 			<td>Takes armor from this entity. Note: flArmor is added to entity armor. Use negative values to subtract.If armor_cap is non-zero, won't add more than armor_cap. Returns 1 if it took damage, 0 otherwise.</td>
 		</tr>
 		<tr>
-			<td>void Killed(entvars_t@pevAtttacker, int iGibbed)</td>
+			<td>void Killed(entvars_t@ pevAttacker, int iGibbed)</td>
 			<td>Tells this entity it's been killed. See the GIB enum for possible values.</td>
 		</tr>
 		<tr>
@@ -423,6 +423,10 @@
 			<td>Entity destructor.</td>
 		</tr>
 		<tr>
+			<td>void OnSetOriginByMap()</td>
+			<td>Entity callback after trigger_setorigin has moved the entity.</td>
+		</tr>
+		<tr>
 			<td>bool IsRevivable()</td>
 			<td>Returns whether this entity is revivable at this time.</td>
 		</tr>
@@ -433,6 +437,22 @@
 		<tr>
 			<td>void EndRevive(float flTimeUntilRevive)</td>
 			<td>Called when this entity should be revived. flTimeUntilRevive is the time until the revival should start.</td>
+		</tr>
+		<tr>
+			<td>void AddEntityFlag(int FlagMask)</td>
+			<td>Add a entity flag mask (EFLAG)</td>
+		</tr>
+		<tr>
+			<td>void RemoveEntityFlag(int FlagMask)</td>
+			<td>Remove a entity flag mask (EFLAG)</td>
+		</tr>
+		<tr>
+			<td>bool HasEntityFlag(int FlagMask) const</td>
+			<td>Check if it has such entity flag mask (EFLAG) set</td>
+		</tr>
+		<tr>
+			<td>void ClearEntityFlags()</td>
+			<td>Clear all entity flag masks (EFLAG)</td>
 		</tr>
 		<tr>
 			<td>dictionary@ GetUserData()</td>

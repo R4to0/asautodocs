@@ -1,1 +1,1 @@
-﻿NDSummary.OnToolTipsLoaded("File:Properties/slIdleWalk.as",{8358:"<div class=\"NDToolTip TVariable LAngelscript\"><div id=\"NDPrototype8358\" class=\"NDPrototype\"><div class=\"PSection PPlainSection\">Schedule Schedules::slIdleWalk</div></div></div>"});
+﻿NDSummary.OnToolTipsLoaded("File:Properties/slIdleWalk.as",{8563:"<div class=\"NDToolTip TVariable LAngelscript\"><div id=\"NDPrototype8563\" class=\"NDPrototype\"><div class=\"PSection PPlainSection\">Schedule Schedules::slIdleWalk</div></div></div>"});

@@ -75,6 +75,11 @@
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
+			<td>HookReturnCode WeaponReloadHook(CBasePlayer@, CBasePlayerWeapon@)</td>
+			<td>Called when a player reloads a weapon.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
 			<td>HookReturnCode WeaponTertiaryAttackHook(CBasePlayer@, CBasePlayerWeapon@)</td>
 			<td>Called when a player fires a weapon's tertiary attack.</td>
 		</tr>
@@ -97,6 +102,11 @@
 			<td>&lt;Global&gt;</td>
 			<td>HookReturnCode PlayerDecalHook(CBasePlayer@, const TraceResult& in)</td>
 			<td>Called when a player is spraypainting a decal onto a surface. The given trace result contains the surface information. </td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>HookReturnCode PlayerRevivedHook(CBasePlayer@ pPlayer)</td>
+			<td>Called when a player is revived. At this point all the revival process is finished.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
@@ -140,21 +150,6 @@
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
-			<td>HookReturnCode PlayerCanRespawnHook(CBasePlayer@, bool& out)</td>
-			<td>Called when the game wants to know if the player should be able to respawn or not.Set bCanRespawn to false to disallow, default true.</td>
-		</tr>
-		<tr>
-			<td>&lt;Global&gt;</td>
-			<td>HookReturnCode PlayerSpawnHook(CBasePlayer@)</td>
-			<td>Called when a player (re)spawns.</td>
-		</tr>
-		<tr>
-			<td>&lt;Global&gt;</td>
-			<td>HookReturnCode ClientConnectedHook(edict_t@, const string& in, const string& in, bool& out, string& out)</td>
-			<td>Called when a player connects to the server. if bDisallowJoin is set to false, the player is disconnected. szRejectReason is shown to the player if disconnected. The maximum length of the reject reason string is 127 characters.</td>
-		</tr>
-		<tr>
-			<td>&lt;Global&gt;</td>
 			<td>HookReturnCode CollectedHook(CBaseEntity@, CBaseEntity@)</td>
 			<td>Called when a pickup object is collected by a player. </td>
 		</tr>
@@ -170,8 +165,33 @@
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
+			<td>HookReturnCode PlayerCanRespawnHook(CBasePlayer@, bool& out)</td>
+			<td>Called when the game wants to know if the player should be able to respawn or not.Set bCanRespawn to false to disallow, default true.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>HookReturnCode PlayerSpawnHook(CBasePlayer@)</td>
+			<td>Called when a player (re)spawns.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>HookReturnCode ClientConnectedHook(edict_t@, const string& in, const string& in, bool& out, string& out)</td>
+			<td>Called when a player connects to the server. if bDisallowJoin is set to false, the player is disconnected. szRejectReason is shown to the player if disconnected. The maximum length of the reject reason string is 127 characters.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
 			<td>HookReturnCode CanPlayerUseReservedSlotHook(edict_t@, const string& in, const string& in, bool& out)</td>
 			<td>Called when a player connects to the server, and the number of slots left on the server is &lt;= the number of reserved slots. Set bAllowJoin to true to allow the player to join (default false).</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>HookReturnCode MonsterTakeDamageHook(DamageInfo@)</td>
+			<td>Called when a monster takes damage.Note that the victim entity can't be changed at this point. Players also appear there as they're technically monsters too.</td>
+		</tr>
+		<tr>
+			<td>&lt;Global&gt;</td>
+			<td>HookReturnCode MonsterKilledHook(CBaseMonster@, CBaseEntity@, int)</td>
+			<td>Called when a monster is killed.This may still be called even when the monster is taking damage while in a event (eg.: death animation). Players also appear there as they're technically monsters too.</td>
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
@@ -195,8 +215,8 @@
 		</tr>
 		<tr>
 			<td>&lt;Global&gt;</td>
-			<td>HookReturnCode MapChangeHook()</td>
-			<td>Called when the map changes. This happens when the world is destroyed. There may still be entities that exist at this point.</td>
+			<td>HookReturnCode MapChangeHook(const string& in)</td>
+			<td>Called when the map changes. This happens when the world is destroyed. There may still be entities that exist at this point. String will show the next map will be, or empty if the server is shutting down.</td>
 		</tr>
 	</table>
 	</div>

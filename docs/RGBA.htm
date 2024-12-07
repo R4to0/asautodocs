@@ -31,12 +31,24 @@
 			<td>Constructor</td>
 		</tr>
 		<tr>
+			<td>void RGBA(const Vector& in color, uint8 a = 255)</td>
+			<td>Constructor</td>
+		</tr>
+		<tr>
 			<td>void RGBA(const RGBA& in other)</td>
 			<td>Copy constructor</td>
 		</tr>
 		<tr>
 			<td>RGBA& opAssign(const RGBA& in other)</td>
 			<td>Assignment operator</td>
+		</tr>
+		<tr>
+			<td>bool opEquals(const RGBA& in other) const</td>
+			<td>Compare colors</td>
+		</tr>
+		<tr>
+			<td>string ToString(const bool withAlpha = true) const</td>
+			<td>Returns a string representation of this RGBA</td>
 		</tr>
 	</table>
 	</div>

@@ -1,0 +1,1 @@
+﻿NDSearch.OnPrefixDataLoaded("cls",["Constant"],[["ClServerInfo",,[["NetworkMessages",,,,0,"File:Enums/NetworkMessageType.as:NetworkMessages.ClServerInfo","AngelscriptClass:NetworkMessages:ClServerInfo"]]]]);
